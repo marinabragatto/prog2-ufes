@@ -137,7 +137,7 @@ Aluno: Marina
  - Resultados corretos: 3 de 3
  - Valgrinds corretos: 3 de 3
  - Nota de Marina para o teste matrix_utils: 3.33
- - Nota de Marina: 0+(3.33)+(3.33)+(3.34)
+ - Nota de Marina: 0+(3.33)+(3.34)+(3.33)
  - Nota de Marina: 10.00
 
 ----------------------------------------------------------------------------
