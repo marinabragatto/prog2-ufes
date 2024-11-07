@@ -23,8 +23,8 @@ Opcao escolhida:
 5 - Transposta de uma matriz
 6 - Encerrar o programa
 Opcao escolhida: 
-|12 13|
-|16 17|
+|17 18|
+|35 38|
 1 - Somar matrizes
 2 - Subtrair matrizes
 3 - Multiplicar matrizes

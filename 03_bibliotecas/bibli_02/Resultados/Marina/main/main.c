@@ -81,10 +81,10 @@ void execute_op(int rows1, int cols1, int matrix1[rows1][cols1], int rows2, int 
         int result1[cols1][rows1];
         int result2[cols2][rows2];
         transpose_matrix(rows1, cols1, matrix1, result1);
-        transpose_matrix(rows2, cols2, matrix1, result2);
-        matrix_print(rows1, cols1, result1);
+        transpose_matrix(rows2, cols2, matrix2, result2);
+        matrix_print(cols1 ,rows1 , result1);
         printf("\n");
-        matrix_print(rows2, cols2, result2);
+        matrix_print( cols2,rows2, result2);
     }
 
     return;

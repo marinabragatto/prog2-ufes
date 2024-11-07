@@ -85,7 +85,7 @@ void matrix_multiply(int rows1, int cols1, int matrix1[rows1][cols1], int rows2,
         for (j = 0; j < cols2; j++){
             result[i][j] = 0;
             for(m = 0; m < cols1; m++){
-                result[i][j] = result[i][j] + matrix1[i][m] + matrix2[m][j];
+                result[i][j] = result[i][j] + (matrix1[i][m] * matrix2[m][j]);
             }
         }
     }
