@@ -1,0 +1,3 @@
+matrix_utils.c:41:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+   41 | possible_matrix_sub(int rows1, int cols1, int rows2, int cols2){
+      | ^~~~~~~~~~~~~~~~~~~
