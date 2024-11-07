@@ -38,7 +38,7 @@ int possible_matrix_sum(int rows1, int cols1, int rows2, int cols2){
     }
 }
 
-possible_matrix_sub(int rows1, int cols1, int rows2, int cols2){
+int possible_matrix_sub(int rows1, int cols1, int rows2, int cols2){
     if(rows1 == rows2 && cols1 == cols2){
         return 1;
     }

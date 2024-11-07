@@ -1,1 +1,69 @@
-timeout: the monitored command dumped core
+1 - Somar matrizes
+2 - Subtrair matrizes
+3 - Multiplicar matrizes
+4 - Multiplicacao de uma matriz por escalar
+5 - Transposta de uma matriz
+6 - Encerrar o programa
+Opcao escolhida:
+Erro: as dimensoes da matriz nao correspondem
+
+1 - Somar matrizes
+2 - Subtrair matrizes
+3 - Multiplicar matrizes
+4 - Multiplicacao de uma matriz por escalar
+5 - Transposta de uma matriz
+6 - Encerrar o programa
+Opcao escolhida:
+Erro: as dimensoes da matriz nao correspondem
+
+1 - Somar matrizes
+2 - Subtrair matrizes
+3 - Multiplicar matrizes
+4 - Multiplicacao de uma matriz por escalar
+5 - Transposta de uma matriz
+6 - Encerrar o programa
+Opcao escolhida:
+|33 36|
+|42 45|
+
+1 - Somar matrizes
+2 - Subtrair matrizes
+3 - Multiplicar matrizes
+4 - Multiplicacao de uma matriz por escalar
+5 - Transposta de uma matriz
+6 - Encerrar o programa
+Opcao escolhida:
+|4 8 12|
+|16 20 24|
+
+1 - Somar matrizes
+2 - Subtrair matrizes
+3 - Multiplicar matrizes
+4 - Multiplicacao de uma matriz por escalar
+5 - Transposta de uma matriz
+6 - Encerrar o programa
+Opcao escolhida:
+|4 16 8|
+|20 12 24|
+
+|4 12|
+|20 8|
+|16 24|
+
+1 - Somar matrizes
+2 - Subtrair matrizes
+3 - Multiplicar matrizes
+4 - Multiplicacao de uma matriz por escalar
+5 - Transposta de uma matriz
+6 - Encerrar o programa
+Opcao escolhida:
+|51 54|
+|87 90|
+
+1 - Somar matrizes
+2 - Subtrair matrizes
+3 - Multiplicar matrizes
+4 - Multiplicacao de uma matriz por escalar
+5 - Transposta de uma matriz
+6 - Encerrar o programa
+Opcao escolhida:

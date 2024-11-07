@@ -1,39 +1,15 @@
-==65682== Memcheck, a memory error detector
-==65682== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==65682== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==65682== Command: Resultados/Marina/main/prog Resultados/Marina/main/Casos/3
-==65682== Parent PID: 65681
-==65682== 
-==65682== Invalid write of size 4
-==65682==    at 0x48C7149: __vfscanf_internal (vfscanf-internal.c:1896)
-==65682==    by 0x48C2141: __isoc99_scanf (isoc99_scanf.c:30)
-==65682==    by 0x109234: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/03_bibliotecas/bibli_02/Resultados/Marina/main/prog)
-==65682==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
-==65682== 
-==65682== 
-==65682== Process terminating with default action of signal 11 (SIGSEGV)
-==65682==  Access not within mapped region at address 0x0
-==65682==    at 0x48C7149: __vfscanf_internal (vfscanf-internal.c:1896)
-==65682==    by 0x48C2141: __isoc99_scanf (isoc99_scanf.c:30)
-==65682==    by 0x109234: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/03_bibliotecas/bibli_02/Resultados/Marina/main/prog)
-==65682==  If you believe this happened as a result of a stack
-==65682==  overflow in your program's main thread (unlikely but
-==65682==  possible), you can try to increase the size of the
-==65682==  main thread stack using the --main-stacksize= flag.
-==65682==  The main thread stack size used in this run was 8388608.
-==65682== 
-==65682== HEAP SUMMARY:
-==65682==     in use at exit: 512 bytes in 1 blocks
-==65682==   total heap usage: 1 allocs, 0 frees, 512 bytes allocated
-==65682== 
-==65682== LEAK SUMMARY:
-==65682==    definitely lost: 0 bytes in 0 blocks
-==65682==    indirectly lost: 0 bytes in 0 blocks
-==65682==      possibly lost: 0 bytes in 0 blocks
-==65682==    still reachable: 512 bytes in 1 blocks
-==65682==         suppressed: 0 bytes in 0 blocks
-==65682== Reachable blocks (those to which a pointer was found) are not shown.
-==65682== To see them, rerun with: --leak-check=full --show-leak-kinds=all
-==65682== 
-==65682== For lists of detected and suppressed errors, rerun with: -s
-==65682== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+==73803== Memcheck, a memory error detector
+==73803== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==73803== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==73803== Command: Resultados/Marina/main/prog Resultados/Marina/main/Casos/3
+==73803== Parent PID: 73802
+==73803== 
+==73803== 
+==73803== HEAP SUMMARY:
+==73803==     in use at exit: 0 bytes in 0 blocks
+==73803==   total heap usage: 2 allocs, 2 frees, 1,024 bytes allocated
+==73803== 
+==73803== All heap blocks were freed -- no leaks are possible
+==73803== 
+==73803== For lists of detected and suppressed errors, rerun with: -s
+==73803== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
