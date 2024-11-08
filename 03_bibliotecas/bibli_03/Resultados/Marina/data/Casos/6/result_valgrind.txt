@@ -1,0 +1,6 @@
+==51106== Memcheck, a memory error detector
+==51106== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==51106== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==51106== Command: Resultados/Marina/data/prog Resultados/Marina/data/Casos/6
+==51106== Parent PID: 51105
+==51106== 

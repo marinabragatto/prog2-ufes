@@ -1,0 +1,10 @@
+oi0
+oi1
+oi2
+oi3
+ 1 
+ 1 
+Primeira data: 25 de Dezembro de 2023
+Segundo data: 29 de Agosto de 2023
+A segunda data eh mais antiga
+A diferenca em dias entre as datas eh: 118 dias

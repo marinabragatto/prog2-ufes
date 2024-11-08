@@ -1,0 +1,6 @@
+==50310== Memcheck, a memory error detector
+==50310== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==50310== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==50310== Command: Resultados/Marina/completo/prog Resultados/Marina/completo/Casos/3
+==50310== Parent PID: 50309
+==50310== 
