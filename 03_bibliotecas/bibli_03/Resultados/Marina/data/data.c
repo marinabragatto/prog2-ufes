@@ -16,7 +16,7 @@ void imprimeMesExtenso(int mes){
         printf("Janeiro");
     }
     if(mes == 2){
-        printf("Feveiro");
+        printf("Fevereiro");
     }
     if(mes == 3){
         printf("Marco");
@@ -51,7 +51,7 @@ void imprimeMesExtenso(int mes){
 }
 
 void imprimeDataExtenso(int dia, int mes, int ano){
-    printf("%d de ", dia);
+    printf("%02d de ", dia);
     imprimeMesExtenso(mes);
     printf(" de %d\n", ano);
     return;
@@ -87,7 +87,7 @@ int verificaBissexto(int ano){
 }
 
 int numeroDiasMes(int mes, int ano){
-    if(mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 10 || mes == 12){
+    if(mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12){
         return 31;
     }
     else if(mes != 2){
@@ -145,28 +145,6 @@ int calculaDiferencaDias(int dia1, int mes1, int ano1, int dia2, int mes2, int a
         return distancia;
     }
     else if(comparaData(dia1, mes1, ano1, dia2, mes2, ano2) == 1){
-        int dia3 = dia1, mes3 = mes1, ano3 = ano1;
-        while(1){    
-            if(dia3 < numeroDiasMes(mes3, ano3)){
-                dia3++;
-                distancia++;
-            }
-            else if(mes3 != 12){
-                mes3++;
-                dia3 = 1;
-                distancia++;
-            }
-            else if(mes3 == 12){
-                ano3++;
-                mes3 = 1;
-                dia3 = 1;
-                distancia++;
-            }
-            if(comparaData(dia2, mes2, ano2, dia3, mes3, ano3) == 0){
-                break;
-            }
-        }
-    } else if(comparaData(dia1, mes1, ano1, dia2, mes2, ano2) == -1){
         int dia3 = dia2, mes3 = mes2, ano3 = ano2;
         while(1){    
             if(dia3 < numeroDiasMes(mes3, ano3)){
@@ -185,6 +163,28 @@ int calculaDiferencaDias(int dia1, int mes1, int ano1, int dia2, int mes2, int a
                 distancia++;
             }
             if(comparaData(dia1, mes1, ano1, dia3, mes3, ano3) == 0){
+                break;
+            }
+        }
+    } else if(comparaData(dia1, mes1, ano1, dia2, mes2, ano2) == -1){
+        int dia3 = dia1, mes3 = mes1, ano3 = ano1;
+        while(1){    
+            if(dia3 < numeroDiasMes(mes3, ano3)){
+                dia3++;
+                distancia++;
+            }
+            else if(mes3 != 12){
+                mes3++;
+                dia3 = 1;
+                distancia++;
+            }
+            else if(mes3 == 12){
+                ano3++;
+                mes3 = 1;
+                dia3 = 1;
+                distancia++;
+            }
+            if(comparaData(dia2, mes2, ano2, dia3, mes3, ano3) == 0){
                 break;
             }
         }
