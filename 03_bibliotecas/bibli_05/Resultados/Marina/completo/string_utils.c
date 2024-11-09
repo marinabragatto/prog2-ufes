@@ -4,7 +4,6 @@
 int string_length(char *str){
     int i = 0;
     for (i = 0; str[i]; i++);
-    printf("\n esse é o tamanho %d\n", i);
     return i + 2;
 }
 

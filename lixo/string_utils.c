@@ -4,7 +4,9 @@
 int string_length(char *str){
     int i = 0;
     for (i = 0; str[i]; i++);
-    return i + 2;
+    printf("(%s)", str);
+    printf("\n esse é o tamanho %d\n", i);
+    return i + 1;
 }
 
 void string_copy(char *src, char *dest){

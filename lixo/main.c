@@ -9,11 +9,12 @@ int main(){
     char str[1000];
     int op = 0, size = 0;
     scanf("%[^\n]", str);
+
     size = string_length(str);
-    str[size - 1] = '\n';
-    str[size] = '\0';
 
-
+    printf("\n size ==== %d ====\n ", size);
+    //str[size - 1] = '\n';
+    //str[size] = '\0';    
 
     while(1){
         menu_print();
@@ -23,7 +24,6 @@ int main(){
         }
         execute_op(op, str);
         printf("\n");
-        
     }
 
     return 0;

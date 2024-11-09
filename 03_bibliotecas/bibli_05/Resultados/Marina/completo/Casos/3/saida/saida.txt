@@ -1,8 +1,4 @@
-
- esse é o tamanho 8
-
- size ==== 10 ====
- 1 - Tamanho da string
+1 - Tamanho da string
 2 - Copiar string
 3 - Converter string para letras maiusculas
 4 - Converter string para letras minusculas
@@ -18,10 +14,6 @@ String convertida para minusculas: netbeans
 5 - Imprimir string ao contrario
 6 - Encerrar o programa
 Opcao escolhida: 
-
- esse é o tamanho 8
-
- esse é o tamanho 8
 String invertida: snaebten
 
 1 - Tamanho da string

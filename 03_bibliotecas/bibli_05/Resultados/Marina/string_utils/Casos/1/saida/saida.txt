@@ -5,8 +5,6 @@
 5 - Imprimir string ao contrario
 6 - Encerrar o programa
 Opcao escolhida: 
-
- esse é o tamanho 12
 Tamanho da string: 14
 
 1 - Tamanho da string
@@ -16,8 +14,6 @@ Tamanho da string: 14
 5 - Imprimir string ao contrario
 6 - Encerrar o programa
 Opcao escolhida: 
-
- esse é o tamanho 12
 String copiada: Hello world!
 
 1 - Tamanho da string
@@ -45,10 +41,6 @@ String convertida para minusculas: hello world!
 5 - Imprimir string ao contrario
 6 - Encerrar o programa
 Opcao escolhida: 
-
- esse é o tamanho 12
-
- esse é o tamanho 12
 String invertida: !dlrow olleh
 
 1 - Tamanho da string

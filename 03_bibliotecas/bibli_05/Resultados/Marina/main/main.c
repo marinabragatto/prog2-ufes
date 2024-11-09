@@ -9,11 +9,11 @@ int main(){
     char str[1000];
     int op = 0, size = 0;
     scanf("%[^\n]", str);
-
     size = string_length(str);
-    printf("\n size ==== %d ====\n ", size);
-    //str[size - 1] = '\n';
-    //str[size] = '\0';    
+    str[size - 1] = '\n';
+    str[size] = '\0';
+
+
 
     while(1){
         menu_print();
@@ -26,8 +26,6 @@ int main(){
         
     }
 
-
-
     return 0;
 }
 
@@ -38,7 +36,7 @@ void menu_print(){
 
 void execute_op(int op, char *str){
     if(op == 1){
-        printf("Tamanho da string: %d\n",string_length(str));
+        printf("Tamanho da string: %d\n", string_length(str));
     }
     else if(op == 2){
         char dest[1000];
