@@ -7,9 +7,12 @@ void execute_op(int op, char *str);
 
 int main(){
     char str[1000];
-    int op = 0;
+    int op = 0, size = 0;
     scanf("%[^\n]", str);
-    
+
+    size = string_length(str);
+    str[size - 1] = '\n';
+    str[size] = '\0';    
     while(1){
         menu_print();
         scanf("%d", &op);
@@ -33,7 +36,7 @@ void menu_print(){
 
 void execute_op(int op, char *str){
     if(op == 1){
-        printf("Tamanho da string: %d\n",string_length(str) + 2);
+        printf("Tamanho da string: %d\n",string_length(str));
     }
     else if(op == 2){
         char dest[1000];
