@@ -4,7 +4,8 @@
 int string_length(char *str){
     int i = 0;
     for (i = 0; str[i]; i++);
-    return i + 1;
+    printf("\n esse é o tamanho %d\n", i);
+    return i + 2;
 }
 
 void string_copy(char *src, char *dest){
@@ -41,18 +42,18 @@ void string_reverse(char *str){
 
     char staticStr[1000];
 
-    sizeStr = string_length(str) - 1;
+    sizeStr = string_length(str) - 2;
     
     string_copy(str, staticStr);
 
 
     for(i = 0, j = sizeStr - 1; i < sizeStr; i++, j--){
-        if(staticStr[j] == '\n'){
-            i = i - 1;
-        }
-        else{
+        //if(staticStr[j] == '\n'){
+          //  i = i - 1;
+        //}
+        //else{
             str[i] = staticStr[j];
-        }
+        //}
         
     }
    // printf("teste 2 = %s\n", str);

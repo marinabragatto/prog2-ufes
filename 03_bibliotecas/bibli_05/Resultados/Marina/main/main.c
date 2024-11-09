@@ -11,8 +11,10 @@ int main(){
     scanf("%[^\n]", str);
 
     size = string_length(str);
-    str[size - 1] = '\n';
-    str[size] = '\0';    
+    printf("\n size ==== %d ====\n ", size);
+    //str[size - 1] = '\n';
+    //str[size] = '\0';    
+
     while(1){
         menu_print();
         scanf("%d", &op);

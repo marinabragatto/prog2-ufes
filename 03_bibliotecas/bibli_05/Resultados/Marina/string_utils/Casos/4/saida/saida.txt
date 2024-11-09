@@ -5,7 +5,9 @@
 5 - Imprimir string ao contrario
 6 - Encerrar o programa
 Opcao escolhida: 
-Tamanho da string: 19
+
+ esse é o tamanho 18
+Tamanho da string: 20
 
 1 - Tamanho da string
 2 - Copiar string
@@ -14,6 +16,10 @@ Tamanho da string: 19
 5 - Imprimir string ao contrario
 6 - Encerrar o programa
 Opcao escolhida: 
+
+ esse é o tamanho 18
+
+ esse é o tamanho 18
 String invertida: tluaf noitatnemges
 
 1 - Tamanho da string

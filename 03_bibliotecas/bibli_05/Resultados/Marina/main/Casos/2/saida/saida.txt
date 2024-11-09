@@ -1,11 +1,13 @@
-1 - Tamanho da string
+
+ size ==== 15 ====
+ 1 - Tamanho da string
 2 - Copiar string
 3 - Converter string para letras maiusculas
 4 - Converter string para letras minusculas
 5 - Imprimir string ao contrario
 6 - Encerrar o programa
 Opcao escolhida: 
-Tamanho da string: 16
+Tamanho da string: 15
 
 1 - Tamanho da string
 2 - Copiar string
@@ -16,7 +18,6 @@ Tamanho da string: 16
 Opcao escolhida: 
 String copiada: programacao ii
 
-
 1 - Tamanho da string
 2 - Copiar string
 3 - Converter string para letras maiusculas
@@ -25,7 +26,6 @@ String copiada: programacao ii
 6 - Encerrar o programa
 Opcao escolhida: 
 String convertida para maiusculas: PROGRAMACAO II
-
 
 1 - Tamanho da string
 2 - Copiar string
@@ -36,7 +36,6 @@ String convertida para maiusculas: PROGRAMACAO II
 Opcao escolhida: 
 String convertida para minusculas: programacao ii
 
-
 1 - Tamanho da string
 2 - Copiar string
 3 - Converter string para letras maiusculas
@@ -44,8 +43,7 @@ String convertida para minusculas: programacao ii
 5 - Imprimir string ao contrario
 6 - Encerrar o programa
 Opcao escolhida: 
-String invertida: ii oacamargorp
-
+String invertida: i oacamargorpi
 
 1 - Tamanho da string
 2 - Copiar string
