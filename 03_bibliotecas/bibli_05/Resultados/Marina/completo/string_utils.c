@@ -47,7 +47,13 @@ void string_reverse(char *str){
 
 
     for(i = 0, j = sizeStr - 1; i < sizeStr; i++, j--){
-        str[i] = staticStr[j];
+        if(staticStr[j] == '\n'){
+            i = i - 1;
+        }
+        else{
+            str[i] = staticStr[j];
+        }
+        
     }
    // printf("teste 2 = %s\n", str);
     //str[i+1] = '\0';

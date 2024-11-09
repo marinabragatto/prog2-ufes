@@ -6,12 +6,12 @@ Teste main
   - Valgrinds corretos: 4 de 4
 Nota de Marina para o teste main: 3.34
 Teste completo
-  - Resultados corretos: 0 de 4
+  - Resultados corretos: 4 de 4
   - Valgrinds corretos: 4 de 4
-Nota de Marina para o teste completo: 0
+Nota de Marina para o teste completo: 3.33
 Teste string_utils
   - Resultados corretos: 1 de 4
   - Valgrinds corretos: 4 de 4
 Nota de Marina para o teste string_utils: .83
-Nota de Marina: 0+(.83)+(3.34)+(0)
-Nota de Marina: 4.17
+Nota de Marina: 0+(.83)+(3.34)+(3.33)
+Nota de Marina: 7.50

@@ -13,6 +13,7 @@ int main(){
     size = string_length(str);
     str[size - 1] = '\n';
     str[size] = '\0';    
+    
     while(1){
         menu_print();
         scanf("%d", &op);
