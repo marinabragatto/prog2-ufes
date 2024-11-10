@@ -12,7 +12,7 @@ int main(){
     size = string_length(str);
     str[size - 1] = '\n';
     str[size] = '\0';
-    printf("esse é o tamanho %d (%s)", string_length(str)-2, str);
+    //printf("esse é o tamanho %d (%s)", string_length(str)-2, str);
 
 
     while(1){

@@ -1,5 +1,4 @@
-esse é o tamanho 12 (Hello world!
-)1 - Tamanho da string
+1 - Tamanho da string
 2 - Copiar string
 3 - Converter string para letras maiusculas
 4 - Converter string para letras minusculas
