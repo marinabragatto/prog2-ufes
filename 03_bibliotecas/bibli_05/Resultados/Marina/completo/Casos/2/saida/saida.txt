@@ -1,4 +1,4 @@
-1 - Tamanho da string
+esse é o tamanho 14 (programacao ii)1 - Tamanho da string
 2 - Copiar string
 3 - Converter string para letras maiusculas
 4 - Converter string para letras minusculas
