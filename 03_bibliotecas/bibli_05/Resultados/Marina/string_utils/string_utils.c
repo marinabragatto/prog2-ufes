@@ -10,7 +10,7 @@ int string_length(char *str){
 void string_copy(char *src, char *dest){
     int sizeScr = 0, i = 0;
     sizeScr = string_length(src);
-    for(i = 0; i <= sizeScr; i++){
+    for(i = 0; i <= sizeScr - 2; i++){
         dest[i] = src[i];
     }
     return;
