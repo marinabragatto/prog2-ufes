@@ -1,0 +1,13 @@
+./test < input/test_1 > outprog/test_1 
+./test < input/test_2 > outprog/test_2 
+./test < input/test_3 > outprog/test_3 
+./test < input/test_4 > outprog/test_4 
+./test < input/test_5 > outprog/test_5 
+./test < input/test_6 > outprog/test_6 
+./test < input/test_7 > outprog/test_7 
+./test < input/test_8 > outprog/test_8 
+./test < input/test_9 > outprog/test_9 
+./test < input/test_10 > outprog/test_10 
+./test < input/test_11 > outprog/test_11 
+./test < input/test_12 > outprog/test_12 
+diff outprog output
