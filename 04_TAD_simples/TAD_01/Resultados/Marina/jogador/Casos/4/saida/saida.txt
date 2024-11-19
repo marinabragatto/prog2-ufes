@@ -1,0 +1,93 @@
+Digite uma posicao (x e y):
+	X--
+	---
+	---
+Digite uma posicao (x e y):
+	X--
+	-0-
+	---
+Digite uma posicao (x e y):
+	XX-
+	-0-
+	---
+Digite uma posicao (x e y):
+	XX0
+	-0-
+	---
+Digite uma posicao (x e y):
+	XXX
+	-0-
+	---
+JOGADOR 1 Venceu!
+Jogar novamente? (s,n)
+Digite uma posicao (x e y):
+	X--
+	---
+	---
+Digite uma posicao (x e y):
+	X0-
+	---
+	---
+Digite uma posicao (x e y):
+	X0X
+	---
+	---
+Digite uma posicao (x e y):
+	X0X
+	-0-
+	---
+Digite uma posicao (x e y):
+	X0X
+	X0-
+	---
+Digite uma posicao (x e y):
+	X0X
+	X00
+	---
+Digite uma posicao (x e y):
+	X0X
+	X00
+	--X
+Digite uma posicao (x e y):
+	X0X
+	X00
+	0-X
+Digite uma posicao (x e y):
+	X0X
+	X00
+	0-X
+Digite uma posicao (x e y):
+	X0X
+	X00
+	0-X
+Digite uma posicao (x e y):
+	X0X
+	X00
+	00X
+Sem vencedor!
+Jogar novamente? (s,n)
+Digite uma posicao (x e y):
+	X--
+	---
+	---
+Digite uma posicao (x e y):
+	X0-
+	---
+	---
+Digite uma posicao (x e y):
+	X0-
+	---
+	---
+Digite uma posicao (x e y):
+	X0-
+	0--
+	---
+Digite uma posicao (x e y):
+	X0-
+	0X-
+	---
+Digite uma posicao (x e y):
+	X0-
+	0X-
+	0--
+timeout: the monitored command dumped core

@@ -1,0 +1,131 @@
+Jogador 1
+Jogada [0,0]!
+	X--
+	---
+	---
+Jogador 2
+Jogada [1,1]!
+	X--
+	-0-
+	---
+Jogador 1
+Jogada [0,1]!
+	X--
+	X0-
+	---
+Jogador 2
+Jogada [0,2]!
+	X--
+	X0-
+	0--
+Jogador 1
+Jogada [1,0]!
+	XX-
+	X0-
+	0--
+Jogador 2
+Jogada [2,0]!
+	XX0
+	X0-
+	0--
+JOGADOR 2 Venceu!
+Jogar novamente? (s,n)
+Jogador 1
+Jogada [1,1]!
+	---
+	-X-
+	---
+Jogador 2
+Jogada [0,0]!
+	0--
+	-X-
+	---
+Jogador 1
+Jogada [0,2]!
+	0--
+	-X-
+	X--
+Jogador 2
+Jogada [0,1]!
+	0--
+	0X-
+	X--
+Jogador 1
+Jogada [2,2]!
+	0--
+	0X-
+	X-X
+Jogador 2
+Jogada [1,0]!
+	00-
+	0X-
+	X-X
+Jogador 1
+Jogada [2,1]!
+	00-
+	0XX
+	X-X
+Jogador 2
+Jogada [1,2]!
+	00-
+	0XX
+	X0X
+Jogador 1
+Posicao invalida (OCUPADA - [0,2] )!
+Jogador 1
+Posicao invalida (OCUPADA - [0,1] )!
+Jogador 1
+Posicao invalida (FORA DO TABULEIRO - [3,3] )!
+Jogador 1
+Posicao invalida (FORA DO TABULEIRO - [1,-1] )!
+Jogador 1
+Posicao invalida (FORA DO TABULEIRO - [1,3] )!
+Jogador 1
+Posicao invalida (FORA DO TABULEIRO - [3,1] )!
+Jogador 1
+Jogada [2,0]!
+	00X
+	0XX
+	X0X
+JOGADOR 1 Venceu!
+Jogar novamente? (s,n)
+Jogador 1
+Posicao invalida (FORA DO TABULEIRO - [3,3] )!
+Jogador 1
+Posicao invalida (FORA DO TABULEIRO - [0,3] )!
+Jogador 1
+Posicao invalida (FORA DO TABULEIRO - [3,2] )!
+Jogador 1
+Jogada [2,2]!
+	---
+	---
+	--X
+Jogador 2
+Jogada [1,1]!
+	---
+	-0-
+	--X
+Jogador 1
+Jogada [1,2]!
+	---
+	-0-
+	-XX
+Jogador 2
+Jogada [0,2]!
+	---
+	-0-
+	0XX
+Jogador 1
+Posicao invalida (OCUPADA - [0,2] )!
+Jogador 1
+Jogada [2,1]!
+	---
+	-0X
+	0XX
+Jogador 2
+Jogada [2,0]!
+	--0
+	-0X
+	0XX
+JOGADOR 2 Venceu!
+Jogar novamente? (s,n)

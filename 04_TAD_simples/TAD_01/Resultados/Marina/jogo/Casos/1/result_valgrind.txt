@@ -1,0 +1,43 @@
+==73310== Memcheck, a memory error detector
+==73310== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==73310== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==73310== Command: Resultados/Marina/jogo/prog Resultados/Marina/jogo/Casos/1
+==73310== Parent PID: 73309
+==73310== 
+==73310== Use of uninitialised value of size 8
+==73310==    at 0x10A17F: EstaLivrePosicaoTabuleiro (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/04_TAD_simples/TAD_01/Resultados/Marina/jogo/prog)
+==73310==    by 0x109CD5: ComecaJogo (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/04_TAD_simples/TAD_01/Resultados/Marina/jogo/prog)
+==73310==    by 0x109EA3: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/04_TAD_simples/TAD_01/Resultados/Marina/jogo/prog)
+==73310== 
+==73310== Conditional jump or move depends on uninitialised value(s)
+==73310==    at 0x48D6AD6: __vfprintf_internal (vfprintf-internal.c:1516)
+==73310==    by 0x48C079E: printf (printf.c:33)
+==73310==    by 0x109D26: ComecaJogo (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/04_TAD_simples/TAD_01/Resultados/Marina/jogo/prog)
+==73310==    by 0x109EA3: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/04_TAD_simples/TAD_01/Resultados/Marina/jogo/prog)
+==73310== 
+==73310== Use of uninitialised value of size 8
+==73310==    at 0x48BA2EB: _itoa_word (_itoa.c:177)
+==73310==    by 0x48D5ABD: __vfprintf_internal (vfprintf-internal.c:1516)
+==73310==    by 0x48C079E: printf (printf.c:33)
+==73310==    by 0x109D26: ComecaJogo (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/04_TAD_simples/TAD_01/Resultados/Marina/jogo/prog)
+==73310==    by 0x109EA3: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/04_TAD_simples/TAD_01/Resultados/Marina/jogo/prog)
+==73310== 
+==73310== Conditional jump or move depends on uninitialised value(s)
+==73310==    at 0x48BA2FC: _itoa_word (_itoa.c:177)
+==73310==    by 0x48D5ABD: __vfprintf_internal (vfprintf-internal.c:1516)
+==73310==    by 0x48C079E: printf (printf.c:33)
+==73310==    by 0x109D26: ComecaJogo (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/04_TAD_simples/TAD_01/Resultados/Marina/jogo/prog)
+==73310==    by 0x109EA3: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/04_TAD_simples/TAD_01/Resultados/Marina/jogo/prog)
+==73310== 
+==73310== Conditional jump or move depends on uninitialised value(s)
+==73310==    at 0x48D65C3: __vfprintf_internal (vfprintf-internal.c:1516)
+==73310==    by 0x48C079E: printf (printf.c:33)
+==73310==    by 0x109D26: ComecaJogo (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/04_TAD_simples/TAD_01/Resultados/Marina/jogo/prog)
+==73310==    by 0x109EA3: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/04_TAD_simples/TAD_01/Resultados/Marina/jogo/prog)
+==73310== 
+==73310== Conditional jump or move depends on uninitialised value(s)
+==73310==    at 0x48D5C05: __vfprintf_internal (vfprintf-internal.c:1516)
+==73310==    by 0x48C079E: printf (printf.c:33)
+==73310==    by 0x109D26: ComecaJogo (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/04_TAD_simples/TAD_01/Resultados/Marina/jogo/prog)
+==73310==    by 0x109EA3: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/04_TAD_simples/TAD_01/Resultados/Marina/jogo/prog)
+==73310== 

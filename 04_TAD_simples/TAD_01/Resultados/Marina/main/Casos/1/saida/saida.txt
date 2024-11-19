@@ -1,0 +1,7 @@
+Jogador 0
+Digite uma posicao (x e y):
+Jogada [1,1]!
+	
+	
+	
+JOGADOR 1 Venceu!
