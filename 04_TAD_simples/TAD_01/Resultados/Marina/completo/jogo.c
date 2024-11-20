@@ -19,85 +19,36 @@ tJogo CriaJogo(){
  * @param jogo o jogo a ser iniciado.
  */
 void ComecaJogo(tJogo jogo){
+    jogo = CriaJogo();
+    int atual = 0;
+
     while(1){
-        jogo = CriaJogo();
-        int atual = 0;
-        while(1){
-            if(atual%2 == 0){
-                printf("Jogador 1\nDigite uma posicao (x e y):\n");
-                tJogada jogada;
-                jogada = LeJogada();
-                int x = 0, y = 0;
-                x = ObtemJogadaX(jogada);
-                y = ObtemJogadaY(jogada);
-                
-        
-                if(FoiJogadaBemSucedida(jogada) && EhPosicaoValidaTabuleiro(x, y) && EstaLivrePosicaoTabuleiro(jogo.tabuleiro, x, y)){
-                    printf("Jogada [%d,%d]!\n", y, x);
-                    jogo.tabuleiro = MarcaPosicaoTabuleiro(jogo.tabuleiro, 'X',ObtemJogadaX(jogada) , ObtemJogadaY(jogada));
-                    ImprimeTabuleiro(jogo.tabuleiro);
-                    atual++;
-                    if(VenceuJogador(jogo.jogador1, jogo.tabuleiro)){
-                        printf("JOGADOR 1 Venceu!\n");
-                        break;
-                    }
-                }
-                else{
-                    if(!(EstaLivrePosicaoTabuleiro(jogo.tabuleiro, x, y)) && EhPosicaoValidaTabuleiro(x, y)){
-                        printf("Posicao invalida (OCUPADA - [%d,%d] )!\n", y, x);
-                        
-                    }
-                    else {
-                        printf("Posicao invalida (FORA DO TABULEIRO - [%d,%d] )!\n", y, x);
-                    }
-                    
-                
-                }
-            }
-            else{
-                printf("Jogador 2\nDigite uma posicao (x e y):\n");
-                tJogada jogada;
-                jogada = LeJogada();
-                int x = 0, y = 0;
-                x = ObtemJogadaX(jogada);
-                y = ObtemJogadaY(jogada);
-                
-                if(FoiJogadaBemSucedida(jogada) && EhPosicaoValidaTabuleiro(x, y) && EstaLivrePosicaoTabuleiro(jogo.tabuleiro, x, y)){
-                    printf("Jogada [%d,%d]!\n", y, x);
-                    jogo.tabuleiro = MarcaPosicaoTabuleiro(jogo.tabuleiro, '0',ObtemJogadaX(jogada) , ObtemJogadaY(jogada));
-                    ImprimeTabuleiro(jogo.tabuleiro);
-                    atual++;
-                    if(VenceuJogador(jogo.jogador2, jogo.tabuleiro)){
-                        printf("JOGADOR 2 Venceu!\n");
-                        break;
-                    }
-                }
-                else{
-                    if(!(EstaLivrePosicaoTabuleiro(jogo.tabuleiro, x, y)) &&EhPosicaoValidaTabuleiro(x, y)){
-                       printf("Posicao invalida (OCUPADA - [%d,%d] )!\n", y, x);
-                        
-                    }
-                    else {
-                        printf("Posicao invalida (FORA DO TABULEIRO - [%d,%d] )!\n", y, x);
-                        
-                    }
-                
-                }
-            }
-           
-            
-            if(AcabouJogo(jogo)){
-                printf("Sem vencedor!\n");
-                break;
-            }
-        }
-        if(ContinuaJogo()){
-            continue;
-        }
-        else{
+        jogo.tabuleiro = JogaJogador(jogo.jogador1, jogo.tabuleiro);
+        ImprimeTabuleiro(jogo.tabuleiro);
+        atual++;
+        if(VenceuJogador(jogo.jogador1, jogo.tabuleiro)){
+            printf("JOGADOR 1 Venceu!\n");
             break;
         }
+        if(AcabouJogo(jogo)){
+            printf("Sem vencedor!\n");
+            break;
+        }
+
+        jogo.tabuleiro = JogaJogador(jogo.jogador2, jogo.tabuleiro);
+        ImprimeTabuleiro(jogo.tabuleiro);
+        atual++;
+        if(VenceuJogador(jogo.jogador2, jogo.tabuleiro)){
+            printf("JOGADOR 2 Venceu!\n");
+            break;
+        }
+        if(AcabouJogo(jogo)){
+            printf("Sem vencedor!\n");
+            break;
+        }
+
     }
+    return;
 }
 
 

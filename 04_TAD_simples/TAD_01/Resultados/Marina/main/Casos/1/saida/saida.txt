@@ -1,7 +1,1 @@
-Jogador 0
-Digite uma posicao (x e y):
-Jogada [1,1]!
-	
-	
-	
-JOGADOR 1 Venceu!
+valgrind: Resultados/Marina/main/prog: No such file or directory

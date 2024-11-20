@@ -9,8 +9,8 @@ tTabuleiro CriaTabuleiro(){
     tabuleiro.peca2 = '0';
     tabuleiro.pecaVazio = '-';
 
-    for(i = 0; i < 3; i++){
-        for(j = 0; j < 3; j++){
+    for(i = 0; i < TAM_TABULEIRO; i++){
+        for(j = 0; j < TAM_TABULEIRO; j++){
             tabuleiro.posicoes[i][j] = tabuleiro.pecaVazio;
         }
     }
@@ -19,9 +19,15 @@ tTabuleiro CriaTabuleiro(){
 }
 
 tTabuleiro MarcaPosicaoTabuleiro(tTabuleiro tabuleiro, int peca, int x, int y){
-    if (EstaLivrePosicaoTabuleiro(tabuleiro, x, y)){
-        tabuleiro.posicoes[x][y] = peca;
+    if(peca == 1){
+        peca = 'X';
     }
+    else if(peca == 2){
+        peca = '0';
+    }
+    //if (EstaLivrePosicaoTabuleiro(tabuleiro, x, y) && EhPosicaoValidaTabuleiro(x,y)){
+    tabuleiro.posicoes[y][x] = peca;
+    //}
     
     return tabuleiro;
 }
@@ -29,8 +35,8 @@ tTabuleiro MarcaPosicaoTabuleiro(tTabuleiro tabuleiro, int peca, int x, int y){
 int TemPosicaoLivreTabuleiro(tTabuleiro tabuleiro){
     int i = 0, j = 0;
 
-    for(i = 0; i < 3; i++){
-        for (j = 0; j < 3; j++){
+    for(i = 0; i < TAM_TABULEIRO; i++){
+        for (j = 0; j < TAM_TABULEIRO; j++){
             if(tabuleiro.posicoes[i][j] == tabuleiro.pecaVazio){
                 return 1;
             }
@@ -40,7 +46,13 @@ int TemPosicaoLivreTabuleiro(tTabuleiro tabuleiro){
 }
 
 int EstaMarcadaPosicaoPecaTabuleiro(tTabuleiro tabuleiro, int x, int y, int peca){
-    if(tabuleiro.posicoes[x][y] == peca){
+    if(peca == 1){
+        peca = 'X';
+    }
+    else if(peca == 2){
+        peca = '0';
+    }
+    if(tabuleiro.posicoes[y][x] == peca){
         return 1;
     }
     else {
@@ -50,7 +62,7 @@ int EstaMarcadaPosicaoPecaTabuleiro(tTabuleiro tabuleiro, int x, int y, int peca
 
 int EstaLivrePosicaoTabuleiro(tTabuleiro tabuleiro, int x, int y){
     
-    if(tabuleiro.posicoes[x][y] == tabuleiro.pecaVazio){
+    if(tabuleiro.posicoes[y][x] == tabuleiro.pecaVazio){
         return 1;
     }
     else {
@@ -69,13 +81,27 @@ int EhPosicaoValidaTabuleiro(int x, int y){
 
 void ImprimeTabuleiro(tTabuleiro tabuleiro){
     int i = 0, j = 0;
-    for (i = 0; i < 3; i++){
+
+    int vazio = 1;
+
+    for (i = 0; i < TAM_TABULEIRO; i++){
+        for(j = 0; j < TAM_TABULEIRO; j++){
+            if(EstaMarcadaPosicaoPecaTabuleiro(tabuleiro,i ,j , 1) || EstaMarcadaPosicaoPecaTabuleiro(tabuleiro,i ,j ,2 )){
+                vazio = 0;
+                break;
+            }
+        }
+    }
+    if(vazio == 0){
+        for (i = 0; i < TAM_TABULEIRO; i++){
         printf("\t");
-        for(j = 0; j < 3; j++){
+        for(j = 0; j < TAM_TABULEIRO; j++){
             printf("%c", tabuleiro.posicoes[i][j]);
         }
         printf("\n");
+        }
     }
+
     return;
 }
 

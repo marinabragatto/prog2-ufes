@@ -1,0 +1,342 @@
+- Arquivo de configuração encontrado!
+ - Arquivos header necessários do professor existem na pasta Includes
+ - Arquivos objetos necessários do professor existem na pasta Gabarito-obj.
+
+#######################################
+ALUNO: Marina
+#######################################
+
+CRIANDO O DIRETÓRIO DE RESULTADO PARA Marina:
+ - Diretório Resultados/Marina criado com sucesso!
+ - Diretório Resultados/Marina/main criado com sucesso!
+ - Diretório Resultados/Marina/completo criado com sucesso!
+ - Diretório Resultados/Marina/jogada criado com sucesso!
+ - Diretório Resultados/Marina/jogador criado com sucesso!
+ - Diretório Resultados/Marina/tabuleiro criado com sucesso!
+ - Diretório Resultados/Marina/jogo criado com sucesso!
+ - Arquivos criados: ok!
+
+CHECKANDO OS ARQUIVOS DO ALUNO:
+ - Arquivo esperado 'Respostas/Marina/jogada.c' encontrado!
+ - Arquivo esperado 'Respostas/Marina/jogada.h' encontrado!
+ - Arquivo esperado 'Respostas/Marina/jogador.c' encontrado!
+ - Arquivo esperado 'Respostas/Marina/jogador.h' encontrado!
+ - Arquivo esperado 'Respostas/Marina/jogo.c' encontrado!
+ - Arquivo esperado 'Respostas/Marina/jogo.h' encontrado!
+ - Arquivo esperado 'Respostas/Marina/main.c' não encontrado!
+ - Arquivo esperado 'Respostas/Marina/tabuleiro.c' encontrado!
+ - Arquivo esperado 'Respostas/Marina/tabuleiro.h' encontrado!
+ - Arquivos esperados enviados: Faltando!
+
+COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
+ - Pasta main:
+ - Copiando os Casos de teste para a pasta Resultados/Marina/main
+ - Copiando os Includes/jogada.h Includes/jogador.h Includes/jogo.h Includes/tabuleiro.h do professor para a pasta Resultados/Marina/main
+ - Copiando os Includes/*.o do professor para a pasta Resultados/Marina/main
+ - Removendo o main.o do professor da pasta Resultados/Marina/main
+ - Copiando o Respostas/Marina/main.c do aluno para a pasta Resultados/Marina/main
+ - Pasta completo:
+ - Copiando os Casos de teste para a pasta Resultados/Marina/completo
+ - Copiando os Respostas/Marina/jogada.c do aluno para a pasta Resultados/Marina/completo
+ - Copiando os Respostas/Marina/jogada.h do aluno para a pasta Resultados/Marina/completo
+ - Copiando os Respostas/Marina/jogador.c do aluno para a pasta Resultados/Marina/completo
+ - Copiando os Respostas/Marina/jogador.h do aluno para a pasta Resultados/Marina/completo
+ - Copiando os Respostas/Marina/jogo.c do aluno para a pasta Resultados/Marina/completo
+ - Copiando os Respostas/Marina/jogo.h do aluno para a pasta Resultados/Marina/completo
+ - Copiando os Respostas/Marina/main.c do aluno para a pasta Resultados/Marina/completo
+ - Copiando os Respostas/Marina/tabuleiro.c do aluno para a pasta Resultados/Marina/completo
+ - Copiando os Respostas/Marina/tabuleiro.h do aluno para a pasta Resultados/Marina/completo
+ - Pasta jogada:
+ - Copiando os Casos de teste para a pasta Resultados/Marina/jogada
+ - Copiando os Includes/jogada.h Includes/jogador.h Includes/jogo.h Includes/tabuleiro.h do professor para a pasta Resultados/Marina/jogada
+ - Copiando os Includes/*.o do professor para a pasta Resultados/Marina/jogada
+ - Removendo o jogada.o do professor da pasta Resultados/Marina/jogada
+ - Copiando o Respostas/Marina/jogada.c do aluno para a pasta Resultados/Marina/jogada
+ - Pasta jogador:
+ - Copiando os Casos de teste para a pasta Resultados/Marina/jogador
+ - Copiando os Includes/jogada.h Includes/jogador.h Includes/jogo.h Includes/tabuleiro.h do professor para a pasta Resultados/Marina/jogador
+ - Copiando os Includes/*.o do professor para a pasta Resultados/Marina/jogador
+ - Removendo o jogador.o do professor da pasta Resultados/Marina/jogador
+ - Copiando o Respostas/Marina/jogador.c do aluno para a pasta Resultados/Marina/jogador
+ - Pasta tabuleiro:
+ - Copiando os Casos de teste para a pasta Resultados/Marina/tabuleiro
+ - Copiando os Includes/jogada.h Includes/jogador.h Includes/jogo.h Includes/tabuleiro.h do professor para a pasta Resultados/Marina/tabuleiro
+ - Copiando os Includes/*.o do professor para a pasta Resultados/Marina/tabuleiro
+ - Removendo o tabuleiro.o do professor da pasta Resultados/Marina/tabuleiro
+ - Copiando o Respostas/Marina/tabuleiro.c do aluno para a pasta Resultados/Marina/tabuleiro
+ - Pasta jogo:
+ - Copiando os Casos de teste para a pasta Resultados/Marina/jogo
+ - Copiando os Includes/jogada.h Includes/jogador.h Includes/jogo.h Includes/tabuleiro.h do professor para a pasta Resultados/Marina/jogo
+ - Copiando os Includes/*.o do professor para a pasta Resultados/Marina/jogo
+ - Removendo o jogo.o do professor da pasta Resultados/Marina/jogo
+ - Copiando o Respostas/Marina/jogo.c do aluno para a pasta Resultados/Marina/jogo
+ - Copiando Arquivos Extras do Aluno:
+ - Arquivos copiados: ok!
+
+COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
+ - Erro de compilação! Verifique os arquivos da pasta main.
+ - Compilação dos arquivos do aluno na pasta completo ok!
+ - Arquivo de output gerado: Resultados/Marina/completo/result_compilation.txt
+ - Compilação dos arquivos do aluno na pasta jogada ok!
+ - Arquivo de output gerado: Resultados/Marina/jogada/result_compilation.txt
+ - Compilação dos arquivos do aluno na pasta jogador ok!
+ - Arquivo de output gerado: Resultados/Marina/jogador/result_compilation.txt
+ - Compilação dos arquivos do aluno na pasta tabuleiro ok!
+ - Arquivo de output gerado: Resultados/Marina/tabuleiro/result_compilation.txt
+ - Compilação dos arquivos do aluno na pasta jogo ok!
+ - Arquivo de output gerado: Resultados/Marina/jogo/result_compilation.txt
+ - Arquivos Compilados: Erro!: 1 arquivos com erros de compilacao.
+
+ - Arquivos Compilados: ok!
+
+LINKANDO OS ARQUIVOS COMPILADOS:
+ - Pasta main:
+ - Gerando o binário prog linkando com o(s) arquivo(s) main/*.o
+ - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivo de output gerado: Resultados/Marina/main/result_linking.txt
+ - Pasta completo:
+ - Gerando o binário prog linkando com o(s) arquivo(s) completo/*.o
+ - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivo de output gerado: Resultados/Marina/completo/result_linking.txt
+ - Pasta jogada:
+ - Gerando o binário prog linkando com o(s) arquivo(s) jogada/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Marina/jogada/result_linking.txt
+ - Pasta jogador:
+ - Gerando o binário prog linkando com o(s) arquivo(s) jogador/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Marina/jogador/result_linking.txt
+ - Pasta tabuleiro:
+ - Gerando o binário prog linkando com o(s) arquivo(s) tabuleiro/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Marina/tabuleiro/result_linking.txt
+ - Pasta jogo:
+ - Gerando o binário prog linkando com o(s) arquivo(s) jogo/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Marina/jogo/result_linking.txt
+ - Arquivos Linkados: Erro! 2 arquivos com erros de linkagem.
+
+EXECUTANDO O VALGRIND EM CADA CASO:
+ - Pasta main / Caso 1:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta main / Caso 2:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta main / Caso 3:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta main / Caso 4:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta main / Caso 5:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta main / Caso 6:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta main (máximo 1.66) - 0 de 60 - 0% de 1.66: 0.
+ -----
+ - Pasta completo / Caso 1:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta completo / Caso 2:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta completo / Caso 3:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta completo / Caso 4:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta completo / Caso 5:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta completo / Caso 6:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta completo (máximo 1.66) - 0 de 60 - 0% de 1.66: 0.
+ -----
+ - Pasta jogada / Caso 1:
+ - Arquivo de output gerado: Resultados/Marina/jogada/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta jogada / Caso 2:
+ - Arquivo de output gerado: Resultados/Marina/jogada/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta jogada / Caso 3:
+ - Arquivo de output gerado: Resultados/Marina/jogada/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta jogada / Caso 4:
+ - Arquivo de output gerado: Resultados/Marina/jogada/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta jogada / Caso 5:
+ - Arquivo de output gerado: Resultados/Marina/jogada/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta jogada / Caso 6:
+ - Arquivo de output gerado: Resultados/Marina/jogada/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Nota para a pasta jogada (máximo 1.67) - 60.00 de 60 - 100.00% de 1.67: 1.67.
+ -----
+ - Pasta jogador / Caso 1:
+ - Arquivo de output gerado: Resultados/Marina/jogador/Casos/1/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 1 | Desconto do valgrind 50.00%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 50.0% (desconto do valgrind) = 5.00 de 10 pontos.
+ - Pasta jogador / Caso 2:
+ - Arquivo de output gerado: Resultados/Marina/jogador/Casos/2/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 1 | Desconto do valgrind 50.00%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 50.0% (desconto do valgrind) = 5.00 de 10 pontos.
+ - Pasta jogador / Caso 3:
+ - Arquivo de output gerado: Resultados/Marina/jogador/Casos/3/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 2 | Desconto do valgrind 50.00%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 50.0% (desconto do valgrind) = 5.00 de 10 pontos.
+ - Pasta jogador / Caso 4:
+ - Arquivo de output gerado: Resultados/Marina/jogador/Casos/4/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 1 | Desconto do valgrind 50.00%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 50.0% (desconto do valgrind) = 5.00 de 10 pontos.
+ - Pasta jogador / Caso 5:
+ - Arquivo de output gerado: Resultados/Marina/jogador/Casos/5/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 1 | Desconto do valgrind 50.00%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 50.0% (desconto do valgrind) = 5.00 de 10 pontos.
+ - Pasta jogador / Caso 6:
+ - Arquivo de output gerado: Resultados/Marina/jogador/Casos/6/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 1 | Desconto do valgrind 50.00%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 50.0% (desconto do valgrind) = 5.00 de 10 pontos.
+ - Nota para a pasta jogador (máximo 1.67) - 30.00 de 60 - 50.00% de 1.67: .83.
+ -----
+ - Pasta tabuleiro / Caso 1:
+ - Arquivo de output gerado: Resultados/Marina/tabuleiro/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta tabuleiro / Caso 2:
+ - Arquivo de output gerado: Resultados/Marina/tabuleiro/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta tabuleiro / Caso 3:
+ - Arquivo de output gerado: Resultados/Marina/tabuleiro/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta tabuleiro / Caso 4:
+ - Arquivo de output gerado: Resultados/Marina/tabuleiro/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta tabuleiro / Caso 5:
+ - Arquivo de output gerado: Resultados/Marina/tabuleiro/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta tabuleiro / Caso 6:
+ - Arquivo de output gerado: Resultados/Marina/tabuleiro/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Nota para a pasta tabuleiro (máximo 1.67) - 60.00 de 60 - 100.00% de 1.67: 1.67.
+ -----
+ - Pasta jogo / Caso 1:
+ - Arquivo de output gerado: Resultados/Marina/jogo/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta jogo / Caso 2:
+ - Arquivo de output gerado: Resultados/Marina/jogo/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta jogo / Caso 3:
+ - Arquivo de output gerado: Resultados/Marina/jogo/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta jogo / Caso 4:
+ - Arquivo de output gerado: Resultados/Marina/jogo/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta jogo / Caso 5:
+ - Arquivo de output gerado: Resultados/Marina/jogo/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta jogo / Caso 6:
+ - Arquivo de output gerado: Resultados/Marina/jogo/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Nota para a pasta jogo (máximo 1.67) - 60.00 de 60 - 100.00% de 1.67: 1.67.
+ -----
+
+#######################################
+RESULTADOS FINAIS
+#######################################
+
+----------------------------------------------------------------------------
+Aluno: Marina
+ - Arquivos Esperados Corretos: 8 de 9
+ - Pastas Compiladas Corretamente: 5 de 6 
+ - Pastas Linkadas Corretamente: 4 de 6
+ - Teste main
+ - Resultados corretos: 0 de 6
+ - Valgrinds corretos: 0 de 6
+ - Nota de Marina para o teste main: 0
+ - Teste completo
+ - Resultados corretos: 0 de 6
+ - Valgrinds corretos: 0 de 6
+ - Nota de Marina para o teste completo: 0
+ - Teste jogada
+ - Resultados corretos: 6 de 6
+ - Valgrinds corretos: 6 de 6
+ - Nota de Marina para o teste jogada: 1.67
+ - Teste jogador
+ - Resultados corretos: 6 de 6
+ - Valgrinds corretos: 0 de 6
+ - Nota de Marina para o teste jogador: .83
+ - Teste tabuleiro
+ - Resultados corretos: 6 de 6
+ - Valgrinds corretos: 6 de 6
+ - Nota de Marina para o teste tabuleiro: 1.67
+ - Teste jogo
+ - Resultados corretos: 6 de 6
+ - Valgrinds corretos: 6 de 6
+ - Nota de Marina para o teste jogo: 1.67
+ - Nota de Marina: 0+(1.67)+(1.67)+(1.67)+(.83)+(0)+(0)
+ - Nota de Marina: 5.84
+
+----------------------------------------------------------------------------
+
+Arquivo CSV Resultado.csv com os resultados finais foi gerado na pasta raíz!
+
+
+
