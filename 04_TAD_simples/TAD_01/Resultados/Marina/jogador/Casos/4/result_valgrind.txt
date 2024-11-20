@@ -1,21 +1,21 @@
-==208714== Memcheck, a memory error detector
-==208714== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==208714== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==208714== Command: Resultados/Marina/jogador/prog Resultados/Marina/jogador/Casos/4
-==208714== Parent PID: 208713
-==208714== 
-==208714== Conditional jump or move depends on uninitialised value(s)
-==208714==    at 0x109471: JogaJogador (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/04_TAD_simples/TAD_01/Resultados/Marina/jogador/prog)
-==208714==    by 0x1096D2: ComecaJogo (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/04_TAD_simples/TAD_01/Resultados/Marina/jogador/prog)
-==208714==    by 0x109952: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/04_TAD_simples/TAD_01/Resultados/Marina/jogador/prog)
-==208714== 
-==208714== 
-==208714== HEAP SUMMARY:
-==208714==     in use at exit: 0 bytes in 0 blocks
-==208714==   total heap usage: 2 allocs, 2 frees, 1,024 bytes allocated
-==208714== 
-==208714== All heap blocks were freed -- no leaks are possible
-==208714== 
-==208714== Use --track-origins=yes to see where uninitialised values come from
-==208714== For lists of detected and suppressed errors, rerun with: -s
-==208714== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+==233282== Memcheck, a memory error detector
+==233282== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==233282== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==233282== Command: Resultados/Marina/jogador/prog Resultados/Marina/jogador/Casos/4
+==233282== Parent PID: 233281
+==233282== 
+==233282== Conditional jump or move depends on uninitialised value(s)
+==233282==    at 0x109454: JogaJogador (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/04_TAD_simples/TAD_01/Resultados/Marina/jogador/prog)
+==233282==    by 0x1096A4: ComecaJogo (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/04_TAD_simples/TAD_01/Resultados/Marina/jogador/prog)
+==233282==    by 0x109924: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/04_TAD_simples/TAD_01/Resultados/Marina/jogador/prog)
+==233282== 
+==233282== 
+==233282== HEAP SUMMARY:
+==233282==     in use at exit: 0 bytes in 0 blocks
+==233282==   total heap usage: 2 allocs, 2 frees, 1,024 bytes allocated
+==233282== 
+==233282== All heap blocks were freed -- no leaks are possible
+==233282== 
+==233282== Use --track-origins=yes to see where uninitialised values come from
+==233282== For lists of detected and suppressed errors, rerun with: -s
+==233282== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

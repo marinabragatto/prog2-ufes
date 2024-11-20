@@ -13,21 +13,29 @@ tJogador CriaJogador(int idJogador){
 
 
 tTabuleiro JogaJogador(tJogador jogador, tTabuleiro tabuleiro){
+    tJogada jogada = {-1, -1, -1};
+    int x = 0, y = 0;
+    int validapos = 0, livrepos = 0;
+
     while (1){
         printf("Jogador %d\n", jogador.id);
-        tJogada jogada = {-1, -1, -1};
-        int x = 0, y = 0;
+        
         jogada = LeJogada();
+
         x = ObtemJogadaX(jogada);
         y = ObtemJogadaY(jogada);
 
-        if(EhPosicaoValidaTabuleiro(x,y) && EstaLivrePosicaoTabuleiro(tabuleiro, x, y)){
-            printf("Jogada [%d,%d]!\n", ObtemJogadaX(jogada), ObtemJogadaY(jogada));
-            tabuleiro =  MarcaPosicaoTabuleiro(tabuleiro, jogador.id, jogada.x, jogada.y);
+        
+        validapos = EhPosicaoValidaTabuleiro(x,y);
+        livrepos = EstaLivrePosicaoTabuleiro(tabuleiro, x, y);
+
+        if(validapos && livrepos){
+            printf("Jogada [%d,%d]!\n", x, y);
+            tabuleiro =  MarcaPosicaoTabuleiro(tabuleiro, jogador.id, x, y);
             break;
             
         }
-        else if(!(EstaLivrePosicaoTabuleiro(tabuleiro, x, y)) && EhPosicaoValidaTabuleiro(x, y)){
+        else if(!livrepos && validapos){
         
         printf("Posicao invalida (OCUPADA - [%d,%d] )!\n", x, y);
                         
@@ -36,6 +44,7 @@ tTabuleiro JogaJogador(tJogador jogador, tTabuleiro tabuleiro){
             printf("Posicao invalida (FORA DO TABULEIRO - [%d,%d] )!\n", x, y);
         }
     }
+    
     return tabuleiro;
 }
 
