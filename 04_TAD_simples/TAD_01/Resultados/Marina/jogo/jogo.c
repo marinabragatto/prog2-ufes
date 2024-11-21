@@ -87,4 +87,5 @@ int ContinuaJogo(){
     else if(letra == 'n'){
         return 0;
     }
+    return 0;
 }
