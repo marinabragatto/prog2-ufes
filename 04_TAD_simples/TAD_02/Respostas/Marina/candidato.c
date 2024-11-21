@@ -11,20 +11,18 @@ tCandidato CriaCandidato(char *nome, char *partido, char cargo, int id){
      strcpy(candidato.nome, nome);
      strcpy(candidato.partido, partido);
 
-    printf("nome : (%s) partido: (%s)  id : %d cargo: %c\n", candidato.nome, candidato.partido, candidato.id, candidato.cargo);
+    //printf("nome : (%s) partido: (%s)  id : %d cargo: %c\n", candidato.nome, candidato.partido, candidato.id, candidato.cargo);
 
      return candidato;
 }
 
-/**
- * @brief Lê um candidato.
- * @return Candidato lido.
- */
+
 tCandidato LeCandidato(){
     tCandidato candidato;
 
     char nome[50], partido[50];
 
+    scanf("%*[^a-zA-Z]");
     scanf("%[^,]", nome);
     scanf("%*[^a-zA-Z]");
     scanf("%[^,]", partido);
@@ -38,77 +36,53 @@ tCandidato LeCandidato(){
     scanf("%d", &id);
 
     candidato = CriaCandidato(nome, partido, cargo, id);
+    //printf("HAHAnome : (%s) partido: (%s)  id : %d cargo: %c\n", candidato.nome, candidato.partido, candidato.id, candidato.cargo);
 
     return candidato;
 }
 
-/**
- * @brief Verifica se o identificador do candidato é igual ao informado.
- * @param candidato Candidato a ser verificado.
- * @param id Identificador a ser comparado.
- * @return 1 se o identificador é igual, 0 caso contrário.
- */
+
 int VerificaIdCandidato(tCandidato candidato, int id){
-
+    if (candidato.id == id){
+        return 1;
+    }
+    else {
+        return 0;
+    }
 }
 
-/**
- * @brief Verifica se dois candidatos são iguais (dica: utilize para verificar se houve empate).
- * @param candidato1 Primeiro candidato a ser comparado.
- * @param candidato2 Segundo candidato a ser comparado.
- * @return 1 se os candidatos são iguais, 0 caso contrário.
- */
+
 int EhMesmoCandidato(tCandidato candidato1, tCandidato candidato2){
-
+    if(candidato1.id == candidato2.id){
+        return 1;
+    }
 }
 
-/**
- * @brief Obtém o cargo do candidato.
- * @param candidato Candidato a ser verificado.
- * @return Cargo do candidato.
- */
+
 char ObtemCargo(tCandidato candidato){
-
+    return candidato.cargo;
 }
 
-/**
- * @brief Incrementa 1 voto ao candidato.
- * @param candidato Candidato a ter os votos incrementados.
- * @return Candidato com a quantidade de votos incrementada.
- */
+
 tCandidato IncrementaVotoCandidato(tCandidato candidato){
-
+    candidato.votos++;
+    return candidato;
 }
 
-/**
- * @brief Obtém a quantidade de votos do candidato.
- * @param candidato Candidato a ser verificado.
- * @return Quantidade de votos do candidato.
- */
 int ObtemVotos(tCandidato candidato){
-
+    return candidato.votos;
 }
 
-/**
- * @brief Calcula o percentual de votos do candidato em relação ao total de votos (do mesmo cargo).
- * @param candidato Candidato a ser verificado.
- * @param totalVotos Total de votos da eleição.
- * @return Percentual de votos do candidato.
- */
+
 float CalculaPercentualVotos(tCandidato candidato, int totalVotos){
-
+    return totalVotos/100.00;
 }
 
-/**
- * @brief Imprime os dados do candidato na tela.
- * @param candidato Candidato a ser impresso.
- * @param percentualVotos Percentual de votos do candidato.
- */
+
 void ImprimeCandidato (tCandidato candidato, float percentualVotos){
-
+    printf("%s %s, %d voto(s), %.2f%%\n", candidato.nome, candidato.partido, candidato.votos, CalculaPercentualVotos(candidato, candidato.votos));
+//Ada Lovelace (Gamers Unidos (GU)), 2 voto(s), 66.67%
 }
 
 
 
-
-//Edsger Dijkstra, Partido do Melhor Caminho (PMC), P, 10
