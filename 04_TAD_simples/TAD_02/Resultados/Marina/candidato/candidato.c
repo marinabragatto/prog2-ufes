@@ -5,14 +5,12 @@
 #include "eleicao.h"
 
 tCandidato CriaCandidato(char *nome, char *partido, char cargo, int id){
-     tCandidato candidato;
-     candidato.cargo = cargo;
-     candidato.id = id;
-     strcpy(candidato.nome, nome);
-     strcpy(candidato.partido, partido);
-
-    //printf("nome : (%s) partido: (%s)  id : %d cargo: %c\n", candidato.nome, candidato.partido, candidato.id, candidato.cargo);
-
+    tCandidato candidato;
+    candidato.cargo = cargo;
+    candidato.id = id;
+    strcpy(candidato.nome, nome);
+    strcpy(candidato.partido, partido);
+    candidato.votos = 0;
      return candidato;
 }
 
@@ -36,7 +34,6 @@ tCandidato LeCandidato(){
     scanf("%d", &id);
 
     candidato = CriaCandidato(nome, partido, cargo, id);
-    //printf("HAHAnome : (%s) partido: (%s)  id : %d cargo: %c\n", candidato.nome, candidato.partido, candidato.id, candidato.cargo);
 
     return candidato;
 }
@@ -55,6 +52,9 @@ int VerificaIdCandidato(tCandidato candidato, int id){
 int EhMesmoCandidato(tCandidato candidato1, tCandidato candidato2){
     if(candidato1.id == candidato2.id){
         return 1;
+    }
+    else {
+        return 0;
     }
 }
 
@@ -75,13 +75,12 @@ int ObtemVotos(tCandidato candidato){
 
 
 float CalculaPercentualVotos(tCandidato candidato, int totalVotos){
-    return totalVotos/100.00;
+    return ((float)candidato.votos/totalVotos)*100;
 }
 
 
 void ImprimeCandidato (tCandidato candidato, float percentualVotos){
-    printf("%s %s, %d voto(s), %.2f%%\n", candidato.nome, candidato.partido, candidato.votos, CalculaPercentualVotos(candidato, candidato.votos));
-//Ada Lovelace (Gamers Unidos (GU)), 2 voto(s), 66.67%
+    printf("%s (%s), %d voto(s), %.2f%%\n", candidato.nome, candidato.partido, candidato.votos,  percentualVotos);
 }
 
 

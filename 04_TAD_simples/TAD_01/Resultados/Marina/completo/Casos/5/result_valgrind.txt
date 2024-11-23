@@ -1,22 +1,22 @@
-==17579== Memcheck, a memory error detector
-==17579== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==17579== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==17579== Command: Resultados/Marina/completo/prog Resultados/Marina/completo/Casos/5
-==17579== Parent PID: 17577
-==17579== 
-==17579== Conditional jump or move depends on uninitialised value(s)
-==17579==    at 0x109C0B: EstaLivrePosicaoTabuleiro (in /home/mbpereira/prog2-ufes/04_TAD_simples/TAD_01/Resultados/Marina/completo/prog)
-==17579==    by 0x1093CB: JogaJogador (in /home/mbpereira/prog2-ufes/04_TAD_simples/TAD_01/Resultados/Marina/completo/prog)
-==17579==    by 0x109705: ComecaJogo (in /home/mbpereira/prog2-ufes/04_TAD_simples/TAD_01/Resultados/Marina/completo/prog)
-==17579==    by 0x109960: main (in /home/mbpereira/prog2-ufes/04_TAD_simples/TAD_01/Resultados/Marina/completo/prog)
-==17579== 
-==17579== 
-==17579== HEAP SUMMARY:
-==17579==     in use at exit: 0 bytes in 0 blocks
-==17579==   total heap usage: 2 allocs, 2 frees, 8,192 bytes allocated
-==17579== 
-==17579== All heap blocks were freed -- no leaks are possible
-==17579== 
-==17579== Use --track-origins=yes to see where uninitialised values come from
-==17579== For lists of detected and suppressed errors, rerun with: -s
-==17579== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+==6585== Memcheck, a memory error detector
+==6585== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==6585== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==6585== Command: Resultados/Marina/completo/prog Resultados/Marina/completo/Casos/5
+==6585== Parent PID: 6584
+==6585== 
+==6585== Conditional jump or move depends on uninitialised value(s)
+==6585==    at 0x109C0B: EstaLivrePosicaoTabuleiro (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/04_TAD_simples/TAD_01/Resultados/Marina/completo/prog)
+==6585==    by 0x1093CB: JogaJogador (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/04_TAD_simples/TAD_01/Resultados/Marina/completo/prog)
+==6585==    by 0x109705: ComecaJogo (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/04_TAD_simples/TAD_01/Resultados/Marina/completo/prog)
+==6585==    by 0x109960: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/04_TAD_simples/TAD_01/Resultados/Marina/completo/prog)
+==6585== 
+==6585== 
+==6585== HEAP SUMMARY:
+==6585==     in use at exit: 0 bytes in 0 blocks
+==6585==   total heap usage: 2 allocs, 2 frees, 1,024 bytes allocated
+==6585== 
+==6585== All heap blocks were freed -- no leaks are possible
+==6585== 
+==6585== Use --track-origins=yes to see where uninitialised values come from
+==6585== For lists of detected and suppressed errors, rerun with: -s
+==6585== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

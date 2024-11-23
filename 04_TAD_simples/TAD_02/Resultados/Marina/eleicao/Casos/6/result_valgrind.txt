@@ -1,0 +1,20 @@
+==310909== Memcheck, a memory error detector
+==310909== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==310909== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==310909== Command: Resultados/Marina/eleicao/prog Resultados/Marina/eleicao/Casos/6
+==310909== Parent PID: 310908
+==310909== 
+==310909== Conditional jump or move depends on uninitialised value(s)
+==310909==    at 0x10A155: ImprimeResultadoEleicao (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/04_TAD_simples/TAD_02/Resultados/Marina/eleicao/prog)
+==310909==    by 0x10A82C: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/04_TAD_simples/TAD_02/Resultados/Marina/eleicao/prog)
+==310909== 
+==310909== 
+==310909== HEAP SUMMARY:
+==310909==     in use at exit: 0 bytes in 0 blocks
+==310909==   total heap usage: 2 allocs, 2 frees, 1,024 bytes allocated
+==310909== 
+==310909== All heap blocks were freed -- no leaks are possible
+==310909== 
+==310909== Use --track-origins=yes to see where uninitialised values come from
+==310909== For lists of detected and suppressed errors, rerun with: -s
+==310909== ERROR SUMMARY: 5 errors from 1 contexts (suppressed: 0 from 0)
