@@ -1,0 +1,21 @@
+==824569== Memcheck, a memory error detector
+==824569== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==824569== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==824569== Command: Resultados/Marina/completo/prog Resultados/Marina/completo/Casos/9
+==824569== Parent PID: 824568
+==824569== 
+==824569== Conditional jump or move depends on uninitialised value(s)
+==824569==    at 0x109F71: devolverFilmesLocadora (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/04_TAD_simples/TAD_03/Resultados/Marina/completo/prog)
+==824569==    by 0x10A34E: lerDevolucaoLocadora (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/04_TAD_simples/TAD_03/Resultados/Marina/completo/prog)
+==824569==    by 0x10ABF9: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/04_TAD_simples/TAD_03/Resultados/Marina/completo/prog)
+==824569== 
+==824569== 
+==824569== HEAP SUMMARY:
+==824569==     in use at exit: 0 bytes in 0 blocks
+==824569==   total heap usage: 2 allocs, 2 frees, 1,024 bytes allocated
+==824569== 
+==824569== All heap blocks were freed -- no leaks are possible
+==824569== 
+==824569== Use --track-origins=yes to see where uninitialised values come from
+==824569== For lists of detected and suppressed errors, rerun with: -s
+==824569== ERROR SUMMARY: 2 errors from 1 contexts (suppressed: 0 from 0)

@@ -40,17 +40,15 @@ tEleicao InicializaEleicao(){
 }
 
 tEleicao RealizaEleicao(tEleicao eleicao){
-
     int qtd = 0;
     scanf("%*[^0-9]");
     scanf("%d", &qtd);
 
     tEleitor eleitor;
-    int i = 0, qtdEleitoresValidos = 0, aux = 0, j = 0;
-    int votos = 0;
-    int eleitor_analise;
+    int i = 0, qtdEleitoresValidos = 0, j = 0;
+    int eleitor_analise = 0;
 
-//eleicao.totalPresidentes
+
 
     for(i = 0; i < qtd; i++){
         eleitor = LeEleitor();
