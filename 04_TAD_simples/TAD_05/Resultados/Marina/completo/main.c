@@ -6,7 +6,8 @@ void imprimeTodasContas(tConta contas[], int qtd);
 int buscaContaNoSistema(tConta contas[], int conta, int qtd);
 
 int main(){
-    int qtd = 0, operacao = 0, i = 0, conta = 0, idxConta;
+    int qtd = 0, operacao = 0, i = 0, conta = 0, idxConta = 0;
+    
     scanf("%d", &qtd);
     
     tConta contas[qtd];
