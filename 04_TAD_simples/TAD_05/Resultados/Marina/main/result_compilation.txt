@@ -1,0 +1,11 @@
+main.c: In function ‘main’:
+main.c:39:30: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   39 |             (contas[idxConta], valor);
+      |                              ^
+main.c:39:13: warning: statement with no effect [-Wunused-value]
+   39 |             (contas[idxConta], valor);
+      |             ^
+main.c: In function ‘buscaContaNoSistema’:
+main.c:61:1: warning: control reaches end of non-void function [-Wreturn-type]
+   61 | }
+      | ^

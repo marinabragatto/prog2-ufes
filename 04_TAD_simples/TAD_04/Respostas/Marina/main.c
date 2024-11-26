@@ -22,9 +22,9 @@ void impremeVetorAlunos(tAluno alunos[], int qtd){
     ordenaVetor(alunos, qtd);
     for (i = 0; i < qtd; i++){
         if(VerificaAprovacao(alunos[i])){
-            ImprimeAluno(alunos[i]);
+            
         }
-        
+        ImprimeAluno(alunos[i]);
     }
 }
 
