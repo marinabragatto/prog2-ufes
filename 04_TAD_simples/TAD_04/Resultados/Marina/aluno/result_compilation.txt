@@ -1,0 +1,3 @@
+aluno.c:7:20: warning: "/*" within comment [-Wcomment]
+    7 |     char nome[50]; /**< Nome do aluno */
+      |                     

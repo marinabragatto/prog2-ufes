@@ -1,0 +1,7 @@
+aluno.c:7:20: warning: "/*" within comment [-Wcomment]
+    7 |     char nome[50]; /**< Nome do aluno */
+      |                     
+main.c: In function ‘ordenaVetor’:
+main.c:40:23: warning: unused variable ‘menor’ [-Wunused-variable]
+   40 |     int idxMenor = 0, menor = alunos[idxMenor].matricula, i = 0;
+      |                       ^~~~~

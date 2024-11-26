@@ -1,0 +1,4 @@
+main.c: In function ‘ordenaVetor’:
+main.c:40:23: warning: unused variable ‘menor’ [-Wunused-variable]
+   40 |     int idxMenor = 0, menor = alunos[idxMenor].matricula, i = 0;
+      |                       ^~~~~
