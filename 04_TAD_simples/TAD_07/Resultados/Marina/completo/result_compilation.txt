@@ -1,0 +1,24 @@
+data.c: In function ‘ImprimeMesExtenso’:
+data.c:66:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   66 |     printf("%s", meses[data.mes - 1]);
+      |     ^~~~~~
+data.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    2 | #include <string.h>
+  +++ |+#include <stdio.h>
+    3 | 
+data.c:66:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   66 |     printf("%s", meses[data.mes - 1]);
+      |     ^~~~~~
+data.c:66:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+data.c: In function ‘ImprimeDataExtenso’:
+data.c:77:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   77 |     printf("%02d de ", data.dia);
+      |     ^~~~~~
+data.c:77:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+data.c:76:10: warning: unused variable ‘mes’ [-Wunused-variable]
+   76 |     char mes[10];
+      |          ^~~
+data.c: In function ‘CalculaDiasAteMes’:
+data.c:163:1: warning: control reaches end of non-void function [-Wreturn-type]
+  163 | }
+      | ^
