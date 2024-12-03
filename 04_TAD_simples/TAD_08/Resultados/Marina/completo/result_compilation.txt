@@ -1,0 +1,19 @@
+departamento.c: In function ‘imprimeAtributosDepartamento’:
+departamento.c:22:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   22 |     printf("ATRIBUTOS:\ndepartamento => %s\ndiretor => %s\ncurso1 => %s, media1 => %d\ncurso2 => %s, media2 => %d\ncurso3 => %s, media3 => %d\nmedia geral => %.2f\ndesvio padrao => %.2f\n\n", depto.nome, depto.diretor, depto.c1, depto.m1, depto.c2, depto.m2, depto.c3, depto.m3, depto.media_geral, calculaDesvioPadraoDepartamento(depto));
+      |     ^~~~~~
+departamento.c:4:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    3 | #include <string.h>
+  +++ |+#include <stdio.h>
+    4 | 
+departamento.c:22:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   22 |     printf("ATRIBUTOS:\ndepartamento => %s\ndiretor => %s\ncurso1 => %s, media1 => %d\ncurso2 => %s, media2 => %d\ncurso3 => %s, media3 => %d\nmedia geral => %.2f\ndesvio padrao => %.2f\n\n", depto.nome, depto.diretor, depto.c1, depto.m1, depto.c2, depto.m2, depto.c3, depto.m3, depto.media_geral, calculaDesvioPadraoDepartamento(depto));
+      |     ^~~~~~
+departamento.c:22:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+departamento.c: In function ‘calculaDesvioPadraoDepartamento’:
+departamento.c:33:9: warning: unused variable ‘i’ [-Wunused-variable]
+   33 |     int i = 0;
+      |         ^
+departamento.c:31:12: warning: variable ‘media’ set but not used [-Wunused-but-set-variable]
+   31 |     double media = 0, somatorio = 0;
+      |            ^~~~~

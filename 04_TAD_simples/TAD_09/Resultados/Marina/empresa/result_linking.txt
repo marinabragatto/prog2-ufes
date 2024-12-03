@@ -1,0 +1,4 @@
+/usr/bin/ld: Resultados/Marina/empresa/main.o: in function `main':
+main.c:(.text+0x1a6): undefined reference to `leEmpresa'
+/usr/bin/ld: main.c:(.text+0x3a7): undefined reference to `imprimeEmpresa'
+collect2: error: ld returned 1 exit status
