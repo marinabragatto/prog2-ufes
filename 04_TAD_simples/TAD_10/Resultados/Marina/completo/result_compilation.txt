@@ -1,0 +1,37 @@
+biblioteca.c: In function ‘inicializarBiblioteca’:
+biblioteca.c:13:17: warning: variable ‘biblioteca’ set but not used [-Wunused-but-set-variable]
+   13 |     tBiblioteca biblioteca;
+      |                 ^~~~~~~~~~
+biblioteca.c:15:1: warning: control reaches end of non-void function [-Wreturn-type]
+   15 | }
+      | ^
+main.c: In function ‘main’:
+main.c:8:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+    8 |     scanf("%d", &qtdOperacoes);
+      |     ^~~~~
+main.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    1 | #include "biblioteca.h"
+  +++ |+#include <stdio.h>
+    2 | #include "livro.h"
+main.c:8:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+    8 |     scanf("%d", &qtdOperacoes);
+      |     ^~~~~
+main.c:8:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+main.c:18:13: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   18 |             printf("\n");
+      |             ^~~~~~
+main.c:18:13: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+main.c:18:13: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+main.c:18:13: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+main.c:38:13: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   38 |             printf("Operacao invalida!\n");
+      |             ^~~~~~
+main.c:38:13: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+main.c:7:27: warning: unused variable ‘i’ [-Wunused-variable]
+    7 |     int qtdOperacoes = 0, i = 0, operacao = 0;
+      |                           ^
+main.c: In function ‘imprimeMenu’:
+main.c:48:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   48 |     printf("Lista de operacoes:\n1 - Cadastrar livros.\n2 - Remover livros.\n3 - Listar todos os livros cadastrados.\n\n");
+      |     ^~~~~~
+main.c:48:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’

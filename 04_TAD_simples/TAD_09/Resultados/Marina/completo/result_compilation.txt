@@ -1,3 +1,37 @@
+empresa.c: In function ‘leEmpresa’:
+empresa.c:22:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   22 |     scanf("%d", &id);
+      |     ^~~~~
+empresa.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    2 | #include "empresa.h"
+  +++ |+#include <stdio.h>
+    3 | 
+empresa.c:22:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   22 |     scanf("%d", &id);
+      |     ^~~~~
+empresa.c:22:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+empresa.c:21:9: warning: unused variable ‘funcionarios’ [-Wunused-variable]
+   21 |     int funcionarios = 0;
+      |         ^~~~~~~~~~~~
+empresa.c: In function ‘contrataFuncionarioEmpresa’:
+empresa.c:46:9: warning: implicit declaration of function ‘estaContratado’ [-Wimplicit-function-declaration]
+   46 |     if(!estaContratado(funcionario.id, empresa)){
+      |         ^~~~~~~~~~~~~~
+empresa.c: In function ‘imprimeEmpresa’:
+empresa.c:62:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   62 |     printf("Empresa %d:\n", empresa.id);
+      |     ^~~~~~
+empresa.c:62:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+empresa.c:62:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+empresa.c:62:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+empresa.c:63:16: warning: unused variable ‘idComparado’ [-Wunused-variable]
+   63 |     int i = 0, idComparado = 0;
+      |                ^~~~~~~~~~~
+empresa.c: In function ‘estaContratado’:
+empresa.c:77:13: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   77 |             printf("A empresa %d ja possui um funcionario com o id %d\n", empresa.id, id);
+      |             ^~~~~~
+empresa.c:77:13: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
 funcionario.c: In function ‘leFuncionario’:
 funcionario.c:19:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
    19 |     scanf("%d %f", &id, &salario);
@@ -17,3 +51,7 @@ funcionario.c:34:5: warning: implicit declaration of function ‘printf’ [-Wim
 funcionario.c:34:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
 funcionario.c:34:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
 funcionario.c:34:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+main.c: In function ‘main’:
+main.c:6:26: warning: unused variable ‘idEmpresa’ [-Wunused-variable]
+    6 |     int qtdEmpresas = 0, idEmpresa = 0 ;
+      |                          ^~~~~~~~~

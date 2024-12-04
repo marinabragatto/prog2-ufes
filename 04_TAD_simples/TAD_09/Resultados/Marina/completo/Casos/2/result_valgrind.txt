@@ -1,0 +1,15 @@
+==47502== Memcheck, a memory error detector
+==47502== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==47502== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==47502== Command: Resultados/Marina/completo/prog Resultados/Marina/completo/Casos/2
+==47502== Parent PID: 47501
+==47502== 
+==47502== 
+==47502== HEAP SUMMARY:
+==47502==     in use at exit: 0 bytes in 0 blocks
+==47502==   total heap usage: 2 allocs, 2 frees, 1,024 bytes allocated
+==47502== 
+==47502== All heap blocks were freed -- no leaks are possible
+==47502== 
+==47502== For lists of detected and suppressed errors, rerun with: -s
+==47502== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
