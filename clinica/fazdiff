@@ -1,0 +1,7 @@
+./test < testes/input/entrada_1 > testes/outprog/saida_1 
+./test < testes/input/entrada_2 > testes/outprog/saida_2 
+./test < testes/input/entrada_3 > testes/outprog/saida_3 
+./test < testes/input/entrada_4 > testes/outprog/saida_4 
+./test < testes/input/entrada_5 > testes/outprog/saida_5 
+./test < testes/input/entrada_6 > testes/outprog/saida_6 
+diff testes/output testes/outprog
