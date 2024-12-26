@@ -1,0 +1,15 @@
+==62198== Memcheck, a memory error detector
+==62198== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==62198== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==62198== Command: Resultados/Marina/vetor/prog Resultados/Marina/vetor/Casos/1
+==62198== Parent PID: 62197
+==62198== 
+==62198== 
+==62198== HEAP SUMMARY:
+==62198==     in use at exit: 0 bytes in 0 blocks
+==62198==   total heap usage: 2 allocs, 2 frees, 1,024 bytes allocated
+==62198== 
+==62198== All heap blocks were freed -- no leaks are possible
+==62198== 
+==62198== For lists of detected and suppressed errors, rerun with: -s
+==62198== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
