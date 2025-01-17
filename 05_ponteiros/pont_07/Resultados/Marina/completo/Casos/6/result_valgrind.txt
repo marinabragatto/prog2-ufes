@@ -1,0 +1,6 @@
+==32467== Memcheck, a memory error detector
+==32467== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==32467== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==32467== Command: Resultados/Marina/completo/prog Resultados/Marina/completo/Casos/6
+==32467== Parent PID: 32466
+==32467== 

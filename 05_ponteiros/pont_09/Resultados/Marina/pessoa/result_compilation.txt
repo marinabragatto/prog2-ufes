@@ -1,0 +1,11 @@
+pessoa.c: In function ‘ImprimePessoa’:
+pessoa.c:60:27: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘tPessoa *’ {aka ‘struct Pessoa *’} [-Wformat=]
+   60 |             printf("PAI: %s\n", pessoa->pai);
+      |                          ~^     ~~~~~~~~~~~
+      |                           |           |
+      |                           char *      tPessoa * {aka struct Pessoa *}
+pessoa.c:67:27: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘tPessoa *’ {aka ‘struct Pessoa *’} [-Wformat=]
+   67 |             printf("MAE: %s\n", pessoa->mae);
+      |                          ~^     ~~~~~~~~~~~
+      |                           |           |
+      |                           char *      tPessoa * {aka struct Pessoa *}

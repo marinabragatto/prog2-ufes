@@ -1,0 +1,15 @@
+==24277== Memcheck, a memory error detector
+==24277== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==24277== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==24277== Command: Resultados/Marina/calculadora/prog Resultados/Marina/calculadora/Casos/2
+==24277== Parent PID: 24276
+==24277== 
+==24277== 
+==24277== HEAP SUMMARY:
+==24277==     in use at exit: 0 bytes in 0 blocks
+==24277==   total heap usage: 2 allocs, 2 frees, 1,024 bytes allocated
+==24277== 
+==24277== All heap blocks were freed -- no leaks are possible
+==24277== 
+==24277== For lists of detected and suppressed errors, rerun with: -s
+==24277== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

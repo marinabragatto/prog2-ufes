@@ -85,7 +85,6 @@ void LiberaVetor(char *vetor){
     if(vetor){
         free(vetor);
     }
-    return;
 }
 
 

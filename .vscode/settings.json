@@ -4,6 +4,7 @@
         "array": "c",
         "string": "c",
         "string_view": "c",
-        "clinica.h": "c"
+        "clinica.h": "c",
+        "utils_char2.h": "c"
     }
 }

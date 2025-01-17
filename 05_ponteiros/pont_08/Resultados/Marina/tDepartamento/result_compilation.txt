@@ -1,0 +1,12 @@
+tDepartamento.c: In function ‘ImprimeAtributosDepartamento’:
+tDepartamento.c:51:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   51 |     printf("\nDepartamento: %s\n\tDiretor: %s\n\t1o curso: %s\n\tMedia do 1o curso: %d\n\t2o curso: %s\n\tMedia do 2o curso: %d\n\t3o curso: %s\n\tMedia do 3o curso: %d\n\tMedia dos cursos:%.2f", depto.nome, depto.diretor, depto.curso1, depto.m1, depto.curso2, depto.m2, depto.curso3, depto.m3, media);
+      |     ^~~~~~
+tDepartamento.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    2 | #include <string.h>
+  +++ |+#include <stdio.h>
+    3 | 
+tDepartamento.c:51:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   51 |     printf("\nDepartamento: %s\n\tDiretor: %s\n\t1o curso: %s\n\tMedia do 1o curso: %d\n\t2o curso: %s\n\tMedia do 2o curso: %d\n\t3o curso: %s\n\tMedia do 3o curso: %d\n\tMedia dos cursos:%.2f", depto.nome, depto.diretor, depto.curso1, depto.m1, depto.curso2, depto.m2, depto.curso3, depto.m3, media);
+      |     ^~~~~~
+tDepartamento.c:51:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’

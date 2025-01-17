@@ -1,0 +1,15 @@
+==10701== Memcheck, a memory error detector
+==10701== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==10701== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==10701== Command: Resultados/Marina/main/prog Resultados/Marina/main/Casos/1
+==10701== Parent PID: 10700
+==10701== 
+==10701== 
+==10701== HEAP SUMMARY:
+==10701==     in use at exit: 0 bytes in 0 blocks
+==10701==   total heap usage: 2 allocs, 2 frees, 1,024 bytes allocated
+==10701== 
+==10701== All heap blocks were freed -- no leaks are possible
+==10701== 
+==10701== For lists of detected and suppressed errors, rerun with: -s
+==10701== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

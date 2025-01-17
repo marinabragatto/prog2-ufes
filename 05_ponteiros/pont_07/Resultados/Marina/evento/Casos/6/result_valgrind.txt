@@ -1,0 +1,6 @@
+==33240== Memcheck, a memory error detector
+==33240== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==33240== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==33240== Command: Resultados/Marina/evento/prog Resultados/Marina/evento/Casos/6
+==33240== Parent PID: 33239
+==33240== 

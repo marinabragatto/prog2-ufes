@@ -1,0 +1,24 @@
+utils_char2.c: In function ‘CriaVetorTamPadrao’:
+utils_char2.c:26:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   26 |         printf("!!!erro de alocacao!!!\n");
+      |         ^~~~~~
+utils_char2.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    2 | #include <stdlib.h>
+  +++ |+#include <stdio.h>
+    3 | 
+utils_char2.c:26:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   26 |         printf("!!!erro de alocacao!!!\n");
+      |         ^~~~~~
+utils_char2.c:26:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+utils_char2.c: In function ‘LeVetor’:
+utils_char2.c:43:9: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   43 |         scanf("%c", &letra);
+      |         ^~~~~
+utils_char2.c:43:9: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+utils_char2.c:43:9: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+utils_char2.c:43:9: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+utils_char2.c: In function ‘ImprimeString’:
+utils_char2.c:59:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   59 |     printf("%s\n", vetor);
+      |     ^~~~~~
+utils_char2.c:59:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’

@@ -1,0 +1,23 @@
+data.c: In function ‘LeData’:
+data.c:46:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   46 |     scanf("%*[^0-9]");
+      |     ^~~~~
+data.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    1 | #include "data.h"
+  +++ |+#include <stdio.h>
+    2 | 
+data.c:46:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   46 |     scanf("%*[^0-9]");
+      |     ^~~~~
+data.c:46:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+data.c: In function ‘ImprimeData’:
+data.c:61:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   61 |     printf("'%02d/%02d/%02d'",data->dia, data->mes, data->ano);
+      |     ^~~~~~
+data.c:61:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+data.c:61:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+data.c:61:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+data.c: In function ‘EhIgual’:
+data.c:126:19: warning: self-comparison always evaluates to true [-Wtautological-compare]
+  126 |     if(data1->ano == data1->ano && data1->dia == data2->dia && data1->mes == data2->mes){
+      |                   ^~

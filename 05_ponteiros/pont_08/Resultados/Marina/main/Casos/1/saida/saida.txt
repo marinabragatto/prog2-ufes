@@ -1,0 +1,10 @@
+
+Departamento: Informatica
+	Diretor: Patricia
+	1o curso: CC
+	Media do 1o curso: -16777472
+	2o curso: EC
+	Media do 2o curso: -16777468
+	3o curso: SI
+	Media do 3o curso: -16777464
+	Media dos cursos: -16777468.00

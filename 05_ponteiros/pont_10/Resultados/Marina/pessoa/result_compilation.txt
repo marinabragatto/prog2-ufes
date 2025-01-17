@@ -1,0 +1,39 @@
+pessoa.c: In function ‘LePessoa’:
+pessoa.c:32:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   32 |     scanf("%*[^a-zA-Z]");
+      |     ^~~~~
+pessoa.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    1 | #include "pessoa.h"
+  +++ |+#include <stdio.h>
+    2 | 
+pessoa.c:32:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   32 |     scanf("%*[^a-zA-Z]");
+      |     ^~~~~
+pessoa.c:32:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+pessoa.c: In function ‘ImprimePessoa’:
+pessoa.c:63:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   63 |         printf("NOME COMPLETO: %s\n", pessoa->nome);
+      |         ^~~~~~
+pessoa.c:63:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+pessoa.c:63:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+pessoa.c:63:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+pessoa.c:66:27: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘tPessoa *’ {aka ‘struct Pessoa *’} [-Wformat=]
+   66 |             printf("PAI: %s\n", pessoa->pai);
+      |                          ~^     ~~~~~~~~~~~
+      |                           |           |
+      |                           char *      tPessoa * {aka struct Pessoa *}
+pessoa.c:73:27: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘tPessoa *’ {aka ‘struct Pessoa *’} [-Wformat=]
+   73 |             printf("MAE: %s\n", pessoa->mae);
+      |                          ~^     ~~~~~~~~~~~
+      |                           |           |
+      |                           char *      tPessoa * {aka struct Pessoa *}
+pessoa.c:80:29: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘tPessoa *’ {aka ‘struct Pessoa *’} [-Wformat=]
+   80 |             printf("IRMAO: %s\n\n", pessoa->irmao);
+      |                            ~^       ~~~~~~~~~~~~~
+      |                             |             |
+      |                             char *        tPessoa * {aka struct Pessoa *}
+pessoa.c: In function ‘AssociaFamiliasGruposPessoas’:
+pessoa.c:117:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+  117 |     scanf("%*[^0-9-]");
+      |     ^~~~~
+pessoa.c:117:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’

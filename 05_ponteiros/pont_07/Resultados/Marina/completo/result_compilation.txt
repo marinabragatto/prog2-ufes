@@ -1,0 +1,54 @@
+evento.c: In function ‘cadastrarEvento’:
+evento.c:11:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   11 |     scanf("%*[^a-zA-Z0-9]");
+      |     ^~~~~
+evento.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    1 | #include "evento.h"
+  +++ |+#include <stdio.h>
+    2 | 
+evento.c:11:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   11 |     scanf("%*[^a-zA-Z0-9]");
+      |     ^~~~~
+evento.c:11:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+evento.c:13:5: warning: value computed is not used [-Wunused-value]
+   13 |     *(numEventos)++;
+      |     ^~~~~~~~~~~~~~~
+evento.c:15:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   15 |     printf("Evento cadastrado com sucesso!\n");
+      |     ^~~~~~
+evento.c:15:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+evento.c:15:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+evento.c:15:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+evento.c: In function ‘exibirEventos’:
+evento.c:26:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   26 |     printf("Eventos cadastrados:\n");
+      |     ^~~~~~
+evento.c:26:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+evento.c: In function ‘trocarDataEvento’:
+evento.c:42:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   42 |     scanf("%d", &idx);
+      |     ^~~~~
+evento.c:42:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+evento.c:44:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   44 |         printf("Indice invalido!\n");
+      |         ^~~~~~
+evento.c:44:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+evento.c:48:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   48 |         printf("Eventos trocados com sucesso!\n");
+      |         ^~~~~~
+evento.c:48:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+evento.c: In function ‘trocarIndicesEventos’:
+evento.c:64:16: warning: comparison between pointer and integer
+   64 |     if(indiceA < *numEventos && indiceB < *numEventos){
+      |                ^
+evento.c:64:41: warning: comparison between pointer and integer
+   64 |     if(indiceA < *numEventos && indiceB < *numEventos){
+      |                                         ^
+evento.c:69:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   69 |         printf("Data modificada com sucesso!\n");
+      |         ^~~~~~
+evento.c:69:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+evento.c:72:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   72 |         printf("Indice invalido!\n");
+      |         ^~~~~~
+evento.c:72:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’

@@ -1,0 +1,19 @@
+vetor.c: In function ‘LeVetor’:
+vetor.c:12:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   12 |     scanf("%d", &vetor->tamanhoUtilizado);
+      |     ^~~~~
+vetor.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    1 | #include "vetor.h"
+  +++ |+#include <stdio.h>
+    2 | 
+vetor.c:12:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   12 |     scanf("%d", &vetor->tamanhoUtilizado);
+      |     ^~~~~
+vetor.c:12:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+vetor.c:10:9: warning: unused variable ‘qtd’ [-Wunused-variable]
+   10 |     int qtd = 0, i = 0;
+      |         ^~~
+vetor.c: In function ‘AplicarOperacaoVetor’:
+vetor.c:27:16: warning: unused variable ‘soma’ [-Wunused-variable]
+   27 |     int i = 0, soma = 0, acumulador = 0;
+      |                ^~~~
