@@ -1,47 +1,168 @@
-jogada.c: In function ‘CriaJogada’:
-jogada.c:18:27: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
-   18 |     jogadaPtr = (tJogada*)malloc(sizeof(tJogada));
-      |                           ^~~~~~
-jogada.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
-    1 | #include "jogada.h"
+jogo.c: In function ‘CriaJogo’:
+jogo.c:17:20: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   17 |     jogo = (tJogo*)malloc(sizeof(tJogo));
+      |                    ^~~~~~
+jogo.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    1 | #include "jogo.h"
   +++ |+#include <stdlib.h>
     2 | 
-jogada.c:18:27: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
-   18 |     jogadaPtr = (tJogada*)malloc(sizeof(tJogada));
-      |                           ^~~~~~
-jogada.c:18:27: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
-jogada.c: In function ‘DestroiJogada’:
-jogada.c:33:9: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
-   33 |         free(jogada);
-      |         ^~~~
-jogada.c:33:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
-jogada.c:33:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
-jogada.c:33:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
-jogada.c:36:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
-   36 |         printf("tentou liberar ponteiro jogada ja nulo");
-      |         ^~~~~~
-jogada.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
-    1 | #include "jogada.h"
+jogo.c:17:20: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   17 |     jogo = (tJogo*)malloc(sizeof(tJogo));
+      |                    ^~~~~~
+jogo.c:17:20: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+jogo.c:19:5: warning: ‘return’ with no value, in function returning non-void [-Wreturn-type]
+   19 |     return;
+      |     ^~~~~~
+jogo.c:15:8: note: declared here
+   15 | tJogo* CriaJogo(){
+      |        ^~~~~~~~
+jogo.c:16:12: warning: variable ‘jogo’ set but not used [-Wunused-but-set-variable]
+   16 |     tJogo *jogo;
+      |            ^~~~
+jogo.c: In function ‘ComecaJogo’:
+jogo.c:36:17: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   36 |                 printf("Sem vencedor!\n");
+      |                 ^~~~~~
+jogo.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    1 | #include "jogo.h"
   +++ |+#include <stdio.h>
     2 | 
-jogada.c:36:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
-   36 |         printf("tentou liberar ponteiro jogada ja nulo");
-      |         ^~~~~~
-jogada.c:36:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
-jogada.c:37:9: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
-   37 |         exit(1);
+jogo.c:36:17: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   36 |                 printf("Sem vencedor!\n");
+      |                 ^~~~~~
+jogo.c:36:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+jogo.c:42:17: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   42 |                 printf("JOGADOR 1 Venceu!\n");
+      |                 ^~~~~~
+jogo.c:42:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+jogo.c:46:17: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   46 |                 printf("Sem vencedor!\n");
+      |                 ^~~~~~
+jogo.c:46:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+jogo.c:52:17: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   52 |                 printf("JOGADOR 2 Venceu!\n");
+      |                 ^~~~~~
+jogo.c:52:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+jogo.c: In function ‘ContinuaJogo’:
+jogo.c:89:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   89 |     printf("Jogar novamente? (s,n)\n");
+      |     ^~~~~~
+jogo.c:89:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+jogo.c:90:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   90 |     scanf("%*[^sn]");
+      |     ^~~~~
+jogo.c:90:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+jogo.c:90:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+jogo.c:90:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+jogo.c: In function ‘DestroiJogo’:
+jogo.c:109:9: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+  109 |         free(jogo);
       |         ^~~~
-jogada.c:37:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
-jogada.c:37:9: warning: incompatible implicit declaration of built-in function ‘exit’ [-Wbuiltin-declaration-mismatch]
-jogada.c:37:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
-jogada.c: In function ‘LeJogada’:
-jogada.c:51:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
-   51 |         printf("Digite uma posicao (x e y):\n");
+jogo.c:109:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+jogo.c:109:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+jogo.c:109:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+jogo.c:112:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  112 |         printf("falha na alocacao do jogo");
       |         ^~~~~~
-jogada.c:51:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
-jogada.c:52:9: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
-   52 |         scanf("%d %d", &x, &y);
-      |         ^~~~~
-jogada.c:52:9: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
-jogada.c:52:9: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
-jogada.c:52:9: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+jogo.c:112:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+jogo.c:113:9: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+  113 |         exit(1);
+      |         ^~~~
+jogo.c:113:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+jogo.c:113:9: warning: incompatible implicit declaration of built-in function ‘exit’ [-Wbuiltin-declaration-mismatch]
+jogo.c:113:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+tabuleiro.c: In function ‘CriaTabuleiro’:
+tabuleiro.c:22:31: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   22 |     tabuleiro = (tTabuleiro *)malloc(sizeof(tTabuleiro));
+      |                               ^~~~~~
+tabuleiro.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    1 | #include "tabuleiro.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+tabuleiro.c:22:31: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   22 |     tabuleiro = (tTabuleiro *)malloc(sizeof(tTabuleiro));
+      |                               ^~~~~~
+tabuleiro.c:22:31: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+tabuleiro.c:24:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   24 |         printf("erro ao alocar");
+      |         ^~~~~~
+tabuleiro.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    1 | #include "tabuleiro.h"
+  +++ |+#include <stdio.h>
+    2 | 
+tabuleiro.c:24:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   24 |         printf("erro ao alocar");
+      |         ^~~~~~
+tabuleiro.c:24:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+tabuleiro.c:25:9: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   25 |         exit(1);
+      |         ^~~~
+tabuleiro.c:25:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+tabuleiro.c:25:9: warning: incompatible implicit declaration of built-in function ‘exit’ [-Wbuiltin-declaration-mismatch]
+tabuleiro.c:25:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+tabuleiro.c: In function ‘DestroiTabuleiro’:
+tabuleiro.c:49:9: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   49 |         free(tabuleiro);
+      |         ^~~~
+tabuleiro.c:49:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+tabuleiro.c:49:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+tabuleiro.c:49:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+tabuleiro.c:52:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   52 |         printf("tentou liberar vetor nulo");
+      |         ^~~~~~
+tabuleiro.c:52:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+tabuleiro.c:53:9: warning: incompatible implicit declaration of built-in function ‘exit’ [-Wbuiltin-declaration-mismatch]
+   53 |         exit(1);
+      |         ^~~~
+tabuleiro.c:53:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+tabuleiro.c: In function ‘ImprimeTabuleiro’:
+tabuleiro.c:177:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  177 |         printf("\t");
+      |         ^~~~~~
+tabuleiro.c:177:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+tabuleiro.c: In function ‘criaMatrizTabuleiro’:
+tabuleiro.c:189:25: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+  189 |     ptrLinhas = (char**)malloc(sizeof(char*)*3);
+      |                         ^~~~~~
+tabuleiro.c:189:25: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+tabuleiro.c:191:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  191 |         printf("erro ao alocar matriz posicoes");
+      |         ^~~~~~
+tabuleiro.c:191:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+tabuleiro.c:192:9: warning: incompatible implicit declaration of built-in function ‘exit’ [-Wbuiltin-declaration-mismatch]
+  192 |         exit(1);
+      |         ^~~~
+tabuleiro.c:192:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+tabuleiro.c:198:13: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  198 |             printf("erro ao alocar colunas");
+      |             ^~~~~~
+tabuleiro.c:198:13: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+tabuleiro.c:199:13: warning: incompatible implicit declaration of built-in function ‘exit’ [-Wbuiltin-declaration-mismatch]
+  199 |             exit(1);
+      |             ^~~~
+tabuleiro.c:199:13: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+tabuleiro.c: In function ‘destroiPosicoes’:
+tabuleiro.c:210:17: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+  210 |                 free(posicoes[i]);
+      |                 ^~~~
+tabuleiro.c:210:17: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+tabuleiro.c:213:17: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  213 |                 printf("tentou liberar ponteiro nulo\n");
+      |                 ^~~~~~
+tabuleiro.c:213:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+tabuleiro.c:214:17: warning: incompatible implicit declaration of built-in function ‘exit’ [-Wbuiltin-declaration-mismatch]
+  214 |                 exit(1);
+      |                 ^~~~
+tabuleiro.c:214:17: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+tabuleiro.c:217:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+  217 |         free(posicoes);
+      |         ^~~~
+tabuleiro.c:217:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+tabuleiro.c:220:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  220 |         printf("tentou liberar ponteiro nulo");
+      |         ^~~~~~
+tabuleiro.c:220:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+tabuleiro.c: In function ‘EstaMarcadaPosicaoPecaTabuleiro’:
+tabuleiro.c:129:1: warning: control reaches end of non-void function [-Wreturn-type]
+  129 | }
+      | ^

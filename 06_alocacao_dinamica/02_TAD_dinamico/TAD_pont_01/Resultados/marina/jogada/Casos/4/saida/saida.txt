@@ -34,7 +34,6 @@ Jogada [0,2]!
 Jogador 2
 Digite uma posicao (x e y):
 Posicao invalida (FORA DO TABULEIRO - [-1,0] )!
-Formato invalido!
 Jogador 2
 Digite uma posicao (x e y):
 Jogada [0,1]!
@@ -50,7 +49,6 @@ Jogada [2,1]!
 Jogador 2
 Digite uma posicao (x e y):
 Posicao invalida (FORA DO TABULEIRO - [4,2] )!
-Formato invalido!
 Jogador 2
 Digite uma posicao (x e y):
 Posicao invalida (OCUPADA - [0,0] )!
@@ -122,7 +120,6 @@ Posicao invalida (OCUPADA - [0,1] )!
 Jogador 1
 Digite uma posicao (x e y):
 Posicao invalida (FORA DO TABULEIRO - [0,3] )!
-Formato invalido!
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [1,2]!
@@ -146,7 +143,6 @@ Jogada [1,0]!
 Jogador 1
 Digite uma posicao (x e y):
 Posicao invalida (FORA DO TABULEIRO - [3,3] )!
-Formato invalido!
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [0,1]!

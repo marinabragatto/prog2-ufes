@@ -1,5 +1,6 @@
 #include "jogada.h"
-
+#include <stdio.h>
+#include <stdlib.h>
 //typedef struct{
   //  int x;
  //   int y;
@@ -16,6 +17,10 @@ tJogada* CriaJogada(){
     tJogada *jogadaPtr;
     
     jogadaPtr = (tJogada*)malloc(sizeof(tJogada));
+    if(!jogadaPtr){
+        printf("alocacao jogada falhou");
+        exit(1);
+    }
     jogadaPtr->x = -1;
     jogadaPtr->y = -1;
     jogadaPtr->sucesso = 0;
@@ -46,26 +51,19 @@ void DestroiJogada(tJogada* jogada){
  */
 void LeJogada(tJogada* jogada){
     int x = 0, y = 0;
+    printf("Digite uma posicao (x e y):\n");
+    scanf("%d %d", &x, &y);
     
-    //while(1){
-        printf("Digite uma posicao (x e y):\n");
-        scanf("%d %d", &x, &y);
-    
-        if(x >= 0 && x <= 2 && y >= 0 && y <= 2 ){
-            
+    if(x >= 0 && x <= 2 && y >= 0 && y <= 2 ){        
             jogada->x = x;
             jogada->y = y;
             jogada->sucesso = 1;
-           // break;
-        }
-        else{
-            jogada->x = 2;
-            jogada->y = 2;
-            printf("Posicao invalida (FORA DO TABULEIRO - [%d,%d] )!\n", x,y);
-
-            jogada->sucesso = 0;
-        }
-    //}
+    }
+    else{
+            jogada->x = x;
+            jogada->y = y;
+            jogada->sucesso = 1;
+    }
     
     return;
 }
@@ -102,7 +100,7 @@ int ObtemJogadaY(tJogada* jogada){
  * @return 1 se a jogada foi bem sucedida, 0 caso contrário.
  */
 int FoiJogadaBemSucedida(tJogada* jogada){
-    if(jogada->sucesso){
+    if(jogada->sucesso == 1){
         return 1;
     }
     else {

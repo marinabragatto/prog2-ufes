@@ -1,0 +1,95 @@
+tabuleiro.c: In function ‘CriaTabuleiro’:
+tabuleiro.c:22:31: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   22 |     tabuleiro = (tTabuleiro *)malloc(sizeof(tTabuleiro));
+      |                               ^~~~~~
+tabuleiro.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    1 | #include "tabuleiro.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+tabuleiro.c:22:31: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   22 |     tabuleiro = (tTabuleiro *)malloc(sizeof(tTabuleiro));
+      |                               ^~~~~~
+tabuleiro.c:22:31: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+tabuleiro.c:24:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   24 |         printf("erro ao alocar");
+      |         ^~~~~~
+tabuleiro.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    1 | #include "tabuleiro.h"
+  +++ |+#include <stdio.h>
+    2 | 
+tabuleiro.c:24:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   24 |         printf("erro ao alocar");
+      |         ^~~~~~
+tabuleiro.c:24:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+tabuleiro.c:25:9: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   25 |         exit(1);
+      |         ^~~~
+tabuleiro.c:25:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+tabuleiro.c:25:9: warning: incompatible implicit declaration of built-in function ‘exit’ [-Wbuiltin-declaration-mismatch]
+tabuleiro.c:25:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+tabuleiro.c: In function ‘DestroiTabuleiro’:
+tabuleiro.c:49:9: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   49 |         free(tabuleiro);
+      |         ^~~~
+tabuleiro.c:49:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+tabuleiro.c:49:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+tabuleiro.c:49:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+tabuleiro.c:52:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   52 |         printf("tentou liberar vetor nulo");
+      |         ^~~~~~
+tabuleiro.c:52:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+tabuleiro.c:53:9: warning: incompatible implicit declaration of built-in function ‘exit’ [-Wbuiltin-declaration-mismatch]
+   53 |         exit(1);
+      |         ^~~~
+tabuleiro.c:53:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+tabuleiro.c: In function ‘ImprimeTabuleiro’:
+tabuleiro.c:177:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  177 |         printf("\t");
+      |         ^~~~~~
+tabuleiro.c:177:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+tabuleiro.c: In function ‘criaMatrizTabuleiro’:
+tabuleiro.c:189:25: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+  189 |     ptrLinhas = (char**)malloc(sizeof(char*)*3);
+      |                         ^~~~~~
+tabuleiro.c:189:25: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+tabuleiro.c:191:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  191 |         printf("erro ao alocar matriz posicoes");
+      |         ^~~~~~
+tabuleiro.c:191:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+tabuleiro.c:192:9: warning: incompatible implicit declaration of built-in function ‘exit’ [-Wbuiltin-declaration-mismatch]
+  192 |         exit(1);
+      |         ^~~~
+tabuleiro.c:192:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+tabuleiro.c:198:13: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  198 |             printf("erro ao alocar colunas");
+      |             ^~~~~~
+tabuleiro.c:198:13: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+tabuleiro.c:199:13: warning: incompatible implicit declaration of built-in function ‘exit’ [-Wbuiltin-declaration-mismatch]
+  199 |             exit(1);
+      |             ^~~~
+tabuleiro.c:199:13: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+tabuleiro.c: In function ‘destroiPosicoes’:
+tabuleiro.c:210:17: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+  210 |                 free(posicoes[i]);
+      |                 ^~~~
+tabuleiro.c:210:17: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+tabuleiro.c:213:17: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  213 |                 printf("tentou liberar ponteiro nulo\n");
+      |                 ^~~~~~
+tabuleiro.c:213:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+tabuleiro.c:214:17: warning: incompatible implicit declaration of built-in function ‘exit’ [-Wbuiltin-declaration-mismatch]
+  214 |                 exit(1);
+      |                 ^~~~
+tabuleiro.c:214:17: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+tabuleiro.c:217:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+  217 |         free(posicoes);
+      |         ^~~~
+tabuleiro.c:217:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+tabuleiro.c:220:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  220 |         printf("tentou liberar ponteiro nulo");
+      |         ^~~~~~
+tabuleiro.c:220:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+tabuleiro.c: In function ‘EstaMarcadaPosicaoPecaTabuleiro’:
+tabuleiro.c:129:1: warning: control reaches end of non-void function [-Wreturn-type]
+  129 | }
+      | ^

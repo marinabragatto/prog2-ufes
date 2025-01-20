@@ -1,5 +1,9 @@
 #include "jogador.h"
-#include "jogada.c"
+#include "jogada.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+
 
 //typedef struct{
   //  int id;
@@ -15,10 +19,14 @@
  */
 tJogador* CriaJogador(int idJogador){
     tJogador *jogador;
-    jogador = malloc(sizeof(tJogador));
+
+    jogador = (tJogador*)malloc(sizeof(tJogador));
+    
     if(!jogador){
         printf("alocacao jogador falhou");
+        exit(1);
     }
+    
     jogador->id = idJogador;
     return jogador;
 }
@@ -60,19 +68,22 @@ void JogaJogador(tJogador* jogador, tTabuleiro* tabuleiro){
 
         if(EhPosicaoValidaTabuleiro(x, y)){
             if(!EstaLivrePosicaoTabuleiro(tabuleiro, x, y)){
-            printf("Posicao invalida (OCUPADA - [%d,%d] )!", x, y);
-            continue;
+                printf("Posicao invalida (OCUPADA - [%d,%d] )!\n", x, y);
+                continue;
             }
             else{
                 break;
             }
         }
         else{
-            printf("Posicao invalida (FORA DO TABULEIRO - [%d,%d] )!", x, y);
+            printf("Posicao invalida (FORA DO TABULEIRO - [%d,%d] )!\n", x, y);
             continue;
         }
     }
-    MarcaPosicaoTabuleiro(tabuleiro, PECA_1, x, y);
+    printf("Jogada [%d,%d]!\n", x, y);
+    
+    MarcaPosicaoTabuleiro(tabuleiro, jogador->id, x, y);
+    DestroiJogada(jogada);
     return;
     
 }
@@ -87,5 +98,31 @@ void JogaJogador(tJogador* jogador, tTabuleiro* tabuleiro){
  * @return 1 se o jogador venceu, 0 caso contrário.
  */
 int VenceuJogador(tJogador* jogador, tTabuleiro* tabuleiro){
-    if(es)
+    
+    if(EstaMarcadaPosicaoPecaTabuleiro(tabuleiro,0, 0, jogador->id) && EstaMarcadaPosicaoPecaTabuleiro(tabuleiro,1, 0, jogador->id) && EstaMarcadaPosicaoPecaTabuleiro(tabuleiro,2, 0, jogador->id)){
+        return 1;
+    }
+    if(EstaMarcadaPosicaoPecaTabuleiro(tabuleiro,0, 0, jogador->id) && EstaMarcadaPosicaoPecaTabuleiro(tabuleiro,0, 1, jogador->id) && EstaMarcadaPosicaoPecaTabuleiro(tabuleiro,0, 2, jogador->id)){
+        return 1;
+    }
+    if(EstaMarcadaPosicaoPecaTabuleiro(tabuleiro,0, 0, jogador->id) && EstaMarcadaPosicaoPecaTabuleiro(tabuleiro,1, 1, jogador->id) && EstaMarcadaPosicaoPecaTabuleiro(tabuleiro,2, 2, jogador->id)){
+        return 1;
+    }
+    if(EstaMarcadaPosicaoPecaTabuleiro(tabuleiro, 1, 0, jogador->id) && EstaMarcadaPosicaoPecaTabuleiro(tabuleiro,1, 1, jogador->id) && EstaMarcadaPosicaoPecaTabuleiro(tabuleiro,1, 2, jogador->id)){
+        return 1;
+    }
+    if(EstaMarcadaPosicaoPecaTabuleiro(tabuleiro, 2, 0, jogador->id) && EstaMarcadaPosicaoPecaTabuleiro(tabuleiro,2, 1, jogador->id) && EstaMarcadaPosicaoPecaTabuleiro(tabuleiro,2, 2, jogador->id)){
+        return 1;
+    }
+    if(EstaMarcadaPosicaoPecaTabuleiro(tabuleiro, 0, 1, jogador->id) && EstaMarcadaPosicaoPecaTabuleiro(tabuleiro,1, 1, jogador->id) && EstaMarcadaPosicaoPecaTabuleiro(tabuleiro,2, 1, jogador->id)){
+        return 1;
+    }
+    if(EstaMarcadaPosicaoPecaTabuleiro(tabuleiro, 0, 2, jogador->id) && EstaMarcadaPosicaoPecaTabuleiro(tabuleiro,1, 2, jogador->id) && EstaMarcadaPosicaoPecaTabuleiro(tabuleiro,2, 2, jogador->id)){
+        return 1;
+    }
+    if(EstaMarcadaPosicaoPecaTabuleiro(tabuleiro, 2, 0, jogador->id) && EstaMarcadaPosicaoPecaTabuleiro(tabuleiro,1, 1, jogador->id) && EstaMarcadaPosicaoPecaTabuleiro(tabuleiro,0, 2, jogador->id)){
+        return 1;
+    }
+    return 0;
+    
 }
