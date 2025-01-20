@@ -1,0 +1,87 @@
+botao.c: In function ‘SetarTexto’:
+botao.c:31:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   31 |         printf("!!!tamanho maior q o permitido!!!\n");
+      |         ^~~~~~
+botao.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    2 | #include <string.h>
+  +++ |+#include <stdio.h>
+    3 | 
+botao.c:31:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   31 |         printf("!!!tamanho maior q o permitido!!!\n");
+      |         ^~~~~~
+botao.c:31:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+botao.c:32:9: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   32 |         exit(1);
+      |         ^~~~
+botao.c:3:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+    2 | #include <string.h>
+  +++ |+#include <stdlib.h>
+    3 | 
+botao.c:32:9: warning: incompatible implicit declaration of built-in function ‘exit’ [-Wbuiltin-declaration-mismatch]
+   32 |         exit(1);
+      |         ^~~~
+botao.c:32:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+botao.c: In function ‘ExecutaBotao’:
+botao.c:99:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   99 |         printf("- Executando o botao com evento de click\n");
+      |         ^~~~~~
+botao.c:99:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+botao.c:103:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  103 |         printf("- Executando o botao com evento de longo click\n");
+      |         ^~~~~~
+botao.c:103:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+botao.c:106:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  106 |         printf("- Executando o botao com evento de longo hoover\n");
+      |         ^~~~~~
+botao.c:106:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+botao.c: In function ‘DesenhaBotao’:
+botao.c:135:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  135 |         printf("-------------\n- Botao [%d]:\n(Salvar ", idx);
+      |         ^~~~~~
+botao.c:135:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+botao.c:138:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  138 |         printf("-------------\n- Botao [%d]:\n(Excluir ", idx);
+      |         ^~~~~~
+botao.c:138:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+botao.c:140:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  140 |         printf("-------------\n- Botao [%d]:\n(Opcoes ", idx);
+      |         ^~~~~~
+botao.c:140:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+botao.c:143:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  143 |     printf("| %s | %d | %d)\n-------------\n", b.corHex, b.tamFonte, b.tipo);
+      |     ^~~~~~
+botao.c:143:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+main.c: In function ‘main’:
+main.c:12:9: warning: unused variable ‘i’ [-Wunused-variable]
+   12 |     int i = 0;
+      |         ^
+tela.c: In function ‘DesenhaTela’:
+tela.c:52:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   52 |     printf("##################\n");
+      |     ^~~~~~
+tela.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    1 | #include "tela.h"
+  +++ |+#include <stdio.h>
+    2 | 
+tela.c:52:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   52 |     printf("##################\n");
+      |     ^~~~~~
+tela.c:52:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+tela.c: In function ‘OuvidorEventosTela’:
+tela.c:70:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   70 |     scanf("%d", &botao);
+      |     ^~~~~
+tela.c:70:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+tela.c:70:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+tela.c:70:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+tela.c:75:9: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   75 |         exit(1);
+      |         ^~~~
+tela.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+    1 | #include "tela.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+tela.c:75:9: warning: incompatible implicit declaration of built-in function ‘exit’ [-Wbuiltin-declaration-mismatch]
+   75 |         exit(1);
+      |         ^~~~
+tela.c:75:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’

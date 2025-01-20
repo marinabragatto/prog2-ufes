@@ -1,0 +1,30 @@
+tela.c: In function ‘DesenhaTela’:
+tela.c:52:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   52 |     printf("##################\n");
+      |     ^~~~~~
+tela.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    1 | #include "tela.h"
+  +++ |+#include <stdio.h>
+    2 | 
+tela.c:52:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   52 |     printf("##################\n");
+      |     ^~~~~~
+tela.c:52:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+tela.c: In function ‘OuvidorEventosTela’:
+tela.c:70:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   70 |     scanf("%d", &botao);
+      |     ^~~~~
+tela.c:70:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+tela.c:70:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+tela.c:70:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+tela.c:75:9: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   75 |         exit(1);
+      |         ^~~~
+tela.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+    1 | #include "tela.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+tela.c:75:9: warning: incompatible implicit declaration of built-in function ‘exit’ [-Wbuiltin-declaration-mismatch]
+   75 |         exit(1);
+      |         ^~~~
+tela.c:75:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
