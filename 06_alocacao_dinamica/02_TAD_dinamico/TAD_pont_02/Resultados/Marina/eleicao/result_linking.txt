@@ -1,0 +1,6 @@
+/usr/bin/ld: Resultados/Marina/eleicao/main.o: in function `main':
+main.c:(.text+0xe): undefined reference to `InicializaEleicao'
+/usr/bin/ld: main.c:(.text+0x1e): undefined reference to `RealizaEleicao'
+/usr/bin/ld: main.c:(.text+0x2a): undefined reference to `ImprimeResultadoEleicao'
+/usr/bin/ld: main.c:(.text+0x36): undefined reference to `ApagaEleicao'
+collect2: error: ld returned 1 exit status
