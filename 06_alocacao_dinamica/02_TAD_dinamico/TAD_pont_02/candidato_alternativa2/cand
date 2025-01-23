@@ -1,7 +1,12 @@
 #include "candidato.h"
+#include <stdio.h>
 #include <stdlib.h>
 
+#define TAM_PAD 10
 
+char *LeString(); 
+char *AumentaTamanhoVetor(char* vetor, int *tamanhoantigo);
+int EhMultiploDez(int numero);
 
 
 /**
@@ -63,14 +68,16 @@ void ApagaCandidato(tCandidato* candidato){
  */
 void LeCandidato(tCandidato *candidato){
 
-  candidato->nome = (char*)malloc(sizeof(char)*40);
-  candidato->partido = (char*)malloc(sizeof(char)*40);
+  candidato->nome = (char*)malloc(sizeof(char)*11);
+  candidato->partido = (char*)malloc(sizeof(char)*11);
   //Limpa buffer 
   scanf("%*[^a-zA-Z]");
-  //Scanea 
-  scanf("%39[^,]", candidato->nome);
-  scanf("%*[, ]");
-  scanf("%39[^,]", candidato->partido);
+  //Le uma string (nesse contexto)
+  candidato->nome = LeString(candidato->nome);
+  //scanf("%39[^,]", candidato->nome);
+  //scanf("%*[, ]");
+  candidato->partido = LeString(candidato->partido);
+  //scanf("%39[^,]", candidato->partido);
   scanf("%*[^PG]");
   scanf("%c, ", &candidato->cargo);
   scanf("%d", &candidato->id);
@@ -152,4 +159,42 @@ void ImprimeCandidato (tCandidato* candidato, float percentualVotos){
 
   printf("%s (%s), %d voto(s), %.2f%%\n", candidato->nome, candidato->partido, ObtemVotos(candidato), percentualVotos);
   return;
+}
+
+char *LeString(char *string){
+    int i = 0;
+    char letra = 'a';
+    int *tamanho;
+    int tam = TAM_PAD;
+    *tamanho = tam;
+
+    for(i = 0; 1; i++){
+        scanf("%c", &letra);
+        if(letra != ','){
+            if(EhMultiploDez(i)){
+                string = AumentaTamanhoVetor(string, tamanho);
+                *tamanho += 10; 
+            }
+            string[i] = letra;
+        }
+        else {
+            break;
+        }
+    }
+    return string;
+}
+
+char *AumentaTamanhoVetor(char* vetor, int *tamanhoantigo){
+    vetor = (char*)realloc(vetor, sizeof(char)*(*(tamanhoantigo)+11));
+    *(tamanhoantigo)++;
+    return vetor;
+}
+
+int EhMultiploDez(int numero){
+    if(((numero%10) == 0) && numero != 0){
+        return 1;
+    }
+    else {
+        return 0;
+    }
 }

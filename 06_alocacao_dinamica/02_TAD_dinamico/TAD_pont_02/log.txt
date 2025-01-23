@@ -86,7 +86,7 @@ LINKANDO OS ARQUIVOS COMPILADOS:
  - Arquivo de output gerado: Resultados/Marina/completo/result_linking.txt
  - Pasta eleicao:
  - Gerando o binário prog linkando com o(s) arquivo(s) eleicao/*.o
- - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
  - Arquivo de output gerado: Resultados/Marina/eleicao/result_linking.txt
  - Pasta candidato:
  - Gerando o binário prog linkando com o(s) arquivo(s) candidato/*.o
@@ -96,7 +96,7 @@ LINKANDO OS ARQUIVOS COMPILADOS:
  - Gerando o binário prog linkando com o(s) arquivo(s) eleitor/*.o
  - Arquivos Linkados: Erro! Binário prog não gerado.
  - Arquivo de output gerado: Resultados/Marina/eleitor/result_linking.txt
- - Arquivos Linkados: Erro! 4 arquivos com erros de linkagem.
+ - Arquivos Linkados: Erro! 3 arquivos com erros de linkagem.
 
 EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta main / Caso 1:
@@ -184,98 +184,108 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Nota para a pasta completo (máximo 2.00) - 0 de 100 - 0% de 2.00: 0.
  -----
  - Pasta eleicao / Caso 1:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Arquivo de output gerado: Resultados/Marina/eleicao/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 34, frees: 34, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta eleicao / Caso 10:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Arquivo de output gerado: Resultados/Marina/eleicao/Casos/10/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 37, frees: 37, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta eleicao / Caso 2:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Arquivo de output gerado: Resultados/Marina/eleicao/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 34, frees: 34, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta eleicao / Caso 3:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Arquivo de output gerado: Resultados/Marina/eleicao/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 34, frees: 34, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta eleicao / Caso 4:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Arquivo de output gerado: Resultados/Marina/eleicao/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 36, frees: 36, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta eleicao / Caso 5:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Arquivo de output gerado: Resultados/Marina/eleicao/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 42, frees: 42, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta eleicao / Caso 6:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Arquivo de output gerado: Resultados/Marina/eleicao/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 37, frees: 37, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta eleicao / Caso 7:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Arquivo de output gerado: Resultados/Marina/eleicao/Casos/7/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 41, frees: 41, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta eleicao / Caso 8:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Arquivo de output gerado: Resultados/Marina/eleicao/Casos/8/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 27, frees: 27, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta eleicao / Caso 9:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
- - Nota para a pasta eleicao (máximo 2.00) - 0 de 100 - 0% de 2.00: 0.
+ - Arquivo de output gerado: Resultados/Marina/eleicao/Casos/9/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 41, frees: 41, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Nota para a pasta eleicao (máximo 2.00) - 100.00 de 100 - 100.00% de 2.00: 2.00.
  -----
  - Pasta candidato / Caso 1:
  - Arquivo de output gerado: Resultados/Marina/candidato/Casos/1/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 23, frees: 0, errors: 60 | Desconto do valgrind 50.00%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Valgrind: Ok! allocs: 27, frees: 27, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta candidato / Caso 10:
  - Arquivo de output gerado: Resultados/Marina/candidato/Casos/10/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 23, frees: 0, errors: 53 | Desconto do valgrind 50.00%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Valgrind: Ok! allocs: 30, frees: 30, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta candidato / Caso 2:
  - Arquivo de output gerado: Resultados/Marina/candidato/Casos/2/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 23, frees: 0, errors: 57 | Desconto do valgrind 50.00%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Valgrind: Ok! allocs: 27, frees: 27, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta candidato / Caso 3:
  - Arquivo de output gerado: Resultados/Marina/candidato/Casos/3/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 20, frees: 0, errors: 45 | Desconto do valgrind 50.00%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Valgrind: Ok! allocs: 28, frees: 28, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta candidato / Caso 4:
  - Arquivo de output gerado: Resultados/Marina/candidato/Casos/4/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 23, frees: 0, errors: 60 | Desconto do valgrind 50.00%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Valgrind: Ok! allocs: 29, frees: 29, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta candidato / Caso 5:
  - Arquivo de output gerado: Resultados/Marina/candidato/Casos/5/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 23, frees: 0, errors: 60 | Desconto do valgrind 50.00%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Valgrind: Ok! allocs: 35, frees: 35, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta candidato / Caso 6:
  - Arquivo de output gerado: Resultados/Marina/candidato/Casos/6/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 23, frees: 0, errors: 53 | Desconto do valgrind 50.00%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Valgrind: Ok! allocs: 30, frees: 30, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta candidato / Caso 7:
  - Arquivo de output gerado: Resultados/Marina/candidato/Casos/7/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 23, frees: 0, errors: 53 | Desconto do valgrind 50.00%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Valgrind: Ok! allocs: 34, frees: 34, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta candidato / Caso 8:
  - Arquivo de output gerado: Resultados/Marina/candidato/Casos/8/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 17, frees: 0, errors: 29 | Desconto do valgrind 50.00%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Valgrind: Ok! allocs: 22, frees: 22, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta candidato / Caso 9:
  - Arquivo de output gerado: Resultados/Marina/candidato/Casos/9/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 23, frees: 0, errors: 53 | Desconto do valgrind 50.00%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
- - Nota para a pasta candidato (máximo 2.00) - 0 de 100 - 0% de 2.00: 0.
+ - Valgrind: Ok! allocs: 34, frees: 34, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Nota para a pasta candidato (máximo 2.00) - 100.00 de 100 - 100.00% de 2.00: 2.00.
  -----
  - Pasta eleitor / Caso 1:
  - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
@@ -328,7 +338,7 @@ RESULTADOS FINAIS
 Aluno: Marina
  - Arquivos Esperados Corretos: 7 de 7
  - Pastas Compiladas Corretamente: 5 de 5 
- - Pastas Linkadas Corretamente: 1 de 5
+ - Pastas Linkadas Corretamente: 2 de 5
  - Teste main
  - Resultados corretos: 0 de 10
  - Valgrinds corretos: 0 de 10
@@ -338,19 +348,19 @@ Aluno: Marina
  - Valgrinds corretos: 0 de 10
  - Nota de Marina para o teste completo: 0
  - Teste eleicao
- - Resultados corretos: 0 de 10
- - Valgrinds corretos: 0 de 10
- - Nota de Marina para o teste eleicao: 0
+ - Resultados corretos: 10 de 10
+ - Valgrinds corretos: 10 de 10
+ - Nota de Marina para o teste eleicao: 2.00
  - Teste candidato
- - Resultados corretos: 0 de 10
- - Valgrinds corretos: 0 de 10
- - Nota de Marina para o teste candidato: 0
+ - Resultados corretos: 10 de 10
+ - Valgrinds corretos: 10 de 10
+ - Nota de Marina para o teste candidato: 2.00
  - Teste eleitor
  - Resultados corretos: 0 de 10
  - Valgrinds corretos: 0 de 10
  - Nota de Marina para o teste eleitor: 0
- - Nota de Marina: 0+(0)+(0)+(0)+(0)+(0)
- - Nota de Marina: 0
+ - Nota de Marina: 0+(0)+(2.00)+(0)+(0)+(2.00)
+ - Nota de Marina: 4.00
 
 ----------------------------------------------------------------------------
 

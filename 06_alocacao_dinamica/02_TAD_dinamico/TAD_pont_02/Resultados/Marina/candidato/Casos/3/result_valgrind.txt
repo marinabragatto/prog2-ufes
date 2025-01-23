@@ -1,109 +1,15 @@
-==28112== Memcheck, a memory error detector
-==28112== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==28112== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==28112== Command: Resultados/Marina/candidato/prog Resultados/Marina/candidato/Casos/3
-==28112== Parent PID: 28111
-==28112== 
-==28112== Invalid write of size 1
-==28112==    at 0x48C603D: __vfscanf_internal (vfscanf-internal.c:2896)
-==28112==    by 0x48C0C6E: scanf (scanf.c:38)
-==28112==    by 0x10934B: LeCandidato (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==    by 0x10961F: InicializaEleicao (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==    by 0x10A07B: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==  Address 0x4a8c4b4 is 0 bytes after a block of size 20 alloc'd
-==28112==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28112==    by 0x1092DB: LeCandidato (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==    by 0x10961F: InicializaEleicao (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==    by 0x10A07B: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112== 
-==28112== Invalid write of size 1
-==28112==    at 0x48C55E4: __vfscanf_internal (vfscanf-internal.c:2983)
-==28112==    by 0x48C0C6E: scanf (scanf.c:38)
-==28112==    by 0x10934B: LeCandidato (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==    by 0x10961F: InicializaEleicao (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==    by 0x10A07B: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==  Address 0x4a8c4c5 is 17 bytes after a block of size 20 alloc'd
-==28112==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28112==    by 0x1092DB: LeCandidato (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==    by 0x10961F: InicializaEleicao (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==    by 0x10A07B: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112== 
-==28112== Conditional jump or move depends on uninitialised value(s)
-==28112==    at 0x48C773A: __vfscanf_internal (vfscanf-internal.c:737)
-==28112==    by 0x48C0C6E: scanf (scanf.c:38)
-==28112==    by 0x109380: LeCandidato (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==    by 0x10961F: InicializaEleicao (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==    by 0x10A07B: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112== 
-==28112== Conditional jump or move depends on uninitialised value(s)
-==28112==    at 0x10962E: InicializaEleicao (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==    by 0x10A07B: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112== 
-==28112== Conditional jump or move depends on uninitialised value(s)
-==28112==    at 0x10966F: InicializaEleicao (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==    by 0x10A07B: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112== 
-==28112== Invalid write of size 1
-==28112==    at 0x48C603D: __vfscanf_internal (vfscanf-internal.c:2896)
-==28112==    by 0x48C0C6E: scanf (scanf.c:38)
-==28112==    by 0x109318: LeCandidato (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==    by 0x10961F: InicializaEleicao (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==    by 0x10A07B: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==  Address 0x4a8c7b4 is 0 bytes after a block of size 20 alloc'd
-==28112==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28112==    by 0x1092C7: LeCandidato (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==    by 0x10961F: InicializaEleicao (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==    by 0x10A07B: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112== 
-==28112== Invalid write of size 1
-==28112==    at 0x48C55E4: __vfscanf_internal (vfscanf-internal.c:2983)
-==28112==    by 0x48C0C6E: scanf (scanf.c:38)
-==28112==    by 0x109318: LeCandidato (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==    by 0x10961F: InicializaEleicao (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==    by 0x10A07B: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==  Address 0x4a8c7ba is 6 bytes after a block of size 20 alloc'd
-==28112==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28112==    by 0x1092C7: LeCandidato (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==    by 0x10961F: InicializaEleicao (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==    by 0x10A07B: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112== 
-==28112== Invalid read of size 4
-==28112==    at 0x109440: ObtemVotos (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==    by 0x109CF2: ImprimeResultadoEleicao (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==    by 0x10A097: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==  Address 0x18 is not stack'd, malloc'd or (recently) free'd
-==28112== 
-==28112== 
-==28112== Process terminating with default action of signal 11 (SIGSEGV)
-==28112==  Access not within mapped region at address 0x18
-==28112==    at 0x109440: ObtemVotos (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==    by 0x109CF2: ImprimeResultadoEleicao (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==    by 0x10A097: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==  If you believe this happened as a result of a stack
-==28112==  overflow in your program's main thread (unlikely but
-==28112==  possible), you can try to increase the size of the
-==28112==  main thread stack using the --main-stacksize= flag.
-==28112==  The main thread stack size used in this run was 8388608.
-==28112== 
-==28112== HEAP SUMMARY:
-==28112==     in use at exit: 1,016 bytes in 20 blocks
-==28112==   total heap usage: 20 allocs, 0 frees, 1,016 bytes allocated
-==28112== 
-==28112== 360 (160 direct, 200 indirect) bytes in 5 blocks are definitely lost in loss record 7 of 8
-==28112==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28112==    by 0x1091BE: CriaCandidato (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==    by 0x10960F: InicializaEleicao (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112==    by 0x10A07B: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/Marina/candidato/prog)
-==28112== 
-==28112== LEAK SUMMARY:
-==28112==    definitely lost: 160 bytes in 5 blocks
-==28112==    indirectly lost: 200 bytes in 10 blocks
-==28112==      possibly lost: 0 bytes in 0 blocks
-==28112==    still reachable: 656 bytes in 5 blocks
-==28112==         suppressed: 0 bytes in 0 blocks
-==28112== Reachable blocks (those to which a pointer was found) are not shown.
-==28112== To see them, rerun with: --leak-check=full --show-leak-kinds=all
-==28112== 
-==28112== Use --track-origins=yes to see where uninitialised values come from
-==28112== For lists of detected and suppressed errors, rerun with: -s
-==28112== ERROR SUMMARY: 45 errors from 9 contexts (suppressed: 0 from 0)
+==16190== Memcheck, a memory error detector
+==16190== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==16190== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==16190== Command: Resultados/Marina/candidato/prog Resultados/Marina/candidato/Casos/3
+==16190== Parent PID: 16189
+==16190== 
+==16190== 
+==16190== HEAP SUMMARY:
+==16190==     in use at exit: 0 bytes in 0 blocks
+==16190==   total heap usage: 28 allocs, 28 frees, 1,868 bytes allocated
+==16190== 
+==16190== All heap blocks were freed -- no leaks are possible
+==16190== 
+==16190== For lists of detected and suppressed errors, rerun with: -s
+==16190== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

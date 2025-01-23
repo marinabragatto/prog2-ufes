@@ -1,3 +1,13 @@
 /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
 (.text+0x1b): undefined reference to `main'
+/usr/bin/ld: Resultados/Marina/completo/eleicao.o: in function `ApagaEleicao':
+eleicao.c:(.text+0x363): undefined reference to `ApagaEleitor'
+/usr/bin/ld: Resultados/Marina/completo/eleicao.o: in function `RealizaEleicao':
+eleicao.c:(.text+0x429): undefined reference to `CriaEleitor'
+/usr/bin/ld: eleicao.c:(.text+0x460): undefined reference to `LeEleitor'
+/usr/bin/ld: Resultados/Marina/completo/eleicao.o: in function `ImprimeResultadoEleicao':
+eleicao.c:(.text+0x520): undefined reference to `ObtemVotoPresidente'
+/usr/bin/ld: eleicao.c:(.text+0x542): undefined reference to `ObtemVotoGovernador'
+/usr/bin/ld: Resultados/Marina/completo/eleicao.o: in function `EleitorTentouVotarDnv':
+eleicao.c:(.text+0x914): undefined reference to `EhMesmoEleitor'
 collect2: error: ld returned 1 exit status

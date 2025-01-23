@@ -2,13 +2,7 @@
 #include <stdlib.h>
 
 
-//typedef struct {
-  //  char* nome;
-  //  char* partido;
-    //char cargo;
-    //int id;
-    //int votos;
-//} tCandidato;
+
 
 /**
  * @brief Cria um candidato "vazio".
@@ -16,16 +10,19 @@
  * @return Candidato criado.
  */
 tCandidato* CriaCandidato(){
-  tCandidato * canditato;
-  canditato = (tCandidato*)malloc(sizeof(tCandidato)*1);
+  tCandidato * candidato;
+  candidato = (tCandidato*)malloc(sizeof(tCandidato)*1);
 
-  canditato->partido = NULL;
-  canditato->nome = NULL;
-  canditato->partido = NULL;
-  canditato->id = -1;
-  canditato->votos = -1;
+  //candidato->nome = (char*)malloc(sizeof(char)*20);
+  //candidato->partido = (char*)malloc(sizeof(char)*20);
+  
+  candidato->partido = NULL;
+  candidato->nome = NULL;
 
-  return canditato;
+  candidato->id = -1;
+  candidato->votos = -1;
+
+  return candidato;
 
 }
 
@@ -35,6 +32,7 @@ tCandidato* CriaCandidato(){
  * @return Candidato criado.
  */
 void ApagaCandidato(tCandidato* candidato){
+  
   if(candidato){
     if(candidato->nome){
       free(candidato->nome);
@@ -64,16 +62,18 @@ void ApagaCandidato(tCandidato* candidato){
  * @param candidato Candidato a ser lido.
  */
 void LeCandidato(tCandidato *candidato){
-  candidato->nome = (char*)malloc(sizeof(char)*20);
-  candidato->partido = (char*)malloc(sizeof(char)*20);
-  scanf("%*[^a-zA-Z]");
 
-  scanf("%[^,]", candidato->nome);
+  candidato->nome = (char*)malloc(sizeof(char)*40);
+  candidato->partido = (char*)malloc(sizeof(char)*40);
+  //Limpa buffer 
+  scanf("%*[^a-zA-Z]");
+  //Scanea 
+  scanf("%39[^,]", candidato->nome);
   scanf("%*[, ]");
-  scanf("%[^,]", candidato->partido);
+  scanf("%39[^,]", candidato->partido);
   scanf("%*[^PG]");
-  scanf("%c,", candidato->cargo);
-  scanf("%d", candidato->id);
+  scanf("%c, ", &candidato->cargo);
+  scanf("%d", &candidato->id);
 
   //Edsger Dijkstra, Partido do Melhor Caminho (PMC), P, 10
 }
@@ -129,7 +129,7 @@ void IncrementaVotoCandidato(tCandidato* candidato){
  * @return Quantidade de votos do candidato.
  */
 int ObtemVotos(tCandidato* candidato){
-  return candidato->votos;
+  return candidato->votos+1;
 }
 /**
  * @brief Calcula o percentual de votos do candidato em relação ao total de votos (do mesmo cargo).
@@ -138,7 +138,7 @@ int ObtemVotos(tCandidato* candidato){
  * @return Percentual de votos do candidato.
  */
 float CalculaPercentualVotos(tCandidato* candidato, int totalVotos){
-  return (candidato->votos/(float)totalVotos);
+  return (ObtemVotos(candidato)/(float)totalVotos);
 }
 
 /**
@@ -147,8 +147,9 @@ float CalculaPercentualVotos(tCandidato* candidato, int totalVotos){
  * @param percentualVotos Percentual de votos do candidato.
  */
 void ImprimeCandidato (tCandidato* candidato, float percentualVotos){
-  float percentual = 12;
 
-  printf("%s (%s), %d voto(s), %.2f%%", candidato->nome, candidato->partido, candidato->votos, percentual);
+  percentualVotos = percentualVotos*100;
+
+  printf("%s (%s), %d voto(s), %.2f%%\n", candidato->nome, candidato->partido, ObtemVotos(candidato), percentualVotos);
   return;
 }

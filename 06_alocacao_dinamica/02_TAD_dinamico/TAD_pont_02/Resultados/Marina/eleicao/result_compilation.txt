@@ -1,0 +1,13 @@
+eleicao.c: In function ‘InicializaEleicao’:
+eleicao.c:71:28: warning: unused variable ‘idxGovernador’ [-Wunused-variable]
+   71 |     int idxPresidente = 0, idxGovernador = 0;
+      |                            ^~~~~~~~~~~~~
+eleicao.c:71:9: warning: unused variable ‘idxPresidente’ [-Wunused-variable]
+   71 |     int idxPresidente = 0, idxGovernador = 0;
+      |         ^~~~~~~~~~~~~
+eleicao.c:39:22: warning: unused variable ‘z’ [-Wunused-variable]
+   39 |     float k = 0; int z = 1;
+      |                      ^
+eleicao.c:39:11: warning: unused variable ‘k’ [-Wunused-variable]
+   39 |     float k = 0; int z = 1;
+      |           ^
