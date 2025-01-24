@@ -1,1 +1,1 @@
-valgrind: Resultados/Marina/eleitor/prog: No such file or directory
+ELEICAO ANULADA

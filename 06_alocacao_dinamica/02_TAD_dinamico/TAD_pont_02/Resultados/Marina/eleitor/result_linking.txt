@@ -1,9 +1,0 @@
-/usr/bin/ld: Resultados/Marina/eleitor/eleicao.o: in function `ApagaEleicao':
-eleicao.c:(.text+0x33c): undefined reference to `ApagaEleitor'
-/usr/bin/ld: Resultados/Marina/eleitor/eleicao.o: in function `RealizaEleicao':
-eleicao.c:(.text+0x3c9): undefined reference to `CriaEleitor'
-/usr/bin/ld: eleicao.c:(.text+0x3d9): undefined reference to `LeEleitor'
-/usr/bin/ld: eleicao.c:(.text+0x457): undefined reference to `EhMesmoEleitor'
-/usr/bin/ld: eleicao.c:(.text+0x4d3): undefined reference to `ObtemVotoPresidente'
-/usr/bin/ld: eleicao.c:(.text+0x5b8): undefined reference to `ObtemVotoGovernador'
-collect2: error: ld returned 1 exit status

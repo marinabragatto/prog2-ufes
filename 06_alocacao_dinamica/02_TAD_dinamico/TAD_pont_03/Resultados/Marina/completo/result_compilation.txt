@@ -1,0 +1,54 @@
+filme.c: In function ‘CriarFilme’:
+filme.c:21:23: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   21 |     filme = (tFilme *)malloc(sizeof(tFilme));
+      |                       ^~~~~~
+filme.c:3:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    2 | #include <string.h>
+  +++ |+#include <stdlib.h>
+    3 | 
+filme.c:21:23: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   21 |     filme = (tFilme *)malloc(sizeof(tFilme));
+      |                       ^~~~~~
+filme.c:21:23: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+filme.c:23:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   23 |         printf("Erro ao alocar o filme!\n");
+      |         ^~~~~~
+filme.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    2 | #include <string.h>
+  +++ |+#include <stdio.h>
+    3 | 
+filme.c:23:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   23 |         printf("Erro ao alocar o filme!\n");
+      |         ^~~~~~
+filme.c:23:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+filme.c: In function ‘LeFilme’:
+filme.c:38:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   38 |     scanf("%19[^,]", filme->nome);
+      |     ^~~~~
+filme.c:38:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+filme.c:38:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+filme.c:38:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+filme.c: In function ‘DestruirFilme’:
+filme.c:50:9: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   50 |         free(filme);
+      |         ^~~~
+filme.c:50:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+filme.c:50:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+filme.c:50:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+filme.c: In function ‘ImprimirNomeFilme’:
+filme.c:70:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   70 |     printf("%s", filme->nome);
+      |     ^~~~~~
+filme.c:70:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+locadora.c: In function ‘LerCadastroLocadora’:
+locadora.c:85:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   85 |     scanf("%d,", &codigo);
+      |     ^~~~~
+locadora.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    2 | #include <stdlib.h>
+  +++ |+#include <stdio.h>
+    3 | 
+locadora.c:85:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   85 |     scanf("%d,", &codigo);
+      |     ^~~~~
+locadora.c:85:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’

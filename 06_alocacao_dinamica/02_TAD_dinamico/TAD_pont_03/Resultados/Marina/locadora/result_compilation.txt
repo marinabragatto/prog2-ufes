@@ -1,0 +1,12 @@
+locadora.c: In function ‘LerCadastroLocadora’:
+locadora.c:85:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   85 |     scanf("%d,", &codigo);
+      |     ^~~~~
+locadora.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    2 | #include <stdlib.h>
+  +++ |+#include <stdio.h>
+    3 | 
+locadora.c:85:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   85 |     scanf("%d,", &codigo);
+      |     ^~~~~
+locadora.c:85:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’

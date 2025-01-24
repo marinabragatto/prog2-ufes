@@ -1,0 +1,31 @@
+eleitor.c: In function ‘CriaEleitor’:
+eleitor.c:12:26: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   12 |     eleitor = (tEleitor*)malloc(sizeof(tEleitor));
+      |                          ^~~~~~
+eleitor.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    1 | #include "eleitor.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+eleitor.c:12:26: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   12 |     eleitor = (tEleitor*)malloc(sizeof(tEleitor));
+      |                          ^~~~~~
+eleitor.c:12:26: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+eleitor.c: In function ‘ApagaEleitor’:
+eleitor.c:25:9: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   25 |         free(eleitor);
+      |         ^~~~
+eleitor.c:25:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+eleitor.c:25:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+eleitor.c:25:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+eleitor.c: In function ‘LeEleitor’:
+eleitor.c:34:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   34 |     scanf("%d %d %d", &eleitor->id, &eleitor->votoP, &eleitor->votoG);
+      |     ^~~~~
+eleitor.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    1 | #include "eleitor.h"
+  +++ |+#include <stdio.h>
+    2 | 
+eleitor.c:34:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   34 |     scanf("%d %d %d", &eleitor->id, &eleitor->votoP, &eleitor->votoG);
+      |     ^~~~~
+eleitor.c:34:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’

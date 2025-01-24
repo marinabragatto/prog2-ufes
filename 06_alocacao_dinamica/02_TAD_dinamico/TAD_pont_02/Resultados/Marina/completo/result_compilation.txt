@@ -1,34 +1,21 @@
-candidato.c: In function ‘ApagaCandidato’:
-candidato.c:41:7: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
-   41 |       printf("!!tentou liberar ponteiro nome ja nulo!!\n");
-      |       ^~~~~~
-candidato.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
-    2 | #include <stdlib.h>
-  +++ |+#include <stdio.h>
-    3 | 
-candidato.c:41:7: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
-   41 |       printf("!!tentou liberar ponteiro nome ja nulo!!\n");
-      |       ^~~~~~
-candidato.c:41:7: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
-candidato.c:48:7: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
-   48 |       printf("!!tentou liberar ponteiro partido ja nulo!!\n");
-      |       ^~~~~~
-candidato.c:48:7: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
-candidato.c:54:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
-   54 |     printf("!!tentou liberar ponteiro candidato ja nulo!!\n");
-      |     ^~~~~~
-candidato.c:54:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
 candidato.c: In function ‘LeCandidato’:
 candidato.c:69:3: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
    69 |   scanf("%*[^a-zA-Z]");
       |   ^~~~~
-candidato.c:69:3: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+candidato.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    2 | #include <stdlib.h>
+  +++ |+#include <stdio.h>
+    3 | 
 candidato.c:69:3: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   69 |   scanf("%*[^a-zA-Z]");
+      |   ^~~~~
 candidato.c:69:3: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
 candidato.c: In function ‘ImprimeCandidato’:
-candidato.c:153:3: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+candidato.c:153:3: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
   153 |   printf("%s (%s), %d voto(s), %.2f%%\n", candidato->nome, candidato->partido, ObtemVotos(candidato), percentualVotos);
       |   ^~~~~~
+candidato.c:153:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+candidato.c:153:3: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
 candidato.c:153:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
 eleicao.c: In function ‘InicializaEleicao’:
 eleicao.c:71:28: warning: unused variable ‘idxGovernador’ [-Wunused-variable]
@@ -43,3 +30,34 @@ eleicao.c:39:22: warning: unused variable ‘z’ [-Wunused-variable]
 eleicao.c:39:11: warning: unused variable ‘k’ [-Wunused-variable]
    39 |     float k = 0; int z = 1;
       |           ^
+eleitor.c: In function ‘CriaEleitor’:
+eleitor.c:12:26: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   12 |     eleitor = (tEleitor*)malloc(sizeof(tEleitor));
+      |                          ^~~~~~
+eleitor.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    1 | #include "eleitor.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+eleitor.c:12:26: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   12 |     eleitor = (tEleitor*)malloc(sizeof(tEleitor));
+      |                          ^~~~~~
+eleitor.c:12:26: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+eleitor.c: In function ‘ApagaEleitor’:
+eleitor.c:25:9: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   25 |         free(eleitor);
+      |         ^~~~
+eleitor.c:25:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+eleitor.c:25:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+eleitor.c:25:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+eleitor.c: In function ‘LeEleitor’:
+eleitor.c:34:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   34 |     scanf("%d %d %d", &eleitor->id, &eleitor->votoP, &eleitor->votoG);
+      |     ^~~~~
+eleitor.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    1 | #include "eleitor.h"
+  +++ |+#include <stdio.h>
+    2 | 
+eleitor.c:34:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   34 |     scanf("%d %d %d", &eleitor->id, &eleitor->votoP, &eleitor->votoG);
+      |     ^~~~~
+eleitor.c:34:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’

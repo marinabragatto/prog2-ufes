@@ -38,21 +38,21 @@ void ApagaCandidato(tCandidato* candidato){
       free(candidato->nome);
     }
     else{
-      printf("!!tentou liberar ponteiro nome ja nulo!!\n");
-      exit(1);
+      //printf("!!tentou liberar ponteiro nome ja nulo!!\n");
+      //exit(1);
     }
     if(candidato->partido){
       free(candidato->partido);
     }
     else{
-      printf("!!tentou liberar ponteiro partido ja nulo!!\n");
-      exit(1);
+     // printf("!!tentou liberar ponteiro partido ja nulo!!\n");
+     // exit(1);
     }
     free(candidato);
   }
   else{
-    printf("!!tentou liberar ponteiro candidato ja nulo!!\n");
-    exit(1);
+    //printf("!!tentou liberar ponteiro candidato ja nulo!!\n");
+    //exit(1);
   }
         
 }

@@ -74,6 +74,8 @@ tEleicao* InicializaEleicao(){
     candidatoAtual = CriaCandidato();
 
     for(i = 0; i < qtdCandidatos; i++){
+        //candidatoAtual->nome = (char*)malloc(sizeof(char)*40);    
+        //candidatoAtual->partido = (char*)malloc(sizeof(char)*40);
         LeCandidato(candidatoAtual);
         if(ObtemCargo(candidatoAtual) == 'P'){
             *(eleicao->presidentes[eleicao->totalPresidentes]) = *(candidatoAtual);
@@ -82,7 +84,9 @@ tEleicao* InicializaEleicao(){
         else if(ObtemCargo(candidatoAtual) == 'G'){
             *(eleicao->governadores[eleicao->totalGovernadores]) = *(candidatoAtual);
             eleicao->totalGovernadores++;
-        }    
+        }
+        //free(candidatoAtual->nome);
+        //free(candidatoAtual->partido);    
     }
     if(candidatoAtual){
         free(candidatoAtual);
@@ -138,7 +142,6 @@ void RealizaEleicao(tEleicao* eleicao){
     eleicao->eleitores = (tEleitor**)malloc(sizeof(tEleitor)*qtdEleitores);
     for(i = 0; i < qtdEleitores;i++){
         eleicao->eleitores[i] = CriaEleitor();
-       // eleicao->eleitores[i] = (tEleitor*)malloc(sizeof(tEleitor));
     }
 
     //tEleitor eleitorAtual();
