@@ -82,7 +82,7 @@ void CadastrarFilmeLocadora (tLocadora *locadora, tFilme *filme){
         ImprimirNomeFilme(locadora->filme[locadora->numFilmes]);
         printf("\n");
         locadora->numFilmes++;
-    }
+    } 
     
     return;
 }
