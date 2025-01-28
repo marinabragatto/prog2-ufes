@@ -1,0 +1,27 @@
+main.c: In function ‘main’:
+main.c:13:24: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   13 |     alunos = (tAluno**)malloc(sizeof(tAluno*)*qtd);
+      |                        ^~~~~~
+main.c:3:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    2 | #include "aluno.h"
+  +++ |+#include <stdlib.h>
+    3 | 
+main.c:13:24: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   13 |     alunos = (tAluno**)malloc(sizeof(tAluno*)*qtd);
+      |                        ^~~~~~
+main.c:13:24: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+main.c:30:5: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   30 |     free(alunos);
+      |     ^~~~
+main.c:30:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+main.c:30:5: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+main.c:30:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+main.c: In function ‘OrdenaVetorAlunos’:
+main.c:56:13: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+   56 |             free(alunosAux);
+      |             ^~~~
+main.c:56:13: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+main.c:59:5: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+   59 |     free(AlunoMenor);
+      |     ^~~~
+main.c:59:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
