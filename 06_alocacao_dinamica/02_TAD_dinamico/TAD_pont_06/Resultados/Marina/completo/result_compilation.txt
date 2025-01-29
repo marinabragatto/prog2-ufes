@@ -1,0 +1,108 @@
+matrix_utils.c: In function ‘MatrixCreate’:
+matrix_utils.c:21:24: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   21 |     matrix = (tMatrix*)malloc(sizeof(tMatrix));
+      |                        ^~~~~~
+matrix_utils.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    1 | #include "matrix_utils.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+matrix_utils.c:21:24: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   21 |     matrix = (tMatrix*)malloc(sizeof(tMatrix));
+      |                        ^~~~~~
+matrix_utils.c:21:24: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+matrix_utils.c:24:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   24 |         printf("nao conseguiu alocar espaco para matriz!\n");
+      |         ^~~~~~
+matrix_utils.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    1 | #include "matrix_utils.h"
+  +++ |+#include <stdio.h>
+    2 | 
+matrix_utils.c:24:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   24 |         printf("nao conseguiu alocar espaco para matriz!\n");
+      |         ^~~~~~
+matrix_utils.c:24:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+matrix_utils.c:25:9: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   25 |         exit(1);
+      |         ^~~~
+matrix_utils.c:25:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+matrix_utils.c:25:9: warning: incompatible implicit declaration of built-in function ‘exit’ [-Wbuiltin-declaration-mismatch]
+matrix_utils.c:25:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+matrix_utils.c:34:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   34 |         printf("nao conseguiu alocar espaco para a data da matriz!");
+      |         ^~~~~~
+matrix_utils.c:34:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+matrix_utils.c:35:9: warning: incompatible implicit declaration of built-in function ‘exit’ [-Wbuiltin-declaration-mismatch]
+   35 |         exit(1);
+      |         ^~~~
+matrix_utils.c:35:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+matrix_utils.c:43:13: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   43 |             printf("nao conseguiu alocar espaco para a data rows da matriz!\n");
+      |             ^~~~~~
+matrix_utils.c:43:13: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+matrix_utils.c:44:13: warning: incompatible implicit declaration of built-in function ‘exit’ [-Wbuiltin-declaration-mismatch]
+   44 |             exit(1);
+      |             ^~~~
+matrix_utils.c:44:13: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+matrix_utils.c: In function ‘MatrixFree’:
+matrix_utils.c:62:21: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   62 |                     free(matrix->data[i]);
+      |                     ^~~~
+matrix_utils.c:62:21: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+matrix_utils.c:62:21: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+matrix_utils.c:62:21: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+matrix_utils.c:66:21: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   66 |                     printf("tentou liberar o ponteiro da data linha jah nulo!\n");
+      |                     ^~~~~~
+matrix_utils.c:66:21: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+matrix_utils.c:67:21: warning: incompatible implicit declaration of built-in function ‘exit’ [-Wbuiltin-declaration-mismatch]
+   67 |                     exit(1);
+      |                     ^~~~
+matrix_utils.c:67:21: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+matrix_utils.c:70:13: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+   70 |             free(matrix->data);
+      |             ^~~~
+matrix_utils.c:70:13: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+matrix_utils.c:73:13: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   73 |             printf("tentou liberar o ponteiro data jah nulo!\n");
+      |             ^~~~~~
+matrix_utils.c:73:13: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+matrix_utils.c:74:13: warning: incompatible implicit declaration of built-in function ‘exit’ [-Wbuiltin-declaration-mismatch]
+   74 |             exit(1);
+      |             ^~~~
+matrix_utils.c:74:13: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+matrix_utils.c:76:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+   76 |         free(matrix);
+      |         ^~~~
+matrix_utils.c:76:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+matrix_utils.c:79:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   79 |         printf("tentou liberar o ponteiro de matriz ja nulo!\n");
+      |         ^~~~~~
+matrix_utils.c:79:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+matrix_utils.c:80:9: warning: incompatible implicit declaration of built-in function ‘exit’ [-Wbuiltin-declaration-mismatch]
+   80 |         exit(1);
+      |         ^~~~
+matrix_utils.c:80:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+matrix_utils.c: In function ‘MatrixRead’:
+matrix_utils.c:94:13: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   94 |             scanf("%d", &matrix->data[i][j]);
+      |             ^~~~~
+matrix_utils.c:94:13: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+matrix_utils.c:94:13: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+matrix_utils.c:94:13: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+matrix_utils.c: In function ‘MatrixPrint’:
+matrix_utils.c:107:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  107 |         printf("|");
+      |         ^~~~~~
+matrix_utils.c:107:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+matrix_utils.c: In function ‘MatrixAdd’:
+matrix_utils.c:189:1: warning: control reaches end of non-void function [-Wreturn-type]
+  189 | }
+      | ^
+matrix_utils.c: In function ‘MatrixSub’:
+matrix_utils.c:211:1: warning: control reaches end of non-void function [-Wreturn-type]
+  211 | }
+      | ^
+matrix_utils.c: In function ‘MatrixMultiply’:
+matrix_utils.c:240:1: warning: control reaches end of non-void function [-Wreturn-type]
+  240 | }
+      | ^
