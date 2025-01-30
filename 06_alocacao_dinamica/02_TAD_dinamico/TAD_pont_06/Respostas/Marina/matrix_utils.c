@@ -73,7 +73,7 @@ void MatrixFree(tMatrix* matrix){
             printf("tentou liberar o ponteiro data jah nulo!\n");
             exit(1);
         }
-        //free(matrix);
+        free(matrix);
     }
     else{
         printf("tentou liberar o ponteiro de matriz ja nulo!\n");
@@ -95,6 +95,7 @@ void MatrixRead(tMatrix* matrix){
             scanf("%d", &matrix->data[i][j]);
         }
     } 
+    scanf("%*[^0-9]");
     return;
 }
 
@@ -104,6 +105,7 @@ void MatrixRead(tMatrix* matrix){
  */
 void MatrixPrint(tMatrix* matrix){
     int i = 0, j = 0;
+    //printf("\n");
     for(i = 0; i < matrix->rows; i++){
         printf("|");
         for(j = 0; j < matrix->cols;j++){
@@ -117,6 +119,7 @@ void MatrixPrint(tMatrix* matrix){
         }
         printf("|\n");
     } 
+    //printf("\n");
     return;    
 }
 
@@ -219,7 +222,6 @@ tMatrix* MatrixSub(tMatrix* matrix1, tMatrix* matrix2){
  */
 tMatrix* MatrixMultiply(tMatrix* matrix1, tMatrix* matrix2){
     if(PossibleMatrixMultiply(matrix1, matrix2)){
-
         tMatrix *res;
         int i = 0, j = 0, k = 0;
         int cols = matrix2->cols, rows =  matrix1->rows;
@@ -253,7 +255,7 @@ tMatrix* TransposeMatrix(tMatrix* matrix){
     
     res =  MatrixCreate(cols, rows);
 
-    for(i = 0; i < cols;i++){
+    for(i = 0; i < cols; i++){
         for(j = 0; j < rows; j++){
             res->data[i][j] = matrix->data[j][i];
         }
@@ -269,10 +271,11 @@ tMatrix* TransposeMatrix(tMatrix* matrix){
  */
 tMatrix* MatrixMultiplyByScalar(tMatrix* matrix, int scalar){
     int i = 0, j = 0, cols = matrix->cols, rows = matrix->rows;
-
-    for(i = 0; i < cols;i++){
-        for(j = 0; j < rows; j++){
-            matrix->data[j][i] = (matrix->data[j][i])*scalar;
+    
+    //matrix = MatrixCreate(matrix->rows, matrix->cols);
+    for(i = 0; i < rows; i++){
+        for(j = 0; j < cols; j++){
+            matrix->data[i][j] = (matrix->data[i][j])*scalar;
         }
     }
     return matrix;

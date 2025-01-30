@@ -1,2 +1,31 @@
-cc1: fatal error: *.c: No such file or directory
-compilation terminated.
+main.c: In function ‘main’:
+main.c:9:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+    9 |     scanf("%d %d\n", &rows1, &cols1);
+      |     ^~~~~
+main.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    1 | #include "matrix_utils.h"
+  +++ |+#include <stdio.h>
+    2 | 
+main.c:9:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+    9 |     scanf("%d %d\n", &rows1, &cols1);
+      |     ^~~~~
+main.c:9:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+main.c:38:17: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   38 |                 printf("Erro: as dimensoes da matriz nao correspondem\n");
+      |                 ^~~~~~
+main.c:38:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+main.c:38:17: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+main.c:38:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+main.c:49:17: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   49 |                 printf("Erro: as dimensoes da matriz nao correspondem\n");
+      |                 ^~~~~~
+main.c:49:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+main.c:60:17: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   60 |                 printf("Erro: o numero de colunas da primeira matriz eh diferente do numero de linhas da segunda matriz\n");
+      |                 ^~~~~~
+main.c:60:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+main.c: In function ‘ImprimeMenu’:
+main.c:97:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   97 |     printf("1 - Somar matrizes\n2 - Subtrair matrizes\n3 - Multiplicar matrizes\n4 - Multiplicacao de uma matriz por escalar\n5 - Transposta de uma matriz\n6 - Encerrar o programa\nOpcao escolhida:\n");
+      |     ^~~~~~
+main.c:97:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’

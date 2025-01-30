@@ -1,3 +1,34 @@
+main.c: In function ‘main’:
+main.c:9:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+    9 |     scanf("%d %d\n", &rows1, &cols1);
+      |     ^~~~~
+main.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    1 | #include "matrix_utils.h"
+  +++ |+#include <stdio.h>
+    2 | 
+main.c:9:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+    9 |     scanf("%d %d\n", &rows1, &cols1);
+      |     ^~~~~
+main.c:9:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+main.c:38:17: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   38 |                 printf("Erro: as dimensoes da matriz nao correspondem\n");
+      |                 ^~~~~~
+main.c:38:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+main.c:38:17: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+main.c:38:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+main.c:49:17: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   49 |                 printf("Erro: as dimensoes da matriz nao correspondem\n");
+      |                 ^~~~~~
+main.c:49:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+main.c:60:17: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   60 |                 printf("Erro: o numero de colunas da primeira matriz eh diferente do numero de linhas da segunda matriz\n");
+      |                 ^~~~~~
+main.c:60:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+main.c: In function ‘ImprimeMenu’:
+main.c:97:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   97 |     printf("1 - Somar matrizes\n2 - Subtrair matrizes\n3 - Multiplicar matrizes\n4 - Multiplicacao de uma matriz por escalar\n5 - Transposta de uma matriz\n6 - Encerrar o programa\nOpcao escolhida:\n");
+      |     ^~~~~~
+main.c:97:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
 matrix_utils.c: In function ‘MatrixCreate’:
 matrix_utils.c:21:24: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
    21 |     matrix = (tMatrix*)malloc(sizeof(tMatrix));
@@ -70,6 +101,10 @@ matrix_utils.c:74:13: warning: incompatible implicit declaration of built-in fun
    74 |             exit(1);
       |             ^~~~
 matrix_utils.c:74:13: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+matrix_utils.c:76:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+   76 |         free(matrix);
+      |         ^~~~
+matrix_utils.c:76:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
 matrix_utils.c:79:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
    79 |         printf("tentou liberar o ponteiro de matriz ja nulo!\n");
       |         ^~~~~~
@@ -86,19 +121,19 @@ matrix_utils.c:92:5: note: include ‘<stdio.h>’ or provide a declaration of �
 matrix_utils.c:92:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
 matrix_utils.c:92:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
 matrix_utils.c: In function ‘MatrixPrint’:
-matrix_utils.c:108:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
-  108 |         printf("|");
+matrix_utils.c:110:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  110 |         printf("|");
       |         ^~~~~~
-matrix_utils.c:108:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+matrix_utils.c:110:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
 matrix_utils.c: In function ‘MatrixAdd’:
-matrix_utils.c:190:1: warning: control reaches end of non-void function [-Wreturn-type]
-  190 | }
+matrix_utils.c:193:1: warning: control reaches end of non-void function [-Wreturn-type]
+  193 | }
       | ^
 matrix_utils.c: In function ‘MatrixSub’:
-matrix_utils.c:212:1: warning: control reaches end of non-void function [-Wreturn-type]
-  212 | }
+matrix_utils.c:215:1: warning: control reaches end of non-void function [-Wreturn-type]
+  215 | }
       | ^
 matrix_utils.c: In function ‘MatrixMultiply’:
-matrix_utils.c:241:1: warning: control reaches end of non-void function [-Wreturn-type]
-  241 | }
+matrix_utils.c:243:1: warning: control reaches end of non-void function [-Wreturn-type]
+  243 | }
       | ^

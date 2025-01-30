@@ -1,146 +1,283 @@
-==174557== Memcheck, a memory error detector
-==174557== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==174557== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==174557== Command: Resultados/Marina/matrix_utils/prog Resultados/Marina/matrix_utils/Casos/2
-==174557== Parent PID: 174556
-==174557== 
-==174557== Invalid read of size 8
-==174557==    at 0x109DE0: TransposeMatrix (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x1094E6: main (main.c:70)
-==174557==  Address 0x4a8c2d0 is 0 bytes inside a block of size 16 free'd
-==174557==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==174557==    by 0x109744: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x109532: main (main.c:80)
-==174557==  Block was alloc'd at
-==174557==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==174557==    by 0x1095DF: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x1092C0: main (main.c:22)
-==174557== 
-==174557== Invalid read of size 4
-==174557==    at 0x109E13: TransposeMatrix (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x1094E6: main (main.c:70)
-==174557==  Address 0x4a8c320 is 0 bytes inside a block of size 12 free'd
-==174557==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==174557==    by 0x10970A: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x109532: main (main.c:80)
-==174557==  Block was alloc'd at
-==174557==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==174557==    by 0x109645: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x1092C0: main (main.c:22)
-==174557== 
-==174557== Invalid read of size 8
-==174557==    at 0x109CDE: MatrixMultiply (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x10942D: main (main.c:55)
-==174557==  Address 0x4a8c2d0 is 0 bytes inside a block of size 16 free'd
-==174557==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==174557==    by 0x109744: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x109532: main (main.c:80)
-==174557==  Block was alloc'd at
-==174557==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==174557==    by 0x1095DF: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x1092C0: main (main.c:22)
-==174557== 
-==174557== Invalid read of size 4
-==174557==    at 0x109CED: MatrixMultiply (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x10942D: main (main.c:55)
-==174557==  Address 0x4a8c320 is 0 bytes inside a block of size 12 free'd
-==174557==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==174557==    by 0x10970A: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x109532: main (main.c:80)
-==174557==  Block was alloc'd at
-==174557==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==174557==    by 0x109645: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x1092C0: main (main.c:22)
-==174557== 
-==174557== Invalid read of size 8
-==174557==    at 0x1096E4: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x10954C: main (main.c:84)
-==174557==  Address 0x4a8c2d0 is 0 bytes inside a block of size 16 free'd
-==174557==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==174557==    by 0x109744: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x109532: main (main.c:80)
-==174557==  Block was alloc'd at
-==174557==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==174557==    by 0x1095DF: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x1092C0: main (main.c:22)
-==174557== 
-==174557== Invalid read of size 8
-==174557==    at 0x109700: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x10954C: main (main.c:84)
-==174557==  Address 0x4a8c2d0 is 0 bytes inside a block of size 16 free'd
-==174557==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==174557==    by 0x109744: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x109532: main (main.c:80)
-==174557==  Block was alloc'd at
-==174557==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==174557==    by 0x1095DF: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x1092C0: main (main.c:22)
-==174557== 
-==174557== Invalid free() / delete / delete[] / realloc()
-==174557==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==174557==    by 0x10970A: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x10954C: main (main.c:84)
-==174557==  Address 0x4a8c320 is 0 bytes inside a block of size 12 free'd
-==174557==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==174557==    by 0x10970A: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x109532: main (main.c:80)
-==174557==  Block was alloc'd at
-==174557==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==174557==    by 0x109645: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x1092C0: main (main.c:22)
-==174557== 
-==174557== Invalid free() / delete / delete[] / realloc()
-==174557==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==174557==    by 0x109744: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x10954C: main (main.c:84)
-==174557==  Address 0x4a8c2d0 is 0 bytes inside a block of size 16 free'd
-==174557==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==174557==    by 0x109744: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x109532: main (main.c:80)
-==174557==  Block was alloc'd at
-==174557==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==174557==    by 0x1095DF: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x1092C0: main (main.c:22)
-==174557== 
-==174557== 
-==174557== HEAP SUMMARY:
-==174557==     in use at exit: 96 bytes in 6 blocks
-==174557==   total heap usage: 28 allocs, 25 frees, 1,360 bytes allocated
-==174557== 
-==174557== 16 bytes in 1 blocks are definitely lost in loss record 1 of 5
-==174557==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==174557==    by 0x109597: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x1092C0: main (main.c:22)
-==174557== 
-==174557== 16 bytes in 1 blocks are definitely lost in loss record 2 of 5
-==174557==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==174557==    by 0x109597: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x1092FE: main (main.c:26)
-==174557== 
-==174557== 16 bytes in 1 blocks are definitely lost in loss record 3 of 5
-==174557==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==174557==    by 0x109597: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x109DB5: TransposeMatrix (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x1094E6: main (main.c:70)
-==174557== 
-==174557== 16 bytes in 1 blocks are definitely lost in loss record 4 of 5
-==174557==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==174557==    by 0x109597: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x109DB5: TransposeMatrix (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x10950E: main (main.c:74)
-==174557== 
-==174557== 32 bytes in 2 blocks are definitely lost in loss record 5 of 5
-==174557==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==174557==    by 0x109597: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x109C53: MatrixMultiply (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
-==174557==    by 0x10942D: main (main.c:55)
-==174557== 
-==174557== LEAK SUMMARY:
-==174557==    definitely lost: 96 bytes in 6 blocks
-==174557==    indirectly lost: 0 bytes in 0 blocks
-==174557==      possibly lost: 0 bytes in 0 blocks
-==174557==    still reachable: 0 bytes in 0 blocks
-==174557==         suppressed: 0 bytes in 0 blocks
-==174557== 
-==174557== For lists of detected and suppressed errors, rerun with: -s
-==174557== ERROR SUMMARY: 48 errors from 13 contexts (suppressed: 0 from 0)
+==129919== Memcheck, a memory error detector
+==129919== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==129919== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==129919== Command: Resultados/Marina/matrix_utils/prog Resultados/Marina/matrix_utils/Casos/2
+==129919== Parent PID: 129918
+==129919== 
+==129919== Invalid read of size 4
+==129919==    at 0x109DB8: TransposeMatrix (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x1094E6: main (main.c:70)
+==129919==  Address 0x4a8c284 is 4 bytes inside a block of size 16 free'd
+==129919==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109750: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x109532: main (main.c:80)
+==129919==  Block was alloc'd at
+==129919==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109597: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x1092C0: main (main.c:22)
+==129919== 
+==129919== Invalid read of size 4
+==129919==    at 0x109DC2: TransposeMatrix (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x1094E6: main (main.c:70)
+==129919==  Address 0x4a8c280 is 0 bytes inside a block of size 16 free'd
+==129919==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109750: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x109532: main (main.c:80)
+==129919==  Block was alloc'd at
+==129919==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109597: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x1092C0: main (main.c:22)
+==129919== 
+==129919== Invalid read of size 8
+==129919==    at 0x109DF0: TransposeMatrix (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x1094E6: main (main.c:70)
+==129919==  Address 0x4a8c288 is 8 bytes inside a block of size 16 free'd
+==129919==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109750: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x109532: main (main.c:80)
+==129919==  Block was alloc'd at
+==129919==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109597: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x1092C0: main (main.c:22)
+==129919== 
+==129919== Invalid read of size 8
+==129919==    at 0x109E00: TransposeMatrix (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x1094E6: main (main.c:70)
+==129919==  Address 0x4a8c2d0 is 0 bytes inside a block of size 16 free'd
+==129919==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109744: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x109532: main (main.c:80)
+==129919==  Block was alloc'd at
+==129919==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x1095DF: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x1092C0: main (main.c:22)
+==129919== 
+==129919== Invalid read of size 4
+==129919==    at 0x109E33: TransposeMatrix (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x1094E6: main (main.c:70)
+==129919==  Address 0x4a8c320 is 0 bytes inside a block of size 12 free'd
+==129919==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x10970A: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x109532: main (main.c:80)
+==129919==  Block was alloc'd at
+==129919==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109645: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x1092C0: main (main.c:22)
+==129919== 
+==129919== Invalid read of size 4
+==129919==    at 0x1099CF: PossibleMatrixMultiply (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x109402: main (main.c:50)
+==129919==  Address 0x4a8c284 is 4 bytes inside a block of size 16 free'd
+==129919==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109750: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x109532: main (main.c:80)
+==129919==  Block was alloc'd at
+==129919==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109597: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x1092C0: main (main.c:22)
+==129919== 
+==129919== Invalid read of size 4
+==129919==    at 0x1099CF: PossibleMatrixMultiply (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x109C2A: MatrixMultiply (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x10942D: main (main.c:55)
+==129919==  Address 0x4a8c284 is 4 bytes inside a block of size 16 free'd
+==129919==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109750: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x109532: main (main.c:80)
+==129919==  Block was alloc'd at
+==129919==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109597: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x1092C0: main (main.c:22)
+==129919== 
+==129919== Invalid read of size 4
+==129919==    at 0x109C56: MatrixMultiply (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x10942D: main (main.c:55)
+==129919==  Address 0x4a8c280 is 0 bytes inside a block of size 16 free'd
+==129919==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109750: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x109532: main (main.c:80)
+==129919==  Block was alloc'd at
+==129919==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109597: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x1092C0: main (main.c:22)
+==129919== 
+==129919== Invalid read of size 4
+==129919==    at 0x109C5F: MatrixMultiply (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x10942D: main (main.c:55)
+==129919==  Address 0x4a8c284 is 4 bytes inside a block of size 16 free'd
+==129919==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109750: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x109532: main (main.c:80)
+==129919==  Block was alloc'd at
+==129919==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109597: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x1092C0: main (main.c:22)
+==129919== 
+==129919== Invalid read of size 8
+==129919==    at 0x109CEE: MatrixMultiply (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x10942D: main (main.c:55)
+==129919==  Address 0x4a8c288 is 8 bytes inside a block of size 16 free'd
+==129919==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109750: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x109532: main (main.c:80)
+==129919==  Block was alloc'd at
+==129919==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109597: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x1092C0: main (main.c:22)
+==129919== 
+==129919== Invalid read of size 8
+==129919==    at 0x109CFE: MatrixMultiply (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x10942D: main (main.c:55)
+==129919==  Address 0x4a8c2d0 is 0 bytes inside a block of size 16 free'd
+==129919==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109744: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x109532: main (main.c:80)
+==129919==  Block was alloc'd at
+==129919==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x1095DF: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x1092C0: main (main.c:22)
+==129919== 
+==129919== Invalid read of size 4
+==129919==    at 0x109D0D: MatrixMultiply (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x10942D: main (main.c:55)
+==129919==  Address 0x4a8c320 is 0 bytes inside a block of size 12 free'd
+==129919==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x10970A: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x109532: main (main.c:80)
+==129919==  Block was alloc'd at
+==129919==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109645: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x1092C0: main (main.c:22)
+==129919== 
+==129919== Invalid read of size 8
+==129919==    at 0x1096BA: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x10954C: main (main.c:84)
+==129919==  Address 0x4a8c288 is 8 bytes inside a block of size 16 free'd
+==129919==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109750: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x109532: main (main.c:80)
+==129919==  Block was alloc'd at
+==129919==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109597: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x1092C0: main (main.c:22)
+==129919== 
+==129919== Invalid read of size 4
+==129919==    at 0x10972E: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x10954C: main (main.c:84)
+==129919==  Address 0x4a8c280 is 0 bytes inside a block of size 16 free'd
+==129919==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109750: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x109532: main (main.c:80)
+==129919==  Block was alloc'd at
+==129919==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109597: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x1092C0: main (main.c:22)
+==129919== 
+==129919== Invalid read of size 8
+==129919==    at 0x1096D4: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x10954C: main (main.c:84)
+==129919==  Address 0x4a8c288 is 8 bytes inside a block of size 16 free'd
+==129919==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109750: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x109532: main (main.c:80)
+==129919==  Block was alloc'd at
+==129919==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109597: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x1092C0: main (main.c:22)
+==129919== 
+==129919== Invalid read of size 8
+==129919==    at 0x1096E4: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x10954C: main (main.c:84)
+==129919==  Address 0x4a8c2d0 is 0 bytes inside a block of size 16 free'd
+==129919==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109744: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x109532: main (main.c:80)
+==129919==  Block was alloc'd at
+==129919==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x1095DF: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x1092C0: main (main.c:22)
+==129919== 
+==129919== Invalid read of size 8
+==129919==    at 0x1096F0: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x10954C: main (main.c:84)
+==129919==  Address 0x4a8c288 is 8 bytes inside a block of size 16 free'd
+==129919==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109750: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x109532: main (main.c:80)
+==129919==  Block was alloc'd at
+==129919==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109597: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x1092C0: main (main.c:22)
+==129919== 
+==129919== Invalid read of size 8
+==129919==    at 0x109700: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x10954C: main (main.c:84)
+==129919==  Address 0x4a8c2d0 is 0 bytes inside a block of size 16 free'd
+==129919==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109744: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x109532: main (main.c:80)
+==129919==  Block was alloc'd at
+==129919==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x1095DF: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x1092C0: main (main.c:22)
+==129919== 
+==129919== Invalid free() / delete / delete[] / realloc()
+==129919==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x10970A: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x10954C: main (main.c:84)
+==129919==  Address 0x4a8c320 is 0 bytes inside a block of size 12 free'd
+==129919==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x10970A: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x109532: main (main.c:80)
+==129919==  Block was alloc'd at
+==129919==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109645: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x1092C0: main (main.c:22)
+==129919== 
+==129919== Invalid read of size 8
+==129919==    at 0x109739: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x10954C: main (main.c:84)
+==129919==  Address 0x4a8c288 is 8 bytes inside a block of size 16 free'd
+==129919==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109750: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x109532: main (main.c:80)
+==129919==  Block was alloc'd at
+==129919==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109597: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x1092C0: main (main.c:22)
+==129919== 
+==129919== Invalid free() / delete / delete[] / realloc()
+==129919==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109744: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x10954C: main (main.c:84)
+==129919==  Address 0x4a8c2d0 is 0 bytes inside a block of size 16 free'd
+==129919==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109744: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x109532: main (main.c:80)
+==129919==  Block was alloc'd at
+==129919==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x1095DF: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x1092C0: main (main.c:22)
+==129919== 
+==129919== Invalid free() / delete / delete[] / realloc()
+==129919==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109750: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x10954C: main (main.c:84)
+==129919==  Address 0x4a8c280 is 0 bytes inside a block of size 16 free'd
+==129919==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109750: MatrixFree (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x109532: main (main.c:80)
+==129919==  Block was alloc'd at
+==129919==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==129919==    by 0x109597: MatrixCreate (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_06/Resultados/Marina/matrix_utils/prog)
+==129919==    by 0x1092C0: main (main.c:22)
+==129919== 
+==129919== 
+==129919== HEAP SUMMARY:
+==129919==     in use at exit: 0 bytes in 0 blocks
+==129919==   total heap usage: 28 allocs, 32 frees, 1,360 bytes allocated
+==129919== 
+==129919== All heap blocks were freed -- no leaks are possible
+==129919== 
+==129919== For lists of detected and suppressed errors, rerun with: -s
+==129919== ERROR SUMMARY: 77 errors from 22 contexts (suppressed: 0 from 0)
