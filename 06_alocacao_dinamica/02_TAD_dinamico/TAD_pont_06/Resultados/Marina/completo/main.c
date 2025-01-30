@@ -62,14 +62,19 @@ int main(){
         }
         else if(op == 4){
             int scalar = 0, m;
+            tMatrix *res;
 
             scanf("%d %d\n", &scalar, &m);
             if(m == 1){
-                m1 = MatrixMultiplyByScalar(m1, scalar);
+                res = MatrixMultiplyByScalar(m1, scalar);
+                MatrixFree(m1);
+                m1 = res;
                 MatrixPrint(m1);
             }
             else if(m == 2){
-                m2 = MatrixMultiplyByScalar(m2, scalar);
+                res = MatrixMultiplyByScalar(m2, scalar);
+                MatrixFree(m2);
+                m2 = res;
                 MatrixPrint(m2);
             }
         }

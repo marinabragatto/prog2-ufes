@@ -25,10 +25,10 @@ main.c:60:17: warning: incompatible implicit declaration of built-in function �
       |                 ^~~~~~
 main.c:60:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
 main.c: In function ‘ImprimeMenu’:
-main.c:97:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
-   97 |     printf("1 - Somar matrizes\n2 - Subtrair matrizes\n3 - Multiplicar matrizes\n4 - Multiplicacao de uma matriz por escalar\n5 - Transposta de uma matriz\n6 - Encerrar o programa\nOpcao escolhida:\n");
+main.c:102:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  102 |     printf("1 - Somar matrizes\n2 - Subtrair matrizes\n3 - Multiplicar matrizes\n4 - Multiplicacao de uma matriz por escalar\n5 - Transposta de uma matriz\n6 - Encerrar o programa\nOpcao escolhida:\n");
       |     ^~~~~~
-main.c:97:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+main.c:102:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
 matrix_utils.c: In function ‘MatrixCreate’:
 matrix_utils.c:21:24: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
    21 |     matrix = (tMatrix*)malloc(sizeof(tMatrix));

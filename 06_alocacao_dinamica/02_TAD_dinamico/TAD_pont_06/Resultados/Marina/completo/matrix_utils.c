@@ -271,12 +271,14 @@ tMatrix* TransposeMatrix(tMatrix* matrix){
  */
 tMatrix* MatrixMultiplyByScalar(tMatrix* matrix, int scalar){
     int i = 0, j = 0, cols = matrix->cols, rows = matrix->rows;
-    
+    tMatrix * res;
+    res = MatrixCreate(rows, cols);
+
     //matrix = MatrixCreate(matrix->rows, matrix->cols);
     for(i = 0; i < rows; i++){
         for(j = 0; j < cols; j++){
-            matrix->data[i][j] = (matrix->data[i][j])*scalar;
+            res->data[i][j] = (matrix->data[i][j])*scalar;
         }
     }
-    return matrix;
+    return res;
 }
