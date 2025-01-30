@@ -5,9 +5,9 @@
 5 - Transposta de uma matriz
 6 - Encerrar o programa
 Opcao escolhida: 
-|0 0|
-|0 0|
-|0 0|
+|12 16|
+|16 17|
+|14 22|
 1 - Somar matrizes
 2 - Subtrair matrizes
 3 - Multiplicar matrizes
@@ -15,9 +15,9 @@ Opcao escolhida:
 5 - Transposta de uma matriz
 6 - Encerrar o programa
 Opcao escolhida: 
-|0 0|
-|0 0|
-|0 0|
+|-2 0|
+|-2 -3|
+|-8 -2|
 1 - Somar matrizes
 2 - Subtrair matrizes
 3 - Multiplicar matrizes
@@ -34,9 +34,9 @@ Erro: o numero de colunas da primeira matriz eh diferente do numero de linhas da
 5 - Transposta de uma matriz
 6 - Encerrar o programa
 Opcao escolhida: 
-|0 0|
-|0 0|
-|0 0|
+|40 64|
+|56 56|
+|24 80|
 1 - Somar matrizes
 2 - Subtrair matrizes
 3 - Multiplicar matrizes
@@ -44,10 +44,10 @@ Opcao escolhida:
 5 - Transposta de uma matriz
 6 - Encerrar o programa
 Opcao escolhida: 
-|0 0 0|
-|0 0 0|
-|0 0 0|
-|0 0 0|
+|40 56 24|
+|64 56 80|
+|7 9 11|
+|8 10 12|
 1 - Somar matrizes
 2 - Subtrair matrizes
 3 - Multiplicar matrizes

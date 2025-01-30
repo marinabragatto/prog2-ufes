@@ -5,8 +5,8 @@
 5 - Transposta de uma matriz
 6 - Encerrar o programa
 Opcao escolhida: 
-|0 0|
-|0 0|
+|2 4|
+|11 12|
 1 - Somar matrizes
 2 - Subtrair matrizes
 3 - Multiplicar matrizes
@@ -15,7 +15,7 @@ Opcao escolhida:
 6 - Encerrar o programa
 Opcao escolhida: 
 |0 0|
-|0 0|
+|-5 -4|
 1 - Somar matrizes
 2 - Subtrair matrizes
 3 - Multiplicar matrizes
@@ -23,8 +23,8 @@ Opcao escolhida:
 5 - Transposta de uma matriz
 6 - Encerrar o programa
 Opcao escolhida: 
-|0 0|
-|0 0|
+|17 18|
+|35 38|
 1 - Somar matrizes
 2 - Subtrair matrizes
 3 - Multiplicar matrizes
@@ -32,8 +32,8 @@ Opcao escolhida:
 5 - Transposta de uma matriz
 6 - Encerrar o programa
 Opcao escolhida: 
-|0 0|
-|0 0|
+|2 4|
+|16 16|
 1 - Somar matrizes
 2 - Subtrair matrizes
 3 - Multiplicar matrizes
@@ -41,10 +41,10 @@ Opcao escolhida:
 5 - Transposta de uma matriz
 6 - Encerrar o programa
 Opcao escolhida: 
-|0 0|
-|0 0|
-|0 0|
-|0 0|
+|1 3|
+|2 4|
+|2 16|
+|4 16|
 1 - Somar matrizes
 2 - Subtrair matrizes
 3 - Multiplicar matrizes
@@ -52,8 +52,8 @@ Opcao escolhida:
 5 - Transposta de uma matriz
 6 - Encerrar o programa
 Opcao escolhida: 
-|0 0|
-|0 0|
+|3 6|
+|19 20|
 1 - Somar matrizes
 2 - Subtrair matrizes
 3 - Multiplicar matrizes

@@ -37,7 +37,7 @@ tMatrix* MatrixCreate(int rows, int cols){
     
     for(i = 0; i < rows; i++){
 
-        matrix->data[i] = (int*)malloc(sizeof(int)*cols);
+        matrix->data[i] = (int*)malloc((sizeof(int))*cols);
         
         if(!matrix->data[i]){
             printf("nao conseguiu alocar espaco para a data rows da matriz!\n");
@@ -73,7 +73,7 @@ void MatrixFree(tMatrix* matrix){
             printf("tentou liberar o ponteiro data jah nulo!\n");
             exit(1);
         }
-        free(matrix);
+        //free(matrix);
     }
     else{
         printf("tentou liberar o ponteiro de matriz ja nulo!\n");
@@ -88,9 +88,10 @@ void MatrixFree(tMatrix* matrix){
 void MatrixRead(tMatrix* matrix){
     int i = 0, j = 0;
 
-    matrix = MatrixCreate(matrix->rows, matrix->cols);
+    //matrix = MatrixCreate(matrix->rows, matrix->cols);
+    scanf("%*[^0-9]");
     for(i = 0; i < matrix->rows; i++){
-        for(j = 0; j < matrix->cols;j++){
+        for(j = 0; j < matrix->cols; j++){
             scanf("%d", &matrix->data[i][j]);
         }
     } 

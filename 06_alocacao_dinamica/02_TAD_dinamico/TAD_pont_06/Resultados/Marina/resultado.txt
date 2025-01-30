@@ -10,8 +10,8 @@ Teste completo
   - Valgrinds corretos: 0 de 3
 Nota de Marina para o teste completo: 0
 Teste matrix_utils
-  - Resultados corretos: 0 de 3
+  - Resultados corretos: 3 de 3
   - Valgrinds corretos: 0 de 3
-Nota de Marina para o teste matrix_utils: 0
-Nota de Marina: 0+(0)+(0)+(0)
-Nota de Marina: 0
+Nota de Marina para o teste matrix_utils: 1.66
+Nota de Marina: 0+(1.66)+(0)+(0)
+Nota de Marina: 1.66
