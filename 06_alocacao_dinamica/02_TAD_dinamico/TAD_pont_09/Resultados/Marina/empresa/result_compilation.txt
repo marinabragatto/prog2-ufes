@@ -1,0 +1,37 @@
+empresa.c: In function ‘LeEmpresa’:
+empresa.c:34:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   34 |     scanf("%d %d", &empresa->id, &qtdFuncionarios);
+      |     ^~~~~
+empresa.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    2 | #include <stdlib.h>
+  +++ |+#include <stdio.h>
+    3 | 
+empresa.c:34:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   34 |     scanf("%d %d", &empresa->id, &qtdFuncionarios);
+      |     ^~~~~
+empresa.c:34:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+empresa.c: In function ‘ApagaEmpresa’:
+empresa.c:63:21: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   63 |                     printf("tentou liberar vetor nulo\n");
+      |                     ^~~~~~
+empresa.c:63:21: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+empresa.c:63:21: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+empresa.c:63:21: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+empresa.c:70:13: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   70 |             printf("tentou liberar vetor nulo\n");
+      |             ^~~~~~
+empresa.c:70:13: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+empresa.c:76:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   76 |         printf("tentou liberar vetor nulo\n");
+      |         ^~~~~~
+empresa.c:76:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+empresa.c: In function ‘ContrataFuncionarioEmpresa’:
+empresa.c:103:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  103 |         printf("A empresa %d ja possui um funcionario com o id %d\n", empresa->id, funcionario->id);
+      |         ^~~~~~
+empresa.c:103:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+empresa.c: In function ‘ImprimeEmpresa’:
+empresa.c:115:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  115 |     printf("Empresa %d:\n", empresa->id);
+      |     ^~~~~~
+empresa.c:115:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
