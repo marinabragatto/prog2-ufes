@@ -1,0 +1,73 @@
+data.c: In function ‘CriaData’:
+data.c:13:20: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   13 |     data = (tData*)malloc(sizeof(tData));
+      |                    ^~~~~~
+data.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    1 | #include "data.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+data.c:13:20: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   13 |     data = (tData*)malloc(sizeof(tData));
+      |                    ^~~~~~
+data.c:13:20: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+data.c: In function ‘LeData’:
+data.c:26:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   26 |     scanf("%d/%d/%d\n",&data->dia, &data->mes, &data->ano);
+      |     ^~~~~
+data.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    1 | #include "data.h"
+  +++ |+#include <stdio.h>
+    2 | 
+data.c:26:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   26 |     scanf("%d/%d/%d\n",&data->dia, &data->mes, &data->ano);
+      |     ^~~~~
+data.c:26:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+data.c: In function ‘LiberaData’:
+data.c:34:9: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   34 |         free(data);
+      |         ^~~~
+data.c:34:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+data.c:34:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+data.c:34:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+data.c:37:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   37 |         printf("tentou liberar vetor jah nulo!\n");
+      |         ^~~~~~
+data.c:37:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+data.c:37:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+data.c:37:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+data.c:38:9: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   38 |         exit(1);
+      |         ^~~~
+data.c:38:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+data.c:38:9: warning: incompatible implicit declaration of built-in function ‘exit’ [-Wbuiltin-declaration-mismatch]
+data.c:38:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+data.c: In function ‘ImprimeMesExtenso’:
+data.c:67:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   67 |     printf("%s",nomesExtenso[data->mes - 1]);
+      |     ^~~~~~
+data.c:67:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+data.c: In function ‘ImprimeDataExtenso’:
+data.c:77:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   77 |     printf("%02d de ", data->dia);
+      |     ^~~~~~
+data.c:77:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+data.c: In function ‘ComparaData’:
+data.c:148:1: warning: control reaches end of non-void function [-Wreturn-type]
+  148 | }
+      | ^
+main.c: In function ‘main’:
+main.c:11:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   11 |         printf("A primeira e/ou segunda data(s) invalida(s)\n");
+      |         ^~~~~~
+main.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    1 | #include "data.h"
+  +++ |+#include <stdio.h>
+    2 | 
+main.c:11:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   11 |         printf("A primeira e/ou segunda data(s) invalida(s)\n");
+      |         ^~~~~~
+main.c:11:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+main.c:14:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   14 |         printf("Primeira data: ");
+      |         ^~~~~~
+main.c:14:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’

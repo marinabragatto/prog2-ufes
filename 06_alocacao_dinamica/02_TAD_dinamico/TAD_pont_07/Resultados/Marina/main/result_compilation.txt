@@ -1,0 +1,16 @@
+main.c: In function ‘main’:
+main.c:11:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   11 |         printf("A primeira e/ou segunda data(s) invalida(s)\n");
+      |         ^~~~~~
+main.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    1 | #include "data.h"
+  +++ |+#include <stdio.h>
+    2 | 
+main.c:11:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   11 |         printf("A primeira e/ou segunda data(s) invalida(s)\n");
+      |         ^~~~~~
+main.c:11:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+main.c:14:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   14 |         printf("Primeira data: ");
+      |         ^~~~~~
+main.c:14:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’

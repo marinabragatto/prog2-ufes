@@ -1,0 +1,15 @@
+==90207== Memcheck, a memory error detector
+==90207== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==90207== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==90207== Command: Resultados/Marina/main/prog Resultados/Marina/main/Casos/3
+==90207== Parent PID: 90206
+==90207== 
+==90207== 
+==90207== HEAP SUMMARY:
+==90207==     in use at exit: 0 bytes in 0 blocks
+==90207==   total heap usage: 4 allocs, 4 frees, 1,048 bytes allocated
+==90207== 
+==90207== All heap blocks were freed -- no leaks are possible
+==90207== 
+==90207== For lists of detected and suppressed errors, rerun with: -s
+==90207== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
