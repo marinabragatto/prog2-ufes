@@ -1,0 +1,16 @@
+main.c: In function ‘LeDepartamento’:
+main.c:38:12: warning: ‘nome’ is used uninitialized [-Wuninitialized]
+   38 |     nome = LeString(nome);
+      |            ^~~~~~~~~~~~~~
+main.c:39:15: warning: ‘diretor’ is used uninitialized [-Wuninitialized]
+   39 |     diretor = LeString(diretor);
+      |               ^~~~~~~~~~~~~~~~~
+main.c:40:10: warning: ‘c1’ is used uninitialized [-Wuninitialized]
+   40 |     c1 = LeString(c1);
+      |          ^~~~~~~~~~~~
+main.c:41:10: warning: ‘c2’ is used uninitialized [-Wuninitialized]
+   41 |     c2 = LeString(c2);
+      |          ^~~~~~~~~~~~
+main.c:42:10: warning: ‘c3’ is used uninitialized [-Wuninitialized]
+   42 |     c3 = LeString(c3);
+      |          ^~~~~~~~~~~~
