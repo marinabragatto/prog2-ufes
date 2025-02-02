@@ -98,7 +98,8 @@ void PreencheDadosDepartamento(tDepartamento* depto, char* c1, char* c2, char* c
         //depto->diretor = (char*)malloc(sizeof(char)*(STRING_MAX+1));
         //strcpy(depto->diretor, diretor);
     }
-    else{
+    else{ 
+        
         depto->c1 = c1;
         depto->c2 = c2;
         depto->c3 = c3;
