@@ -37,8 +37,6 @@ void LerLivro(tLivros* livro){
 
     scanf("%d", &livro->anoPublicacao);
     return;
-    
-
 }
 /**
  * Imprime os atributos da TAD tLivros (título, autor e ano de publicação).

@@ -1,0 +1,4 @@
+biblioteca.c: In function ‘InicializarBiblioteca’:
+biblioteca.c:25:9: warning: unused variable ‘i’ [-Wunused-variable]
+   25 |     int i = 0;
+      |         ^

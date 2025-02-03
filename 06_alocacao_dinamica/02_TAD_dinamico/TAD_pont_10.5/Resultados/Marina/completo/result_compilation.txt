@@ -1,0 +1,46 @@
+biblioteca.c: In function ‘InicializarBiblioteca’:
+biblioteca.c:25:9: warning: unused variable ‘i’ [-Wunused-variable]
+   25 |     int i = 0;
+      |         ^
+livro.c: In function ‘LerLivro’:
+livro.c:34:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   34 |     scanf("%*[^a-zA-Z]");
+      |     ^~~~~
+livro.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    1 | #include "livro.h"
+  +++ |+#include <stdio.h>
+    2 | 
+livro.c:34:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   34 |     scanf("%*[^a-zA-Z]");
+      |     ^~~~~
+livro.c:34:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+livro.c: In function ‘ImprimeLivro’:
+livro.c:47:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   47 |     printf("Titulo: %s\nAutor: %s\nAno de Publicacao: %d\n", livro->titulo, livro->autor, livro->anoPublicacao);
+      |     ^~~~~~
+livro.c:47:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+livro.c:47:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+livro.c:47:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+livro.c: In function ‘LeString’:
+livro.c:73:9: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   73 |         scanf("%c", &letraAtual);
+      |         ^~~~~
+livro.c:73:9: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+main.c: In function ‘main’:
+main.c:6:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+    6 |     scanf("%d\n", &qtd);
+      |     ^~~~~
+main.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    1 | #include "biblioteca.h"
+  +++ |+#include <stdio.h>
+    2 | 
+main.c:6:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+    6 |     scanf("%d\n", &qtd);
+      |     ^~~~~
+main.c:6:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+main.c:11:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   11 |     printf("Lista de operacoes:\n1 - Cadastrar livros.\n2 - Remover livros.\n3 - Listar todos os livros cadastrados.\n\n");
+      |     ^~~~~~
+main.c:11:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+main.c:11:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+main.c:11:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’

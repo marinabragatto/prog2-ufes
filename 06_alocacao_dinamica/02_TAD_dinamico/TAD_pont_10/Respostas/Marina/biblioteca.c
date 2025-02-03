@@ -1,14 +1,6 @@
 #include "biblioteca.h"
 #include <string.h>
 
-//#define MAX_LIVROS 10
-
-// Estrutura que representa uma biblioteca de livros/
-//typedef struct {
-//    tLivros* livros[MAX_LIVROS]; // Array de livros (Neste exemplo, o máximo suportado será 10)
-//    int tamanho; // Número atual de livros na biblioteca
-//} tBiblioteca;
-
 /**
  * Inicializa uma biblioteca vazia.
  * Ponteiros são inicializados com NULL; 
