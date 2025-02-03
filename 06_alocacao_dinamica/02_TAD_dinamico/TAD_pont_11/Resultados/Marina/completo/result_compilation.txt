@@ -1,0 +1,55 @@
+loja.c: In function ‘ImprimeRelatorioLoja’:
+loja.c:126:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+  126 |     printf("Loja %d: Lucro total: R$ %.2f\n", loja->id, loja->lucro);
+      |     ^~~~~~
+loja.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    2 | #include <stdlib.h>
+  +++ |+#include <stdio.h>
+    3 | 
+loja.c:126:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  126 |     printf("Loja %d: Lucro total: R$ %.2f\n", loja->id, loja->lucro);
+      |     ^~~~~~
+loja.c:126:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+vendedor.c: In function ‘RegistraVendedor’:
+vendedor.c:21:28: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   21 |     vendedor = (tVendedor*)malloc(sizeof(tVendedor));
+      |                            ^~~~~~
+vendedor.c:3:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    2 | #include <string.h>
+  +++ |+#include <stdlib.h>
+    3 | 
+vendedor.c:21:28: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   21 |     vendedor = (tVendedor*)malloc(sizeof(tVendedor));
+      |                            ^~~~~~
+vendedor.c:21:28: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+vendedor.c: In function ‘ApagaVendedor’:
+vendedor.c:42:13: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   42 |             free(vendedor->nome);
+      |             ^~~~
+vendedor.c:42:13: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+vendedor.c:42:13: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+vendedor.c:42:13: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+vendedor.c:45:13: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   45 |             printf("tentou liberar vetor ja nulo!\n");
+      |             ^~~~~~
+vendedor.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    2 | #include <string.h>
+  +++ |+#include <stdio.h>
+    3 | 
+vendedor.c:45:13: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   45 |             printf("tentou liberar vetor ja nulo!\n");
+      |             ^~~~~~
+vendedor.c:45:13: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+vendedor.c:47:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+   47 |         free(vendedor);
+      |         ^~~~
+vendedor.c:47:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+vendedor.c:50:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   50 |         printf("tentou liberar vetor ja nulo!\n");
+      |         ^~~~~~
+vendedor.c:50:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+vendedor.c: In function ‘ImprimeRelatorioVendedor’:
+vendedor.c:121:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  121 |     printf("\t%s > Total vendido: R$%.2f\n", vendedor->nome, vendedor->valor_vendido);
+      |     ^~~~~~
+vendedor.c:121:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
