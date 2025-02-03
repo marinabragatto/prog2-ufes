@@ -2,14 +2,6 @@
 #include <stdlib.h>
 
 #define NUM_MIN_VEND 5
-//typedef struct Loja {
-//    int id; /**< ID da loja */
-//    int totalVendedores; /**< Número total de vendedores da loja */
-//    int maxVendedores; /* Número máximo atual de vendedores que uma loja consegue armazenar*/
-//    float aluguel; /**< Valor do aluguel da loja */
-//    float lucro; /**< Lucro da loja */
-//    tVendedor** vendedores; /**< Vetor de vendedores da loja */
-//} tLoja;
 
 /**
  * @brief Abre uma nova loja.

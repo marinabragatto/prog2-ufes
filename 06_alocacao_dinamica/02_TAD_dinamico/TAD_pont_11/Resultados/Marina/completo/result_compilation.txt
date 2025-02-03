@@ -1,15 +1,15 @@
 loja.c: In function ‘ImprimeRelatorioLoja’:
-loja.c:126:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
-  126 |     printf("Loja %d: Lucro total: R$ %.2f\n", loja->id, loja->lucro);
+loja.c:118:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+  118 |     printf("Loja %d: Lucro total: R$ %.2f\n", loja->id, loja->lucro);
       |     ^~~~~~
 loja.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
     2 | #include <stdlib.h>
   +++ |+#include <stdio.h>
     3 | 
-loja.c:126:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
-  126 |     printf("Loja %d: Lucro total: R$ %.2f\n", loja->id, loja->lucro);
+loja.c:118:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  118 |     printf("Loja %d: Lucro total: R$ %.2f\n", loja->id, loja->lucro);
       |     ^~~~~~
-loja.c:126:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+loja.c:118:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
 vendedor.c: In function ‘RegistraVendedor’:
 vendedor.c:21:28: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
    21 |     vendedor = (tVendedor*)malloc(sizeof(tVendedor));
