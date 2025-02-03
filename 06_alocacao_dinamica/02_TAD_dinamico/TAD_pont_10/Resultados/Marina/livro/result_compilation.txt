@@ -1,0 +1,24 @@
+livro.c: In function ‘LerLivro’:
+livro.c:34:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   34 |     scanf("%*[^a-zA-Z]");
+      |     ^~~~~
+livro.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    1 | #include "livro.h"
+  +++ |+#include <stdio.h>
+    2 | 
+livro.c:34:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   34 |     scanf("%*[^a-zA-Z]");
+      |     ^~~~~
+livro.c:34:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+livro.c: In function ‘ImprimeLivro’:
+livro.c:49:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   49 |     printf("Titulo: %s\nAutor: %s\nAno de Publicacao: %d\n", livro->titulo, livro->autor, livro->anoPublicacao);
+      |     ^~~~~~
+livro.c:49:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+livro.c:49:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+livro.c:49:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+livro.c: In function ‘LeString’:
+livro.c:75:9: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   75 |         scanf("%c", &letraAtual);
+      |         ^~~~~
+livro.c:75:9: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’

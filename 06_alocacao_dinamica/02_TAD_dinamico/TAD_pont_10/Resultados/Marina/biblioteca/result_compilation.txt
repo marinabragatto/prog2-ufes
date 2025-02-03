@@ -1,0 +1,39 @@
+biblioteca.c: In function ‘ApagaBiblioteca’:
+biblioteca.c:47:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   47 |         printf("tentou liberar vetor nulo\n");
+      |         ^~~~~~
+biblioteca.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    2 | #include <string.h>
+  +++ |+#include <stdio.h>
+    3 | 
+biblioteca.c:47:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   47 |         printf("tentou liberar vetor nulo\n");
+      |         ^~~~~~
+biblioteca.c:47:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+biblioteca.c: In function ‘AdicionarLivroNaBiblioteca’:
+biblioteca.c:62:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   62 |         printf("Livro adicionado com sucesso!\n");
+      |         ^~~~~~
+biblioteca.c:62:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+biblioteca.c:65:8: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   65 |        printf("A biblioteca esta cheia. Nao eh possivel adicionar mais livros.\n");
+      |        ^~~~~~
+biblioteca.c:65:8: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+biblioteca.c: In function ‘RemoverLivroDaBiblioteca’:
+biblioteca.c:93:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   93 |         printf("Livro removido com sucesso!\n");
+      |         ^~~~~~
+biblioteca.c:93:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+biblioteca.c:96:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   96 |         printf("Livro nao encontrado na biblioteca.\n");
+      |         ^~~~~~
+biblioteca.c:96:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+biblioteca.c: In function ‘ListarLivrosDaBiblioteca’:
+biblioteca.c:121:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  121 |         printf("\nLista de Livros na Biblioteca:\n");
+      |         ^~~~~~
+biblioteca.c:121:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+biblioteca.c:127:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  127 |         printf("A biblioteca esta vazia!\n");
+      |         ^~~~~~
+biblioteca.c:127:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
