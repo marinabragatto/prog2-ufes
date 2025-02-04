@@ -1,1 +1,1 @@
-valgrind: Resultados/Marina/completo/prog: No such file or directory
+Elemento 12 encontrado no índice 3.

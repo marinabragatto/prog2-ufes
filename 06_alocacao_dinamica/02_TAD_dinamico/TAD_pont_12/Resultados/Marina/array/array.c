@@ -101,34 +101,24 @@ void OrdenarArray(Array *array){
  * @return Índice do elemento buscado no array, ou -1 caso não seja encontrado.
  */
 int BuscaBinariaArray(Array *array, int elementoBuscado){
-
     int inicio = 0, fim = array->tamanho - 1;
-    int meio = (fim - inicio + 1)/2;
+    
+    while (inicio <= fim) {
+        int meio = inicio + (fim - inicio) / 2; // Cálculo correto do meio
 
-
-
-    while(1){
-        if(array->data[meio] == elementoBuscado){
-            return meio;
-        }
-        if(inicio >= fim){
-            break;
+        if (array->data[meio] == elementoBuscado) {
+            return meio; // Encontrado
         }
 
-        if(array->data[meio] >= elementoBuscado){
-            inicio = inicio;
-            fim = meio - 1;
-            meio = inicio + (fim - inicio + 1)/2;
+        if (array->data[meio] > elementoBuscado) {
+            fim = meio - 1; // Busca na metade esquerda
+        } else {
+            inicio = meio + 1; // Busca na metade direita
         }
-        else if(array->data[meio] <= elementoBuscado){ 
-            inicio = meio+1;
-            fim = fim;
-            meio = inicio + (fim - inicio + 1)/2;
-        }
-
     }
-    return -1;
+    return -1; // Elemento não encontrado
 
+   
 }
 
 int * AumentaTamanhoArray(int * data, int * tamanho){
@@ -151,3 +141,62 @@ int * AumentaTamanhoArray(int * data, int * tamanho){
                 idxAnterior = idxBusca;
                 idxBusca = tamanho/2 + 1 + idxBusca;
             }*/
+
+
+           /*
+           while(1){
+           if(inicio >= fim){
+            break;
+            }
+        if(array->data[meio] == elementoBuscado){
+            return meio;
+        }
+        
+
+        if(array->data[meio] >= elementoBuscado){
+            inicio = inicio;
+            fim = meio - 1;
+            meio = inicio + (fim - inicio + 1)/2;
+        }
+        else if(array->data[meio] <= elementoBuscado){ 
+            inicio = meio+1;
+            fim = fim;
+            meio = inicio + (fim - inicio + 1)/2;
+        }
+
+    }
+    return -1;
+           */
+
+/*
+    int inicio = 0, fim = array->tamanho - 1;
+    int meio = (fim - inicio + 1)/2;
+
+
+
+    while(1){
+        if(inicio >= fim){
+            break;
+        }
+        if(array->data[meio] == elementoBuscado){
+            return meio;
+        }
+        
+
+        if(array->data[meio] >= elementoBuscado){
+            inicio = inicio;
+            fim = meio - 1;
+            meio = inicio + (fim - inicio + 1)/2;
+        }
+        else if(array->data[meio] <= elementoBuscado){ 
+            inicio = meio+1;
+            fim = fim;
+            meio = inicio + (fim - inicio + 1)/2;
+        }
+
+    }
+    return -1;
+
+
+
+*/          
