@@ -175,7 +175,7 @@ int * AumentaTamanhoArray(int * data, int * tamanho){
 
 
     while(1){
-        if(inicio >= fim){
+    if(inicio >= fim){
             break;
         }
         if(array->data[meio] == elementoBuscado){
