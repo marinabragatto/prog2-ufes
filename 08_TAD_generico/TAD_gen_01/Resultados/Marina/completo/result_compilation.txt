@@ -1,0 +1,58 @@
+tadgen.c: In function ‘CriaGenerico’:
+tadgen.c:27:27: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   27 |     generico = (tGeneric*)malloc(sizeof(tGeneric));
+      |                           ^~~~~~
+tadgen.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    1 | #include "tadgen.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+tadgen.c:27:27: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   27 |     generico = (tGeneric*)malloc(sizeof(tGeneric));
+      |                           ^~~~~~
+tadgen.c:27:27: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+tadgen.c: In function ‘DestroiGenerico’:
+tadgen.c:50:13: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   50 |             free(gen->vetor);
+      |             ^~~~
+tadgen.c:50:13: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+tadgen.c:50:13: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+tadgen.c:50:13: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+tadgen.c:52:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+   52 |         free(gen);
+      |         ^~~~
+tadgen.c:52:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+tadgen.c: In function ‘LeGenerico’:
+tadgen.c:63:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   63 |     printf("\nDigite o vetor:\n");
+      |     ^~~~~~
+tadgen.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    1 | #include "tadgen.h"
+  +++ |+#include <stdio.h>
+    2 | 
+tadgen.c:63:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   63 |     printf("\nDigite o vetor:\n");
+      |     ^~~~~~
+tadgen.c:63:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+tadgen.c:68:13: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   68 |             scanf("%f", &((float*)gen->vetor)[i]);
+      |             ^~~~~
+tadgen.c:68:13: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+tadgen.c:68:13: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+tadgen.c:68:13: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+tadgen.c:71:13: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   71 |             scanf("%d", &((int*)gen->vetor)[i]);
+      |             ^~~~~
+tadgen.c:71:13: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+tadgen.c: In function ‘ImprimeGenerico’:
+tadgen.c:86:13: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   86 |             printf("%.2f ", ((float*)gen->vetor)[i]);
+      |             ^~~~~~
+tadgen.c:86:13: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+tadgen.c:89:13: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   89 |             printf("%d ", ((int*)gen->vetor)[i]);
+      |             ^~~~~~
+tadgen.c:89:13: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+tadgen.c:93:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   93 |     printf("\n");
+      |     ^~~~~~
+tadgen.c:93:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
