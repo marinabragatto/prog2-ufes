@@ -1,0 +1,22 @@
+main.c: In function ‘main’:
+main.c:5:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+    5 |     scanf("%f %f %f %f %f", &xC, &yC, &r, &xP, &yP);
+      |     ^~~~~
+main.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    1 | #include "circulo.h"
+  +++ |+#include <stdio.h>
+    2 | 
+main.c:5:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+    5 |     scanf("%f %f %f %f %f", &xC, &yC, &r, &xP, &yP);
+      |     ^~~~~
+main.c:5:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+main.c:14:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   14 |         printf("1");
+      |         ^~~~~~
+main.c:14:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+main.c:14:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+main.c:14:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+main.c:17:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   17 |         printf("0");
+      |         ^~~~~~
+main.c:17:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’

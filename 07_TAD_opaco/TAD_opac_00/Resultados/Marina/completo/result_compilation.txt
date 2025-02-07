@@ -1,0 +1,45 @@
+circulo.c: In function ‘Circulo_Cria’:
+circulo.c:19:25: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   19 |     circulo = (tCirculo)malloc(sizeof(struct circulo));
+      |                         ^~~~~~
+circulo.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    1 | #include "circulo.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+circulo.c:19:25: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   19 |     circulo = (tCirculo)malloc(sizeof(struct circulo));
+      |                         ^~~~~~
+circulo.c:19:25: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+circulo.c: In function ‘Circulo_Apaga’:
+circulo.c:32:13: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   32 |             free(c->centro);
+      |             ^~~~
+circulo.c:32:13: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+circulo.c:32:13: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+circulo.c:32:13: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+circulo.c:34:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+   34 |         free(c);
+      |         ^~~~
+circulo.c:34:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+main.c: In function ‘main’:
+main.c:5:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+    5 |     scanf("%f %f %f %f %f", &xC, &yC, &r, &xP, &yP);
+      |     ^~~~~
+main.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    1 | #include "circulo.h"
+  +++ |+#include <stdio.h>
+    2 | 
+main.c:5:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+    5 |     scanf("%f %f %f %f %f", &xC, &yC, &r, &xP, &yP);
+      |     ^~~~~
+main.c:5:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+main.c:14:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   14 |         printf("1");
+      |         ^~~~~~
+main.c:14:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+main.c:14:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+main.c:14:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+main.c:17:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   17 |         printf("0");
+      |         ^~~~~~
+main.c:17:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’

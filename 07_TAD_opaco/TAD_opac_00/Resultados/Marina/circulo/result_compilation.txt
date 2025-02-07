@@ -1,0 +1,23 @@
+circulo.c: In function ‘Circulo_Cria’:
+circulo.c:19:25: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   19 |     circulo = (tCirculo)malloc(sizeof(struct circulo));
+      |                         ^~~~~~
+circulo.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    1 | #include "circulo.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+circulo.c:19:25: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   19 |     circulo = (tCirculo)malloc(sizeof(struct circulo));
+      |                         ^~~~~~
+circulo.c:19:25: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+circulo.c: In function ‘Circulo_Apaga’:
+circulo.c:32:13: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   32 |             free(c->centro);
+      |             ^~~~
+circulo.c:32:13: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+circulo.c:32:13: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+circulo.c:32:13: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+circulo.c:34:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+   34 |         free(c);
+      |         ^~~~
+circulo.c:34:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
