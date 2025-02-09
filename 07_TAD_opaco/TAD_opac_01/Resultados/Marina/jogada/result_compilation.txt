@@ -1,0 +1,37 @@
+jogada.c: In function ‘CriaJogada’:
+jogada.c:18:24: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   18 |     jogada = (tJogada*)malloc(sizeof(tJogada));
+      |                        ^~~~~~
+jogada.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    1 | #include "jogada.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+jogada.c:18:24: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   18 |     jogada = (tJogada*)malloc(sizeof(tJogada));
+      |                        ^~~~~~
+jogada.c:18:24: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+jogada.c: In function ‘DestroiJogada’:
+jogada.c:33:9: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   33 |         free(jogada);
+      |         ^~~~
+jogada.c:33:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+jogada.c:33:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+jogada.c:33:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+jogada.c: In function ‘LeJogada’:
+jogada.c:45:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   45 |     printf("Digite uma posicao (x e y):\n");
+      |     ^~~~~~
+jogada.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    1 | #include "jogada.h"
+  +++ |+#include <stdio.h>
+    2 | 
+jogada.c:45:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   45 |     printf("Digite uma posicao (x e y):\n");
+      |     ^~~~~~
+jogada.c:45:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+jogada.c:46:15: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   46 |     retorno = scanf("%d %d", &jogada->x, &jogada->y);
+      |               ^~~~~
+jogada.c:46:15: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+jogada.c:46:15: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+jogada.c:46:15: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’

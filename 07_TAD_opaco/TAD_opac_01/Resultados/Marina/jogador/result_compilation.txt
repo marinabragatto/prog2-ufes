@@ -1,0 +1,31 @@
+jogador.c: In function ‘CriaJogador’:
+jogador.c:22:26: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   22 |     jogador = (tJogador*)malloc(sizeof(tJogador));
+      |                          ^~~~~~
+jogador.c:3:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    2 | #include "jogada.h"
+  +++ |+#include <stdlib.h>
+    3 | 
+jogador.c:22:26: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   22 |     jogador = (tJogador*)malloc(sizeof(tJogador));
+      |                          ^~~~~~
+jogador.c:22:26: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+jogador.c: In function ‘DestroiJogador’:
+jogador.c:35:9: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   35 |         free(jogador);
+      |         ^~~~
+jogador.c:35:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+jogador.c:35:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+jogador.c:35:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+jogador.c: In function ‘JogaJogador’:
+jogador.c:53:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   53 |         printf("Jogador %d\n", jogador->id);
+      |         ^~~~~~
+jogador.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    2 | #include "jogada.h"
+  +++ |+#include <stdio.h>
+    3 | 
+jogador.c:53:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   53 |         printf("Jogador %d\n", jogador->id);
+      |         ^~~~~~
+jogador.c:53:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
