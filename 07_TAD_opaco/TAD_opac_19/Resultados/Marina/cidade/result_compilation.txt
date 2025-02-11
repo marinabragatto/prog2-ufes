@@ -1,0 +1,28 @@
+cidade.c: In function ‘LeEntrada’:
+cidade.c:43:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   43 |     scanf("%f %f", &x, &y);
+      |     ^~~~~
+cidade.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    2 | #include "cidade.h"
+  +++ |+#include <stdio.h>
+    3 | 
+cidade.c:43:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   43 |     scanf("%f %f", &x, &y);
+      |     ^~~~~
+cidade.c:43:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+cidade.c:43:13: warning: format ‘%f’ expects argument of type ‘float *’, but argument 2 has type ‘int *’ [-Wformat=]
+   43 |     scanf("%f %f", &x, &y);
+      |            ~^      ~~
+      |             |      |
+      |             |      int *
+      |             float *
+      |            %d
+cidade.c:43:16: warning: format ‘%f’ expects argument of type ‘float *’, but argument 3 has type ‘int *’ [-Wformat=]
+   43 |     scanf("%f %f", &x, &y);
+      |               ~^       ~~
+      |                |       |
+      |                float * int *
+      |               %d
+cidade.c:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+   44 | }
+      | ^

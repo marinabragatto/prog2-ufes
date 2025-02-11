@@ -1,0 +1,38 @@
+missil.c: In function ‘CriaMissil’:
+missil.c:21:23: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   21 |     missil = (tMissil)malloc(sizeof(struct missil));
+      |                       ^~~~~~
+missil.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    1 | #include "missil.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+missil.c:21:23: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   21 |     missil = (tMissil)malloc(sizeof(struct missil));
+      |                       ^~~~~~
+missil.c:21:23: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+missil.c: In function ‘LeMissil’:
+missil.c:39:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   39 |     scanf("%[^ ]", missil->nome);
+      |     ^~~~~
+missil.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    1 | #include "missil.h"
+  +++ |+#include <stdio.h>
+    2 | 
+missil.c:39:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   39 |     scanf("%[^ ]", missil->nome);
+      |     ^~~~~
+missil.c:39:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+missil.c: In function ‘ImprimeMissil’:
+missil.c:52:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   52 |         printf("M-%s: %.2f\n", missil->nome, missil->poder);
+      |         ^~~~~~
+missil.c:52:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+missil.c:52:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+missil.c:52:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+missil.c: In function ‘LiberaMissil’:
+missil.c:64:9: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   64 |         free(missil);
+      |         ^~~~
+missil.c:64:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+missil.c:64:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+missil.c:64:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
