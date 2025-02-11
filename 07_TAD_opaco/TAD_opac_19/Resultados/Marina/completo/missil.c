@@ -105,14 +105,11 @@ void ReduzPoder(tMissil missil, float valor){
     
     if(valor >= missil->poder){
         missil->poder = 0;
-        //missil->poder = missil->poder - valor;
     }
     else if(valor < missil->poder){
         missil->poder -= valor; 
     }
-    //Se o poder de neutralização do míssil de defesa é maior do que o de ataque 
-//do míssil de araque 
-  //         
+
 
 
 }

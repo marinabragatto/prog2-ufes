@@ -1,31 +1,32 @@
 cidade.c: In function ‘LeEntrada’:
-cidade.c:43:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
-   43 |     scanf("%f %f", &x, &y);
+cidade.c:98:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   98 |     scanf("C %f %f\n", &cidade->x, &cidade->y);
       |     ^~~~~
-cidade.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
-    2 | #include "cidade.h"
+cidade.c:5:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    4 | #include "defesa.h"
   +++ |+#include <stdio.h>
-    3 | 
-cidade.c:43:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
-   43 |     scanf("%f %f", &x, &y);
+    5 | 
+cidade.c:98:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   98 |     scanf("C %f %f\n", &cidade->x, &cidade->y);
       |     ^~~~~
-cidade.c:43:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
-cidade.c:43:13: warning: format ‘%f’ expects argument of type ‘float *’, but argument 2 has type ‘int *’ [-Wformat=]
-   43 |     scanf("%f %f", &x, &y);
-      |            ~^      ~~
-      |             |      |
-      |             |      int *
-      |             float *
-      |            %d
-cidade.c:43:16: warning: format ‘%f’ expects argument of type ‘float *’, but argument 3 has type ‘int *’ [-Wformat=]
-   43 |     scanf("%f %f", &x, &y);
-      |               ~^       ~~
-      |                |       |
-      |                float * int *
-      |               %d
-cidade.c:44:1: warning: control reaches end of non-void function [-Wreturn-type]
-   44 | }
-      | ^
+cidade.c:98:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+cidade.c:90:16: warning: unused variable ‘y’ [-Wunused-variable]
+   90 |     int x = 0, y  = 0;
+      |                ^
+cidade.c:90:9: warning: unused variable ‘x’ [-Wunused-variable]
+   90 |     int x = 0, y  = 0;
+      |         ^
+cidade.c: In function ‘ProcessaAtaques’:
+cidade.c:184:23: warning: unused variable ‘valor’ [-Wunused-variable]
+  184 |                 float valor;
+      |                       ^~~~~
+cidade.c: In function ‘ImprimeDados’:
+cidade.c:221:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+  221 |     printf("Efetividade: %.2f%%", efetividade);
+      |     ^~~~~~
+cidade.c:221:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+cidade.c:221:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+cidade.c:221:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
 defesa.c: In function ‘CriaDefesa’:
 defesa.c:27:23: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
    27 |     defesa = (tDefesa)malloc(sizeof(struct defesa));

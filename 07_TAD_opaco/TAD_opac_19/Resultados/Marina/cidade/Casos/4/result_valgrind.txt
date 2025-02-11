@@ -1,0 +1,15 @@
+==133882== Memcheck, a memory error detector
+==133882== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==133882== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==133882== Command: Resultados/Marina/cidade/prog Resultados/Marina/cidade/Casos/4
+==133882== Parent PID: 133881
+==133882== 
+==133882== 
+==133882== HEAP SUMMARY:
+==133882==     in use at exit: 0 bytes in 0 blocks
+==133882==   total heap usage: 44 allocs, 44 frees, 2,910 bytes allocated
+==133882== 
+==133882== All heap blocks were freed -- no leaks are possible
+==133882== 
+==133882== For lists of detected and suppressed errors, rerun with: -s
+==133882== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
