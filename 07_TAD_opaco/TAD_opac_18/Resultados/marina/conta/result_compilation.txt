@@ -1,0 +1,19 @@
+conta.c: In function ‘CriaConta’:
+conta.c:17:22: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   17 |     conta = (tConta*)malloc(sizeof(tConta));
+      |                      ^~~~~~
+conta.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    1 | #include "conta.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+conta.c:17:22: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   17 |     conta = (tConta*)malloc(sizeof(tConta));
+      |                      ^~~~~~
+conta.c:17:22: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+conta.c: In function ‘DestroiConta’:
+conta.c:30:9: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   30 |         free(conta);
+      |         ^~~~
+conta.c:30:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+conta.c:30:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+conta.c:30:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’

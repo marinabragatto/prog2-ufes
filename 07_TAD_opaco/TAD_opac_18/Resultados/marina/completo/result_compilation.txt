@@ -1,0 +1,103 @@
+agencia.c: In function ‘LeOperacoes’:
+agencia.c:80:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   80 |     scanf("%d\n", &qtdContas);
+      |     ^~~~~
+agencia.c:4:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    3 | #include <stdlib.h>
+  +++ |+#include <stdio.h>
+    4 | 
+agencia.c:80:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   80 |     scanf("%d\n", &qtdContas);
+      |     ^~~~~
+agencia.c:80:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+agencia.c:98:17: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   98 |                 printf("\nEste id ja esta cadastrado na agencia. Digite um id diferente!");
+      |                 ^~~~~~
+agencia.c:98:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+agencia.c:98:17: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+agencia.c:98:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+agencia.c:103:13: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  103 |             printf("\nDigite um id valido para a conta a ser cadastrada!");
+      |             ^~~~~~
+agencia.c:103:13: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+agencia.c:128:13: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  128 |             printf("\nConta Invalida! Repita a operacao, mas com uma conta valida!");
+      |             ^~~~~~
+agencia.c:128:13: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+agencia.c: In function ‘ImprimeOperacoesSuspeitas’:
+agencia.c:161:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  161 |     printf("\nA lista de operações suspeitas:");
+      |     ^~~~~~
+agencia.c:161:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+agencia.c: In function ‘ImprimeDoisCorrentistasComMaiorSaldo’:
+agencia.c:192:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  192 |     printf("\nOs dois correntistas com maior saldo são:\n");
+      |     ^~~~~~
+agencia.c:192:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+agencia.c: In function ‘ImprimeSaldoTotal’:
+agencia.c:239:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  239 |     printf("O saldo total da agencia eh: %.2f\n", somatorio);
+      |     ^~~~~~
+agencia.c:239:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+conta.c: In function ‘CriaConta’:
+conta.c:17:22: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   17 |     conta = (tConta*)malloc(sizeof(tConta));
+      |                      ^~~~~~
+conta.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    1 | #include "conta.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+conta.c:17:22: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   17 |     conta = (tConta*)malloc(sizeof(tConta));
+      |                      ^~~~~~
+conta.c:17:22: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+conta.c: In function ‘DestroiConta’:
+conta.c:30:9: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   30 |         free(conta);
+      |         ^~~~
+conta.c:30:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+conta.c:30:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+conta.c:30:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+main.c: In function ‘main’:
+main.c:5:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+    5 |     printf("--- Agencia Bancaria ---");
+      |     ^~~~~~
+main.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    1 | #include "agencia.h"
+  +++ |+#include <stdio.h>
+    2 | 
+main.c:5:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+    5 |     printf("--- Agencia Bancaria ---");
+      |     ^~~~~~
+main.c:5:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+operacao.c: In function ‘CriaOperacao’:
+operacao.c:19:28: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   19 |     operacao = (tOperacao*)malloc(sizeof(tOperacao));
+      |                            ^~~~~~
+operacao.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    1 | #include "operacao.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+operacao.c:19:28: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   19 |     operacao = (tOperacao*)malloc(sizeof(tOperacao));
+      |                            ^~~~~~
+operacao.c:19:28: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+operacao.c: In function ‘DestroiOperacao’:
+operacao.c:32:9: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   32 |         free(op);
+      |         ^~~~
+operacao.c:32:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+operacao.c:32:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+operacao.c:32:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+operacao.c: In function ‘ImprimeOperacao’:
+operacao.c:54:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   54 |     printf("\nOperação na conta %d com valor %.2f",op->id, op->valor);
+      |     ^~~~~~
+operacao.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    1 | #include "operacao.h"
+  +++ |+#include <stdio.h>
+    2 | 
+operacao.c:54:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   54 |     printf("\nOperação na conta %d com valor %.2f",op->id, op->valor);
+      |     ^~~~~~
+operacao.c:54:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
