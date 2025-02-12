@@ -1,0 +1,12 @@
+main.c: In function ‘main’:
+main.c:5:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+    5 |     printf("--- Agencia Bancaria ---");
+      |     ^~~~~~
+main.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    1 | #include "agencia.h"
+  +++ |+#include <stdio.h>
+    2 | 
+main.c:5:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+    5 |     printf("--- Agencia Bancaria ---");
+      |     ^~~~~~
+main.c:5:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’

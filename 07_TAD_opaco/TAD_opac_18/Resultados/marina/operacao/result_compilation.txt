@@ -1,0 +1,31 @@
+operacao.c: In function ‘CriaOperacao’:
+operacao.c:19:28: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   19 |     operacao = (tOperacao*)malloc(sizeof(tOperacao));
+      |                            ^~~~~~
+operacao.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    1 | #include "operacao.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+operacao.c:19:28: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   19 |     operacao = (tOperacao*)malloc(sizeof(tOperacao));
+      |                            ^~~~~~
+operacao.c:19:28: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+operacao.c: In function ‘DestroiOperacao’:
+operacao.c:32:9: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   32 |         free(op);
+      |         ^~~~
+operacao.c:32:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+operacao.c:32:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+operacao.c:32:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+operacao.c: In function ‘ImprimeOperacao’:
+operacao.c:54:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   54 |     printf("\nOperação na conta %d com valor %.2f",op->id, op->valor);
+      |     ^~~~~~
+operacao.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    1 | #include "operacao.h"
+  +++ |+#include <stdio.h>
+    2 | 
+operacao.c:54:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   54 |     printf("\nOperação na conta %d com valor %.2f",op->id, op->valor);
+      |     ^~~~~~
+operacao.c:54:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
