@@ -1,0 +1,51 @@
+jogo.c: In function ‘retornaFibonacciDeIdx’:
+jogo.c:18:12: warning: implicit declaration of function ‘ehPrimo’ [-Wimplicit-function-declaration]
+   18 |         if(ehPrimo(numero)){
+      |            ^~~~~~~
+jogo.c: In function ‘CriaJogo’:
+jogo.c:51:20: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   51 |     jogo = (tJogo*)malloc(sizeof(tJogo));
+      |                    ^~~~~~
+jogo.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    1 | #include "jogo.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+jogo.c:51:20: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   51 |     jogo = (tJogo*)malloc(sizeof(tJogo));
+      |                    ^~~~~~
+jogo.c:51:20: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+jogo.c:54:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   54 |         printf("erro na alocacao\n");
+      |         ^~~~~~
+jogo.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    1 | #include "jogo.h"
+  +++ |+#include <stdio.h>
+    2 | 
+jogo.c:54:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   54 |         printf("erro na alocacao\n");
+      |         ^~~~~~
+jogo.c:54:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+jogo.c:55:9: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   55 |         exit(1);
+      |         ^~~~
+jogo.c:55:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+jogo.c:55:9: warning: incompatible implicit declaration of built-in function ‘exit’ [-Wbuiltin-declaration-mismatch]
+jogo.c:55:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+jogo.c: In function ‘DestroiJogo’:
+jogo.c:68:9: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   68 |         free(jogo);
+      |         ^~~~
+jogo.c:68:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+jogo.c:68:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+jogo.c:68:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+jogo.c: In function ‘ProcessaTentativas’:
+jogo.c:135:4: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  135 |    printf("\nVoce tem direito a %d tentativas\n", jogo->mc);
+      |    ^~~~~~
+jogo.c:135:4: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+jogo.c:140:9: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+  140 |         scanf("%*[^0-9-]");
+      |         ^~~~~
+jogo.c:140:9: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+jogo.c:140:9: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+jogo.c:140:9: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’

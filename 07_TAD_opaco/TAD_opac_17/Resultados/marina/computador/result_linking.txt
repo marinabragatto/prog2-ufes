@@ -1,0 +1,6 @@
+/usr/bin/ld: Resultados/marina/computador/main.o: in function `main':
+main.c:(.text+0xe): undefined reference to `CriaComputador'
+/usr/bin/ld: main.c:(.text+0x1e): undefined reference to `GerenciaJogo'
+/usr/bin/ld: main.c:(.text+0x2a): undefined reference to `ImprimeRelatorio'
+/usr/bin/ld: main.c:(.text+0x36): undefined reference to `DestroiComputador'
+collect2: error: ld returned 1 exit status

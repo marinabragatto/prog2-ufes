@@ -1,0 +1,6 @@
+==46239== Memcheck, a memory error detector
+==46239== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==46239== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==46239== Command: Resultados/marina/jogo/prog Resultados/marina/jogo/Casos/3
+==46239== Parent PID: 46238
+==46239== 
