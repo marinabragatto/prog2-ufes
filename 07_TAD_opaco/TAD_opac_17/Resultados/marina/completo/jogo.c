@@ -54,6 +54,10 @@ tJogo* CriaJogo(){
         printf("erro na alocacao\n");
         exit(1);
     }
+    jogo->max = 0;
+    jogo->min = 0;
+    jogo->mc = 0;
+    jogo->numeroAdivinha = 0;
     
     return jogo;
 }
@@ -96,7 +100,8 @@ void DefineMinimo(tJogo* jogo, int min){
  * @param jogo - A variável do tipo jogo que tem os dados do jogo armazenados. O cálculo será armazenado nela
  */
 void CalculaValorASerAdivinhado(tJogo *jogo, int n){
-    int r, fib = 0, x  = 0;
+    int r, fib = 0; 
+    float x  = 0;
     fib = retornaFibonacciDeIdx(n);
 
     r = fib%101;
@@ -104,8 +109,9 @@ void CalculaValorASerAdivinhado(tJogo *jogo, int n){
     x = ((float)r/100)*(jogo->max - jogo->min);
 
     x += jogo->min;
-    
-    jogo->numeroAdivinha =  x;
+    x = ((x - (int)x) > 0.5) ? ceil(x) : floor(x);
+
+    jogo->numeroAdivinha =  (int)(x);
 }
 
 /**
@@ -116,11 +122,11 @@ void CalculaValorASerAdivinhado(tJogo *jogo, int n){
  */
 void CalculaNumeroTentativas(tJogo *jogo){
     int mc;
+    
     mc  = (log2 (jogo->max-jogo->min+1)) + 1;
-    //printf("\n\n\n\n\ %d\n\n\n\n", mc);
 
     jogo->mc = mc;
-// mc = parte_inteira 
+
 }
 
 /**
@@ -132,11 +138,12 @@ void CalculaNumeroTentativas(tJogo *jogo){
 int ProcessaTentativas(tJogo* jogo){
    int opa;
    int i = 0;
+
    printf("\nVoce tem direito a %d tentativas\n", jogo->mc);
 
     for(i = 0; i < jogo->mc;i++){
 
-        printf("Tentativa %d:\n",i+1);
+        printf("Tentativa %d:\n", i+1);
         scanf("%*[^0-9-]");
         scanf("%d", &opa);
         

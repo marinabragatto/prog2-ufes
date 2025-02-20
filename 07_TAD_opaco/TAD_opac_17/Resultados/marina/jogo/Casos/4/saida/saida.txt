@@ -22,9 +22,9 @@ O primeiro numero do intervalo deve ser inferior ao segundo
 Forneca um intervalo de numeros naturais: 
 Voce tem direito a 2 tentativas
 Tentativa 1:
+Baixa
+Tentativa 2:
 Parabens, voce ganhou!
-Deseja continuar a jogar (s/n): 
-Voce deve digitar s ou n!
 Deseja continuar a jogar (s/n): 
 Forneca um numero no intervalo entre 1 e 10000: 
 Forneca um intervalo de numeros naturais: 
@@ -36,6 +36,7 @@ Baixa
 Tentativa 3:
 Baixa
 Tentativa 4:
-Parabens, voce ganhou!
+Baixa
+Voce perdeu! O numero escolhido foi 9
 Deseja continuar a jogar (s/n): 
-Obrigado por jogar comigo. Desta vez, voce jogou 3 jogo(s), ganhou 2 jogo(s) e perdeu 1 jogo(s). Ate a proxima!
+Obrigado por jogar comigo. Desta vez, voce jogou 3 jogo(s), ganhou 1 jogo(s) e perdeu 2 jogo(s). Ate a proxima!

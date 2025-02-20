@@ -73,13 +73,13 @@ LINKANDO OS ARQUIVOS COMPILADOS:
  - Arquivo de output gerado: Resultados/marina/completo/result_linking.txt
  - Pasta computador:
  - Gerando o binário prog linkando com o(s) arquivo(s) computador/*.o
- - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
  - Arquivo de output gerado: Resultados/marina/computador/result_linking.txt
  - Pasta jogo:
  - Gerando o binário prog linkando com o(s) arquivo(s) jogo/*.o
  - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
  - Arquivo de output gerado: Resultados/marina/jogo/result_linking.txt
- - Arquivos Linkados: Erro! 3 arquivos com erros de linkagem.
+ - Arquivos Linkados: Erro! 2 arquivos com erros de linkagem.
 
 EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta main / Caso 1:
@@ -119,19 +119,23 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Nota para a pasta completo (máximo 2.50) - 0 de 40 - 0% de 2.50: 0.
  -----
  - Pasta computador / Caso 1:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Arquivo de output gerado: Resultados/marina/computador/Casos/1/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 4, frees: 5, errors: 1 | Desconto do valgrind 50.00%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta computador / Caso 2:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Arquivo de output gerado: Resultados/marina/computador/Casos/2/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 4, frees: 5, errors: 1 | Desconto do valgrind 50.00%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta computador / Caso 3:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Arquivo de output gerado: Resultados/marina/computador/Casos/3/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 4, frees: 5, errors: 1 | Desconto do valgrind 50.00%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta computador / Caso 4:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Arquivo de output gerado: Resultados/marina/computador/Casos/4/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 4, frees: 5, errors: 1 | Desconto do valgrind 50.00%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
  - Nota para a pasta computador (máximo 2.50) - 0 de 40 - 0% de 2.50: 0.
@@ -154,9 +158,9 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta jogo / Caso 4:
  - Arquivo de output gerado: Resultados/marina/jogo/Casos/4/result_valgrind.txt.
  - Valgrind: Ok! allocs: 6, frees: 6, errors: 0 | Desconto do valgrind: 0.0%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
- - Nota para a pasta jogo (máximo 2.50) - 20.00 de 40 - 50.00% de 2.50: 1.25.
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Nota para a pasta jogo (máximo 2.50) - 30.00 de 40 - 75.00% de 2.50: 1.87.
  -----
 
 #######################################
@@ -167,7 +171,7 @@ RESULTADOS FINAIS
 Aluno: marina
  - Arquivos Esperados Corretos: 5 de 5
  - Pastas Compiladas Corretamente: 4 de 4 
- - Pastas Linkadas Corretamente: 1 de 4
+ - Pastas Linkadas Corretamente: 2 de 4
  - Teste main
  - Resultados corretos: 0 de 4
  - Valgrinds corretos: 0 de 4
@@ -181,11 +185,11 @@ Aluno: marina
  - Valgrinds corretos: 0 de 4
  - Nota de marina para o teste computador: 0
  - Teste jogo
- - Resultados corretos: 2 de 4
+ - Resultados corretos: 3 de 4
  - Valgrinds corretos: 4 de 4
- - Nota de marina para o teste jogo: 1.25
- - Nota de marina: 0+(0)+(1.25)+(0)+(0)
- - Nota de marina: 1.25
+ - Nota de marina para o teste jogo: 1.87
+ - Nota de marina: 0+(0)+(1.87)+(0)+(0)
+ - Nota de marina: 1.87
 
 ----------------------------------------------------------------------------
 

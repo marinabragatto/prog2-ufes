@@ -1,1 +1,67 @@
-valgrind: Resultados/marina/computador/prog: No such file or directory
+Jogo de adivinhaçãoForneca um numero no intervalo entre 1 e 10000: 
+Forneca um numero no intervalo entre 1 e 10000: 
+Forneca um numero no intervalo entre 1 e 10000: 
+Forneca um intervalo de numeros naturais: 
+Voce tem direito a 30 tentativas
+Tentativa 1: 
+Baixa
+Tentativa 2: 
+Baixa
+Tentativa 3: 
+Baixa
+Tentativa 4: 
+Baixa
+Tentativa 5: 
+Baixa
+Tentativa 6: 
+Baixa
+Tentativa 7: 
+Baixa
+Tentativa 8: 
+Baixa
+Tentativa 9: 
+Baixa
+Tentativa 10: 
+Baixa
+Tentativa 11: 
+Baixa
+Tentativa 12: 
+Baixa
+Tentativa 13: 
+Baixa
+Tentativa 14: 
+Baixa
+Tentativa 15: 
+Baixa
+Tentativa 16: 
+Baixa
+Tentativa 17: 
+Baixa
+Tentativa 18: 
+Baixa
+Tentativa 19: 
+Baixa
+Tentativa 20: 
+Baixa
+Tentativa 21: 
+Baixa
+Tentativa 22: 
+Baixa
+Tentativa 23: 
+Baixa
+Tentativa 24: 
+Baixa
+Tentativa 25: 
+Baixa
+Tentativa 26: 
+Baixa
+Tentativa 27: 
+Baixa
+Tentativa 28: 
+Baixa
+Tentativa 29: 
+Baixa
+Tentativa 30: 
+Baixa
+Voce perdeu! O numero escolhido foi 50000000
+Deseja continuar a jogar (s/n): 

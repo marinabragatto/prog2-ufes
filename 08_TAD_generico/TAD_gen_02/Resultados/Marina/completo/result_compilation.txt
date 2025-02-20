@@ -1,0 +1,54 @@
+pacote.c: In function ‘CriaPacote’:
+pacote.c:25:24: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   25 |     pacote = (tPacote*)malloc(sizeof(tPacote));
+      |                        ^~~~~~
+pacote.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    1 | #include "pacote.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+pacote.c:25:24: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   25 |     pacote = (tPacote*)malloc(sizeof(tPacote));
+      |                        ^~~~~~
+pacote.c:25:24: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+pacote.c: In function ‘DestroiPacote’:
+pacote.c:50:13: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   50 |             free(pac->mensagem);
+      |             ^~~~
+pacote.c:50:13: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+pacote.c:50:13: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+pacote.c:50:13: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+pacote.c:53:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+   53 |         free(pac);
+      |         ^~~~
+pacote.c:53:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+pacote.c: In function ‘LePacote’:
+pacote.c:65:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   65 |     printf("\nDigite o conteúdo do vetor/mensagem: ");
+      |     ^~~~~~
+pacote.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    1 | #include "pacote.h"
+  +++ |+#include <stdio.h>
+    2 | 
+pacote.c:65:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   65 |     printf("\nDigite o conteúdo do vetor/mensagem: ");
+      |     ^~~~~~
+pacote.c:65:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+pacote.c:67:9: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   67 |         scanf("%*[^a-zA-Z]");
+      |         ^~~~~
+pacote.c:67:9: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+pacote.c:67:9: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+pacote.c:67:9: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+pacote.c:75:13: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   75 |             scanf("%d", &((int*)pac->mensagem)[i]);
+      |             ^~~~~
+pacote.c:75:13: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+pacote.c: In function ‘ImprimePacote’:
+pacote.c:92:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   92 |         printf("%d %s\n", pac->soma, ((char*)pac->mensagem));
+      |         ^~~~~~
+pacote.c:92:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+pacote.c:97:13: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   97 |             printf("%d ", pac->soma);
+      |             ^~~~~~
+pacote.c:97:13: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’

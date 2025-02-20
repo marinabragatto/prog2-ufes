@@ -1,0 +1,41 @@
+computador.c: In function ‘CriaComputador’:
+computador.c:16:26: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   16 |     comp = (tComputador*)malloc(sizeof(tComputador));
+      |                          ^~~~~~
+computador.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    1 | #include "computador.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+computador.c:16:26: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   16 |     comp = (tComputador*)malloc(sizeof(tComputador));
+      |                          ^~~~~~
+computador.c:16:26: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+computador.c: In function ‘DestroiComputador’:
+computador.c:31:9: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   31 |         free(comp);
+      |         ^~~~
+computador.c:31:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+computador.c:31:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+computador.c:31:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+computador.c: In function ‘GerenciaJogo’:
+computador.c:43:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   43 |     printf("Jogo de adivinhação");
+      |     ^~~~~~
+computador.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    1 | #include "computador.h"
+  +++ |+#include <stdio.h>
+    2 | 
+computador.c:43:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   43 |     printf("Jogo de adivinhação");
+      |     ^~~~~~
+computador.c:43:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+computador.c:48:13: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   48 |             scanf("%d", &n);
+      |             ^~~~~
+computador.c:48:13: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+computador.c:48:13: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+computador.c:48:13: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+computador.c:62:13: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   62 |             scanf("%d %d\n", &in, &fim);
+      |             ^~~~~
+computador.c:62:13: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’

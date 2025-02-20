@@ -1,0 +1,31 @@
+==75386== Memcheck, a memory error detector
+==75386== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==75386== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==75386== Command: Resultados/marina/computador/prog Resultados/marina/computador/Casos/3
+==75386== Parent PID: 75385
+==75386== 
+==75386== Invalid free() / delete / delete[] / realloc()
+==75386==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==75386==    by 0x10943B: DestroiJogo (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/07_TAD_opaco/TAD_opac_17/Resultados/marina/computador/prog)
+==75386==    by 0x109224: DestroiComputador (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/07_TAD_opaco/TAD_opac_17/Resultados/marina/computador/prog)
+==75386==    by 0x1097B5: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/07_TAD_opaco/TAD_opac_17/Resultados/marina/computador/prog)
+==75386==  Address 0x4b72510 is 0 bytes inside a block of size 16 free'd
+==75386==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==75386==    by 0x10943B: DestroiJogo (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/07_TAD_opaco/TAD_opac_17/Resultados/marina/computador/prog)
+==75386==    by 0x1093B5: GerenciaJogo (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/07_TAD_opaco/TAD_opac_17/Resultados/marina/computador/prog)
+==75386==    by 0x10979D: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/07_TAD_opaco/TAD_opac_17/Resultados/marina/computador/prog)
+==75386==  Block was alloc'd at
+==75386==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==75386==    by 0x1093EE: CriaJogo (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/07_TAD_opaco/TAD_opac_17/Resultados/marina/computador/prog)
+==75386==    by 0x1092C3: GerenciaJogo (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/07_TAD_opaco/TAD_opac_17/Resultados/marina/computador/prog)
+==75386==    by 0x10979D: main (in /mnt/c/Users/marin/OneDrive/Documentos/prog2-ufes/prog2-ufes/07_TAD_opaco/TAD_opac_17/Resultados/marina/computador/prog)
+==75386== 
+==75386== 
+==75386== HEAP SUMMARY:
+==75386==     in use at exit: 0 bytes in 0 blocks
+==75386==   total heap usage: 4 allocs, 5 frees, 1,056 bytes allocated
+==75386== 
+==75386== All heap blocks were freed -- no leaks are possible
+==75386== 
+==75386== For lists of detected and suppressed errors, rerun with: -s
+==75386== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

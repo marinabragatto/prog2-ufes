@@ -1,6 +1,6 @@
 Arquivos Esperados Corretos: 5 de 5
 Pastas Compiladas Corretamente: 4 de 4 
-Pastas Linkadas Corretamente: 1 de 4
+Pastas Linkadas Corretamente: 2 de 4
 Teste main
   - Resultados corretos: 0 de 4
   - Valgrinds corretos: 0 de 4
@@ -14,8 +14,8 @@ Teste computador
   - Valgrinds corretos: 0 de 4
 Nota de marina para o teste computador: 0
 Teste jogo
-  - Resultados corretos: 2 de 4
+  - Resultados corretos: 3 de 4
   - Valgrinds corretos: 4 de 4
-Nota de marina para o teste jogo: 1.25
-Nota de marina: 0+(0)+(1.25)+(0)+(0)
-Nota de marina: 1.25
+Nota de marina para o teste jogo: 1.87
+Nota de marina: 0+(0)+(1.87)+(0)+(0)
+Nota de marina: 1.87
