@@ -14,8 +14,12 @@ void imprime_elementoFloat(void * elem);
 void imprime_elementoDouble(void * elem);
 void imprime_elementoChar(void * elem);
 
-int somaInteiros(int a, int b);
+
+//void* (*multi_elem)(void*, void*), void* (*soma_elem)(void*,void*)
+void * SomaInteiros(void * a, void * b);
+
 void escolheTipoMatrizImprime(tMatrizGenerica * mat, int tipo);
+tMatrizGenerica * SelecionaMultiplicacaoMat(tMatrizGenerica * mat, tMatrizGenerica * trans, int tipo);
 
 
 int main(){
@@ -61,6 +65,7 @@ int main(){
             tMatrizGenerica * trans ;
             trans = MatrizTransposta(mat);
             tMatrizGenerica * mult;
+            mult = SelecionaMultiplicacaoMat(mat, trans, tipo);
           // mult = MultiplicaMatrizes(mat, trans, ,);
 
         }
@@ -186,6 +191,38 @@ void escolheTipoMatrizImprime(tMatrizGenerica * mat, int tipo){
         ImprimirMatrizGenerica(mat, ImprimeNumeroComplexo);
     }
     return ;
+}
+
+tMatrizGenerica * SelecionaMultiplicacaoMat(tMatrizGenerica * mat, tMatrizGenerica * trans, int tipo){
+    tMatrizGenerica * mult;
+    if(tipo == 0){
+        mult = MultiplicaMatrizes(mat, trans, sizeof(int), , );
+
+    }else if(tipo == 1){
+        mult = MultiplicaMatrizes(mat, trans, sizeof(float), , );
+    }
+    else if(tipo == 2){
+        mult = MultiplicaMatrizes(mat, trans, sizeof(double), , );
+    }
+    else if(tipo == 3){
+        mult = MultiplicaMatrizes(mat, trans, sizeof(char), , );
+    }
+    else if(tipo == 4){
+        mult = MultiplicaMatrizes(mat, trans, RetornaNumBytesComplexo(),MultComplexos,SomaComplexos);
+    }
+
+    // void* (*multi_elem)(void*, void*), void* (*soma_elem)(void*,void*)
+    return mult;
+
+}
+
+void * SomaInteiros(void * a, void * b){
+    void * ponteiro;
+    ponteiro = (int*)malloc(sizeof(int));
+
+    *((int*)ponteiro) = *((int*)a) + *((int*)b);
+
+    return ponteiro;
 }
 /*
 2 2 0
