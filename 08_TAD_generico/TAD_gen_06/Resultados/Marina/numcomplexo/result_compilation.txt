@@ -1,0 +1,12 @@
+numcomplexo.c: In function ‘ImprimeNumeroComplexo’:
+numcomplexo.c:54:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   54 |     printf("%.2f + i%.2f", cplx->real, cplx->imag);
+      |     ^~~~~~
+numcomplexo.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    2 | #include <stdlib.h>
+  +++ |+#include <stdio.h>
+    3 | 
+numcomplexo.c:54:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   54 |     printf("%.2f + i%.2f", cplx->real, cplx->imag);
+      |     ^~~~~~
+numcomplexo.c:54:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
