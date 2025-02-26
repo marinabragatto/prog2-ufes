@@ -1,0 +1,31 @@
+tarefasoma.c: In function ‘CriaTarefaSoma’:
+tarefasoma.c:20:20: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   20 |     soma = (tSoma*)malloc(sizeof(tSoma));
+      |                    ^~~~~~
+tarefasoma.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    1 | #include "tarefasoma.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+tarefasoma.c:20:20: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   20 |     soma = (tSoma*)malloc(sizeof(tSoma));
+      |                    ^~~~~~
+tarefasoma.c:20:20: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+tarefasoma.c: In function ‘ExecutaTarefaSoma’:
+tarefasoma.c:36:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   36 |     printf("\nO resultado da soma de %.2f com %.2f eh: %.2f",((tSoma*)sum)->n1, ((tSoma*)sum)->n2, ((tSoma*)sum)->res);
+      |     ^~~~~~
+tarefasoma.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    1 | #include "tarefasoma.h"
+  +++ |+#include <stdio.h>
+    2 | 
+tarefasoma.c:36:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   36 |     printf("\nO resultado da soma de %.2f com %.2f eh: %.2f",((tSoma*)sum)->n1, ((tSoma*)sum)->n2, ((tSoma*)sum)->res);
+      |     ^~~~~~
+tarefasoma.c:36:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+tarefasoma.c: In function ‘DestroiTarefaSoma’:
+tarefasoma.c:49:9: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   49 |         free(sum);
+      |         ^~~~
+tarefasoma.c:49:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+tarefasoma.c:49:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+tarefasoma.c:49:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’

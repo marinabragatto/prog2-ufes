@@ -1,0 +1,62 @@
+tarefamultiplica.c: In function ‘CriaTarefaMultiplicar’:
+tarefamultiplica.c:17:20: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   17 |     mult = (tMult*)malloc(sizeof(tMult));
+      |                    ^~~~~~
+tarefamultiplica.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    1 | #include "tarefamultiplica.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+tarefamultiplica.c:17:20: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   17 |     mult = (tMult*)malloc(sizeof(tMult));
+      |                    ^~~~~~
+tarefamultiplica.c:17:20: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+tarefamultiplica.c: In function ‘ExecutaTarefaMultiplicar’:
+tarefamultiplica.c:32:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   32 |     printf("\nO resultado da multiplicacao de %.2f com %.2f eh: %.2f",((tMult*)mult)->n1 , ((tMult*)mult)->n2, ((tMult*)mult)->res);
+      |     ^~~~~~
+tarefamultiplica.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    1 | #include "tarefamultiplica.h"
+  +++ |+#include <stdio.h>
+    2 | 
+tarefamultiplica.c:32:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   32 |     printf("\nO resultado da multiplicacao de %.2f com %.2f eh: %.2f",((tMult*)mult)->n1 , ((tMult*)mult)->n2, ((tMult*)mult)->res);
+      |     ^~~~~~
+tarefamultiplica.c:32:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+tarefamultiplica.c: In function ‘DestroiTarefaMultiplicar’:
+tarefamultiplica.c:43:9: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   43 |         free(mult);
+      |         ^~~~
+tarefamultiplica.c:43:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+tarefamultiplica.c:43:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+tarefamultiplica.c:43:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+tarefasoma.c: In function ‘CriaTarefaSoma’:
+tarefasoma.c:20:20: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   20 |     soma = (tSoma*)malloc(sizeof(tSoma));
+      |                    ^~~~~~
+tarefasoma.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    1 | #include "tarefasoma.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+tarefasoma.c:20:20: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   20 |     soma = (tSoma*)malloc(sizeof(tSoma));
+      |                    ^~~~~~
+tarefasoma.c:20:20: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+tarefasoma.c: In function ‘ExecutaTarefaSoma’:
+tarefasoma.c:36:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   36 |     printf("\nO resultado da soma de %.2f com %.2f eh: %.2f",((tSoma*)sum)->n1, ((tSoma*)sum)->n2, ((tSoma*)sum)->res);
+      |     ^~~~~~
+tarefasoma.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    1 | #include "tarefasoma.h"
+  +++ |+#include <stdio.h>
+    2 | 
+tarefasoma.c:36:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   36 |     printf("\nO resultado da soma de %.2f com %.2f eh: %.2f",((tSoma*)sum)->n1, ((tSoma*)sum)->n2, ((tSoma*)sum)->res);
+      |     ^~~~~~
+tarefasoma.c:36:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+tarefasoma.c: In function ‘DestroiTarefaSoma’:
+tarefasoma.c:49:9: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   49 |         free(sum);
+      |         ^~~~
+tarefasoma.c:49:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+tarefasoma.c:49:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+tarefasoma.c:49:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’

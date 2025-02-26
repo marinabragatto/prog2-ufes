@@ -17,9 +17,27 @@ void imprime_elementoChar(void * elem);
 
 //void* (*multi_elem)(void*, void*), void* (*soma_elem)(void*,void*)
 void * SomaInteiros(void * a, void * b);
+void * SomaFloat(void * a, void * b);
+void * SomaDouble(void * a, void * b);
+void * SomaChar(void * a, void * b);
+void * SomaNumComplexo(void * a, void * b);
+
+void * MultiplicaInteiros(void * a, void * b);
+void * MultiplicaFloat(void * a, void * b);
+void * MultiplicaDouble(void * a, void * b);
+void * MultiplicaChar(void * a, void * b);
+void * MultiplicaNumComplexo(void * a, void * b);
+
+void * converteInteiroComplexo(void * elemento);
+void * converteFloatComplexo(void * elemento);
+void * converteDoubleComplexo(void * elemento);
+void * converteCharComplexo(void * elemento);
 
 void escolheTipoMatrizImprime(tMatrizGenerica * mat, int tipo);
-tMatrizGenerica * SelecionaMultiplicacaoMat(tMatrizGenerica * mat, tMatrizGenerica * trans, int tipo);
+tMatrizGenerica * escolheTipoMatrizLe(tMatrizGenerica * mat, int tipo, int linhas, int colunas);
+tMatrizGenerica * escolheTipoMatrizConverteComp(tMatrizGenerica * mat, int tipo);
+tMatrizGenerica * multiplicaMatrizComplexa(tMatrizGenerica * mat, tMatrizGenerica * trans);
+//tMatrizGenerica * SelecionaMultiplicacaoMat(tMatrizGenerica * mat, tMatrizGenerica * trans, int tipo);
 
 
 int main(){
@@ -27,47 +45,72 @@ int main(){
     int op = 0;
 
     while(1){
-        printf("Digite o número de linhas, colunas e o tipo da matriz (0 – inteiro, 1 – float, 2 – double, 3 – char, 4 – número complexo): \n");
-        scanf("%d %d %d\n", &linhas, &colunas, &tipo);
+        while (1){
+            printf("Digite o número de linhas, colunas e o tipo da matriz (0 – inteiro, 1 – float, 2 – double, 3 – char, 4 – número complexo): ");
+            scanf("%d %d %d\n", &linhas, &colunas, &tipo);
+            if(tipo >= 0 && tipo <= 4){
+                printf("\n");
+                break;
+            }
+        }
 
         tMatrizGenerica * mat;
         
-        if(tipo == 0){
-            mat = LeMatrizInteiros(colunas, linhas);
-
-        }else if(tipo == 1){
-            mat = LeMatrizFloat(colunas, linhas);
-        }
-        else if(tipo == 2){
-            mat = LeMatrizDouble(colunas, linhas);
-        }
-        else if(tipo == 3){
-            mat = LeMatrizChar(colunas, linhas);
-        }
-        else if(tipo == 4){
-            mat = LeMatrizNumComplexo(colunas, linhas);
-        }
-
-        
+        mat = escolheTipoMatrizLe(mat, tipo, linhas, colunas);
 
         printf("Digite a operação desejada\n\t1 - Apenas imprimir a matriz\n\t2 - Converter para o tipo complexo e imprimir\n\t3 - Calcular e imprimir a multiplicacao da matriz pela sua transposta.\n");
-        scanf("%*[^0-9]");
-        scanf("%d", &op);
-
+        
+        while(1){
+            scanf("%*[^0-9]");
+            scanf("%d", &op);
+            if(op >= 1 && op <= 3){
+                break;
+            }
+        }
+        
         if(op == 1){
             escolheTipoMatrizImprime(mat, tipo);
-
         }
-        else if(op == 1){
-
+        else if(op == 2){
+            tMatrizGenerica * convertida;
+            convertida = escolheTipoMatrizConverteComp(mat,tipo);
+            
+            ImprimirMatrizGenerica(convertida, ImprimeNumeroComplexo);
+            printf("\n");
+            
+            if(convertida != mat){
+                DestroiMatrizGenerica(convertida);
+            }
         }
         else if(op == 3){
+            tMatrizGenerica * convertida;
+            convertida = escolheTipoMatrizConverteComp(mat, tipo);
+            
             tMatrizGenerica * trans ;
-            trans = MatrizTransposta(mat);
-            tMatrizGenerica * mult;
-            mult = SelecionaMultiplicacaoMat(mat, trans, tipo);
-          // mult = MultiplicaMatrizes(mat, trans, ,);
+            trans = MatrizTransposta(convertida);
 
+            tMatrizGenerica * mult;
+            mult = multiplicaMatrizComplexa(convertida, trans);
+
+            ImprimirMatrizGenerica(mult, ImprimeNumeroComplexo);
+            printf("\n");
+
+            DestroiMatrizGenerica(mult);
+            DestroiMatrizGenerica(trans);
+
+            if(convertida != mat){
+                DestroiMatrizGenerica(convertida);
+            }
+        }
+        
+        DestroiMatrizGenerica(mat);
+
+        printf("Digite a operação desejada\n\t1 - Entrar com uma nova matriz\n\t2 - Encerrar o Programa\n");
+        scanf("%*[^0-9-]");
+        int finalizar = -1;
+        scanf("%d\n", &finalizar);
+        if(finalizar == 2){
+            break;
         }
 
     }
@@ -77,7 +120,8 @@ int main(){
 
 tMatrizGenerica * LeMatrizInteiros(int colunas, int linhas){
     tMatrizGenerica * mat;
-    mat = CriaMatrizGenerica(colunas, linhas, sizeof(int));
+
+    mat = CriaMatrizGenerica(linhas, colunas, sizeof(int));
     
     int i = 0, j = 0;
     void * elem;
@@ -90,6 +134,7 @@ tMatrizGenerica * LeMatrizInteiros(int colunas, int linhas){
             scanf("%d", &inteiro);
             *((int *)elem) = inteiro;
             AtribuiElementoMatrizGenerica(mat, i , j, elem);
+            free(elem);
         }
     }
 
@@ -98,7 +143,7 @@ tMatrizGenerica * LeMatrizInteiros(int colunas, int linhas){
 }
 tMatrizGenerica * LeMatrizChar(int colunas, int linhas){
     tMatrizGenerica * mat;
-    mat = CriaMatrizGenerica(colunas, linhas, sizeof(char));
+    mat = CriaMatrizGenerica(linhas, colunas, sizeof(char));
     
     int i = 0, j = 0;
     void * elem;
@@ -106,7 +151,9 @@ tMatrizGenerica * LeMatrizChar(int colunas, int linhas){
     for(i = 0; i < linhas; i++){
         for(j = 0; j < colunas; j++){
             elem = (int*)malloc(sizeof(int));
+            scanf("%c", &*((char*)elem));
             AtribuiElementoMatrizGenerica(mat, i , j, elem);
+            free(elem);
         }
     }
 
@@ -114,7 +161,7 @@ tMatrizGenerica * LeMatrizChar(int colunas, int linhas){
 }
 tMatrizGenerica * LeMatrizDouble(int colunas, int linhas){
     tMatrizGenerica * mat;
-    mat = CriaMatrizGenerica(colunas, linhas, sizeof(double));
+    mat = CriaMatrizGenerica(linhas, colunas, sizeof(double));
     
     int i = 0, j = 0;
     void * elem;
@@ -127,19 +174,36 @@ tMatrizGenerica * LeMatrizDouble(int colunas, int linhas){
             scanf("%lf", &racional);
             *((double *)elem) = racional;
             AtribuiElementoMatrizGenerica(mat, i , j, elem);
+            free(elem);
         }
     }
 
     return mat;
 }
 tMatrizGenerica * LeMatrizNumComplexo(int colunas, int linhas){
+    tMatrizGenerica * mat;
+    mat = CriaMatrizGenerica(linhas, colunas, RetornaNumBytesComplexo());
+    
+    int i = 0, j = 0;
+    void * elem;
+    float n1, n2;
 
+    for(i = 0; i < linhas; i++){
+        for(j = 0; j < colunas; j++){
+            scanf("%*[^(]");
+            scanf("(%f,%f)", &n1, &n2);
+            elem = CriaNumComplexo(n1, n2);
+            AtribuiElementoMatrizGenerica(mat, i , j, elem);
+            free(elem);
+        }
+    }
 
+    return mat;
 }
 
 tMatrizGenerica * LeMatrizFloat(int colunas, int linhas){
     tMatrizGenerica * mat;
-    mat = CriaMatrizGenerica(colunas, linhas, sizeof(float));
+    mat = CriaMatrizGenerica(linhas, colunas, sizeof(float));
     
     int i = 0, j = 0;
     void * elem;
@@ -152,6 +216,7 @@ tMatrizGenerica * LeMatrizFloat(int colunas, int linhas){
             scanf("%f", &racional);
             *((float *)elem) = racional;
             AtribuiElementoMatrizGenerica(mat, i , j, elem);
+            free(elem);
         }
     }
 
@@ -159,19 +224,19 @@ tMatrizGenerica * LeMatrizFloat(int colunas, int linhas){
 }
 
 void imprime_elementoInteiro(void * elem){
-    printf("%d", ((int*)elem));
+    printf("%d", *((int*)elem));
 }
 
 void imprime_elementoFloat(void * elem){
-    printf("%f", ((float*)elem));
+    printf("%f", *((float*)elem));
 }
 
 void imprime_elementoDouble(void * elem){
-    printf("%lf", ((double*)elem));
+    printf("%lf", *((double*)elem));
 }
 
 void imprime_elementoChar(void * elem){
-    printf("%c", ((char*)elem));
+    printf("%c", *((char*)elem));
 }
 
 void escolheTipoMatrizImprime(tMatrizGenerica * mat, int tipo){
@@ -193,25 +258,11 @@ void escolheTipoMatrizImprime(tMatrizGenerica * mat, int tipo){
     return ;
 }
 
-tMatrizGenerica * SelecionaMultiplicacaoMat(tMatrizGenerica * mat, tMatrizGenerica * trans, int tipo){
+tMatrizGenerica * multiplicaMatrizComplexa(tMatrizGenerica * mat, tMatrizGenerica * trans){
     tMatrizGenerica * mult;
-    if(tipo == 0){
-        mult = MultiplicaMatrizes(mat, trans, sizeof(int), , );
+   
+    mult = MultiplicaMatrizes(mat, trans, RetornaNumBytesComplexo(),MultiplicaNumComplexo, SomaNumComplexo);
 
-    }else if(tipo == 1){
-        mult = MultiplicaMatrizes(mat, trans, sizeof(float), , );
-    }
-    else if(tipo == 2){
-        mult = MultiplicaMatrizes(mat, trans, sizeof(double), , );
-    }
-    else if(tipo == 3){
-        mult = MultiplicaMatrizes(mat, trans, sizeof(char), , );
-    }
-    else if(tipo == 4){
-        mult = MultiplicaMatrizes(mat, trans, RetornaNumBytesComplexo(),MultComplexos,SomaComplexos);
-    }
-
-    // void* (*multi_elem)(void*, void*), void* (*soma_elem)(void*,void*)
     return mult;
 
 }
@@ -223,6 +274,145 @@ void * SomaInteiros(void * a, void * b){
     *((int*)ponteiro) = *((int*)a) + *((int*)b);
 
     return ponteiro;
+}
+
+void * SomaFloat(void * a, void * b){
+    void * ponteiro;
+    ponteiro = (float*)malloc(sizeof(float));
+
+    *((float*)ponteiro) = *((float*)a) + *((float*)b);
+
+    return ponteiro;
+
+}
+void * SomaDouble(void * a, void * b){
+    void * ponteiro;
+    ponteiro = (double*)malloc(sizeof(double));
+
+    *((double*)ponteiro) = *((double*)a) + *((double*)b);
+
+    return ponteiro;
+}
+void * SomaChar(void * a, void * b){
+    void * ponteiro;
+    ponteiro = (char*)malloc(sizeof(char));
+
+    *((char*)ponteiro) = *((char*)a) + *((char*)b);
+
+    return ponteiro;
+}
+void * SomaNumComplexo(void * a, void * b){
+    void * ponteiro;
+    ponteiro = SomaComplexos(((tNumComplexo*)a) , ((tNumComplexo*)b));
+    return ponteiro;
+}
+
+void * MultiplicaInteiros(void * a, void * b){
+    void * ponteiro;
+    ponteiro = (int*)malloc(sizeof(int));
+
+    *((int*)ponteiro) = (*((int*)a)) * (*((int*)b));
+
+    return ponteiro;
+}
+void * MultiplicaFloat(void * a, void * b){
+    void * ponteiro;
+    ponteiro = (float*)malloc(sizeof(float));
+
+    *((float*)ponteiro) = (*((float*)a)) * (*((float*)b));
+
+    return ponteiro;
+
+}
+void * MultiplicaDouble(void * a, void * b){
+    void * ponteiro;
+    ponteiro = (double*)malloc(sizeof(double));
+
+    *((double*)ponteiro) = (*((double*)a)) * (*((double*)b));
+
+    return ponteiro;
+}
+void * MultiplicaChar(void * a, void * b){
+    void * ponteiro;
+    ponteiro = (char*)malloc(sizeof(char));
+
+    *((char*)ponteiro) = (*((char*)a)) * (*((char*)b));
+
+    return ponteiro;
+}
+void * MultiplicaNumComplexo(void * a, void * b){
+    void * ponteiro;
+    ponteiro = MultComplexos(((tNumComplexo*)a) , ((tNumComplexo*)b));
+    return ponteiro;
+}
+
+void * converteInteiroComplexo(void * elemento){
+    void * conv;
+    conv = CriaNumComplexo((*(int*)elemento), 0);
+    return conv;
+}
+
+
+void * converteFloatComplexo(void * elemento){
+    void * conv;
+    conv = CriaNumComplexo((*(float*)elemento), 0);
+    return conv;
+
+}
+void * converteDoubleComplexo(void * elemento){
+    void * conv;
+    conv = CriaNumComplexo((*(double*)elemento), 0);
+    return conv;
+}
+void * converteCharComplexo(void * elemento){
+    void * conv;
+    conv = CriaNumComplexo((*(char*)elemento), 0);
+    return conv;
+}
+
+tMatrizGenerica * escolheTipoMatrizLe(tMatrizGenerica * mat, int tipo, int linhas, int colunas){
+    if(tipo == 0){
+        mat = LeMatrizInteiros(colunas, linhas);
+
+    }else if(tipo == 1){
+        mat = LeMatrizFloat(colunas, linhas);
+    }
+    else if(tipo == 2){
+        mat = LeMatrizDouble(colunas, linhas);
+    }
+    else if(tipo == 3){
+        mat = LeMatrizChar(colunas, linhas);
+    }
+    else if(tipo == 4){
+        mat = LeMatrizNumComplexo(colunas, linhas);
+    }
+    else {
+        return NULL;
+    }
+    return mat;
+}
+
+tMatrizGenerica * escolheTipoMatrizConverteComp(tMatrizGenerica * mat, int tipo){
+    tMatrizGenerica * convertida;
+
+    if(tipo == 0){
+        convertida = ConverteTipoMatriz(mat, RetornaNumBytesComplexo(), converteInteiroComplexo);
+
+    }else if(tipo == 1){
+        convertida = ConverteTipoMatriz(mat, RetornaNumBytesComplexo(), converteFloatComplexo);
+    }
+    else if(tipo == 2){
+        convertida = ConverteTipoMatriz(mat, RetornaNumBytesComplexo(), converteDoubleComplexo);
+    }
+    else if(tipo == 3){
+        convertida = ConverteTipoMatriz(mat, RetornaNumBytesComplexo(), converteCharComplexo);
+    }
+    else if(tipo == 4){
+        convertida = mat;
+    }
+
+    return convertida;
+
 }
 /*
 2 2 0

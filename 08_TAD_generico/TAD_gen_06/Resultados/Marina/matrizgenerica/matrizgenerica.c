@@ -228,14 +228,13 @@ tMatrizGenerica *ConverteTipoMatriz(tMatrizGenerica *mat2, int novoNumByteElem, 
     int j = 0, i = 0;
     for(i = 0; i < mat2->lin; i++){
         for(j = 0 ; j < mat2->col; j++){
-            //free(mat2->data[i][j]);
-            //mat2->data[i][j] = (void*)malloc(novoNumByteElem);
+    
             novo = converte_elem(mat2->data[i][j]);
             AtribuiElementoMatrizGenerica(mat3,i,j, novo);
             free(novo);
-            //mat2->data[i][j] = 
+            
         }
     }
-    //DestroiMatrizGenerica(mat2);
+
     return mat3;
 }

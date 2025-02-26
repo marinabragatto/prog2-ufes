@@ -1,3 +1,32 @@
+main.c: In function ‘main’:
+main.c:78:48: warning: passing argument 2 of ‘ImprimirMatrizGenerica’ from incompatible pointer type [-Wincompatible-pointer-types]
+   78 |             ImprimirMatrizGenerica(convertida, ImprimeNumeroComplexo);
+      |                                                ^~~~~~~~~~~~~~~~~~~~~
+      |                                                |
+      |                                                void (*)(tNumComplexo *) {aka void (*)(struct complexo *)}
+In file included from main.c:3:
+matrizgenerica.h:76:58: note: expected ‘void (*)(void *)’ but argument is of type ‘void (*)(tNumComplexo *)’ {aka ‘void (*)(struct complexo *)’}
+   76 | void ImprimirMatrizGenerica(tMatrizGenerica * mat, void (imprime_elemento(void*)));
+      |                                                    ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+main.c:95:42: warning: passing argument 2 of ‘ImprimirMatrizGenerica’ from incompatible pointer type [-Wincompatible-pointer-types]
+   95 |             ImprimirMatrizGenerica(mult, ImprimeNumeroComplexo);
+      |                                          ^~~~~~~~~~~~~~~~~~~~~
+      |                                          |
+      |                                          void (*)(tNumComplexo *) {aka void (*)(struct complexo *)}
+In file included from main.c:3:
+matrizgenerica.h:76:58: note: expected ‘void (*)(void *)’ but argument is of type ‘void (*)(tNumComplexo *)’ {aka ‘void (*)(struct complexo *)’}
+   76 | void ImprimirMatrizGenerica(tMatrizGenerica * mat, void (imprime_elemento(void*)));
+      |                                                    ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+main.c: In function ‘escolheTipoMatrizImprime’:
+main.c:256:37: warning: passing argument 2 of ‘ImprimirMatrizGenerica’ from incompatible pointer type [-Wincompatible-pointer-types]
+  256 |         ImprimirMatrizGenerica(mat, ImprimeNumeroComplexo);
+      |                                     ^~~~~~~~~~~~~~~~~~~~~
+      |                                     |
+      |                                     void (*)(tNumComplexo *) {aka void (*)(struct complexo *)}
+In file included from main.c:3:
+matrizgenerica.h:76:58: note: expected ‘void (*)(void *)’ but argument is of type ‘void (*)(tNumComplexo *)’ {aka ‘void (*)(struct complexo *)’}
+   76 | void ImprimirMatrizGenerica(tMatrizGenerica * mat, void (imprime_elemento(void*)));
+      |                                                    ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
 numcomplexo.c: In function ‘ImprimeNumeroComplexo’:
 numcomplexo.c:54:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
    54 |     printf("%.2f + i%.2f", cplx->real, cplx->imag);

@@ -1,0 +1,31 @@
+tarefamultiplica.c: In function ‘CriaTarefaMultiplicar’:
+tarefamultiplica.c:17:20: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   17 |     mult = (tMult*)malloc(sizeof(tMult));
+      |                    ^~~~~~
+tarefamultiplica.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    1 | #include "tarefamultiplica.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+tarefamultiplica.c:17:20: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   17 |     mult = (tMult*)malloc(sizeof(tMult));
+      |                    ^~~~~~
+tarefamultiplica.c:17:20: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+tarefamultiplica.c: In function ‘ExecutaTarefaMultiplicar’:
+tarefamultiplica.c:32:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   32 |     printf("\nO resultado da multiplicacao de %.2f com %.2f eh: %.2f",((tMult*)mult)->n1 , ((tMult*)mult)->n2, ((tMult*)mult)->res);
+      |     ^~~~~~
+tarefamultiplica.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    1 | #include "tarefamultiplica.h"
+  +++ |+#include <stdio.h>
+    2 | 
+tarefamultiplica.c:32:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   32 |     printf("\nO resultado da multiplicacao de %.2f com %.2f eh: %.2f",((tMult*)mult)->n1 , ((tMult*)mult)->n2, ((tMult*)mult)->res);
+      |     ^~~~~~
+tarefamultiplica.c:32:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+tarefamultiplica.c: In function ‘DestroiTarefaMultiplicar’:
+tarefamultiplica.c:43:9: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   43 |         free(mult);
+      |         ^~~~
+tarefamultiplica.c:43:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+tarefamultiplica.c:43:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+tarefamultiplica.c:43:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
