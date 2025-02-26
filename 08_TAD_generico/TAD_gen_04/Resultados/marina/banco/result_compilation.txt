@@ -1,0 +1,19 @@
+banco.c: In function ‘LeBanco’:
+banco.c:48:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   48 |     scanf("%*[^a-zA-Z]");
+      |     ^~~~~
+banco.c:4:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    3 | #include <string.h>
+  +++ |+#include <stdio.h>
+    4 | 
+banco.c:48:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   48 |     scanf("%*[^a-zA-Z]");
+      |     ^~~~~
+banco.c:48:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+banco.c: In function ‘ImprimeRelatorioBanco’:
+banco.c:88:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   88 |     printf("%s\nLista de agencias:\n", banco->nome);
+      |     ^~~~~~
+banco.c:88:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+banco.c:88:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+banco.c:88:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’

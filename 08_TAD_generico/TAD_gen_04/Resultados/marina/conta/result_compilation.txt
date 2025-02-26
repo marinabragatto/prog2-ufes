@@ -1,0 +1,12 @@
+conta.c: In function ‘LeConta’:
+conta.c:46:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   46 |     scanf("%*[^0-9-]");
+      |     ^~~~~
+conta.c:4:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    3 | #include <stdlib.h>
+  +++ |+#include <stdio.h>
+    4 | /**
+conta.c:46:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   46 |     scanf("%*[^0-9-]");
+      |     ^~~~~
+conta.c:46:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’

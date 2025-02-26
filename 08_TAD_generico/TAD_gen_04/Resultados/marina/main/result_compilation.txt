@@ -1,0 +1,12 @@
+main.c: In function ‘main’:
+main.c:13:9: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   13 |         scanf("%*[^A-Za-z]");
+      |         ^~~~~
+main.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    1 | #include "banco.h"
+  +++ |+#include <stdio.h>
+    2 | 
+main.c:13:9: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   13 |         scanf("%*[^A-Za-z]");
+      |         ^~~~~
+main.c:13:9: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’

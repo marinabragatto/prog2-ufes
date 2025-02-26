@@ -1,0 +1,19 @@
+agencia.c: In function ‘LeAgencia’:
+agencia.c:50:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   50 |     scanf("%*[^0-9-]");
+      |     ^~~~~
+agencia.c:4:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    3 | #include <string.h>
+  +++ |+#include <stdio.h>
+    4 | /**
+agencia.c:50:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   50 |     scanf("%*[^0-9-]");
+      |     ^~~~~
+agencia.c:50:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+agencia.c: In function ‘ImprimeDadosAgencia’:
+agencia.c:105:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+  105 |     printf("\tNome: %s\n\tNumero: %d\n\tNumero de contas cadastradas: %d\n\tSaldo médio: R$%.2f\n\n", agencia->nome, agencia->nAgencia, VectorSize(agencia->contas), GetSaldoMedioAgencia(agencia));
+      |     ^~~~~~
+agencia.c:105:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+agencia.c:105:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+agencia.c:105:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
