@@ -41,7 +41,8 @@ tMatrizGenerica * CriaMatrizGenerica(int linhas, int colunas, int numByteElem){
     int j = 0;
     for(i = 0; i < linhas; i++){
         for(j = 0 ; j < colunas; j++){
-            mat->data[i][j] = (void*)malloc(numByteElem);
+            mat->data[i][j] = NULL;
+            //mat->data[i][j] = (void*)malloc(numByteElem);
         }
     }
 
@@ -107,6 +108,7 @@ int ObtemNumeroColunasMatrizGenerica(tMatrizGenerica * mat){
  * @return Ponteiro para o elemento da matriz que está na linha e coluna passadas como parâmetro
  */
 void * ObtemElementoMatrizGenerica(tMatrizGenerica * mat, int linha, int coluna){
+
     return mat->data[linha][coluna];
 }
 
@@ -121,7 +123,11 @@ void * ObtemElementoMatrizGenerica(tMatrizGenerica * mat, int linha, int coluna)
  * @return Ponteiro para o elemento da matriz que está na linha e coluna passadas como parâmetro
  */
 void AtribuiElementoMatrizGenerica(tMatrizGenerica * mat, int linha, int coluna, void* elem){
+    if(mat->data[linha][coluna] != NULL){
+        free(mat->data[linha][coluna]);
+    }
     
+    mat->data[linha][coluna] = (void*)malloc(mat->novoNumByteElem);
     memcpy(mat->data[linha][coluna], elem, mat->novoNumByteElem);
     //*(mat->data[linha][coluna]) = *elem;
 }

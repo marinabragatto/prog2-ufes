@@ -130,42 +130,42 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  -----
  - Pasta completo / Caso 1:
  - Arquivo de output gerado: Resultados/Marina/completo/Casos/1/result_valgrind.txt.
- - Valgrind: Ok! allocs: 54, frees: 54, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 58, frees: 58, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Ok! Peso: 10
  - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta completo / Caso 2:
  - Arquivo de output gerado: Resultados/Marina/completo/Casos/2/result_valgrind.txt.
- - Valgrind: Ok! allocs: 54, frees: 54, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 58, frees: 58, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Ok! Peso: 10
  - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta completo / Caso 3:
  - Arquivo de output gerado: Resultados/Marina/completo/Casos/3/result_valgrind.txt.
- - Valgrind: Ok! allocs: 54, frees: 54, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 58, frees: 58, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Ok! Peso: 10
  - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta completo / Caso 4:
  - Arquivo de output gerado: Resultados/Marina/completo/Casos/4/result_valgrind.txt.
- - Valgrind: Ok! allocs: 54, frees: 54, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 58, frees: 58, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Ok! Peso: 10
  - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta completo / Caso 5:
  - Arquivo de output gerado: Resultados/Marina/completo/Casos/5/result_valgrind.txt.
- - Valgrind: Ok! allocs: 42, frees: 42, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 46, frees: 46, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Ok! Peso: 10
  - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta completo / Caso 6:
  - Arquivo de output gerado: Resultados/Marina/completo/Casos/6/result_valgrind.txt.
- - Valgrind: Ok! allocs: 78, frees: 78, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 82, frees: 82, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Ok! Peso: 10
  - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta completo / Caso 7:
  - Arquivo de output gerado: Resultados/Marina/completo/Casos/7/result_valgrind.txt.
- - Valgrind: Ok! allocs: 130, frees: 130, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 147, frees: 147, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Ok! Peso: 10
  - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta completo / Caso 8:
  - Arquivo de output gerado: Resultados/Marina/completo/Casos/8/result_valgrind.txt.
- - Valgrind: Ok! allocs: 963, frees: 963, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 1,107, frees: 1,107, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Ok! Peso: 10
  - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta completo / Caso 9:
@@ -177,42 +177,42 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  -----
  - Pasta matrizgenerica / Caso 1:
  - Arquivo de output gerado: Resultados/Marina/matrizgenerica/Casos/1/result_valgrind.txt.
- - Valgrind: Ok! allocs: 50, frees: 50, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 54, frees: 54, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Ok! Peso: 10
  - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta matrizgenerica / Caso 2:
  - Arquivo de output gerado: Resultados/Marina/matrizgenerica/Casos/2/result_valgrind.txt.
- - Valgrind: Ok! allocs: 50, frees: 50, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 54, frees: 54, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Ok! Peso: 10
  - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta matrizgenerica / Caso 3:
  - Arquivo de output gerado: Resultados/Marina/matrizgenerica/Casos/3/result_valgrind.txt.
- - Valgrind: Ok! allocs: 50, frees: 50, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 54, frees: 54, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Ok! Peso: 10
  - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta matrizgenerica / Caso 4:
  - Arquivo de output gerado: Resultados/Marina/matrizgenerica/Casos/4/result_valgrind.txt.
- - Valgrind: Ok! allocs: 50, frees: 50, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 54, frees: 54, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Ok! Peso: 10
  - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta matrizgenerica / Caso 5:
  - Arquivo de output gerado: Resultados/Marina/matrizgenerica/Casos/5/result_valgrind.txt.
- - Valgrind: Ok! allocs: 42, frees: 42, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 46, frees: 46, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Ok! Peso: 10
  - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta matrizgenerica / Caso 6:
  - Arquivo de output gerado: Resultados/Marina/matrizgenerica/Casos/6/result_valgrind.txt.
- - Valgrind: Ok! allocs: 70, frees: 70, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 74, frees: 74, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Ok! Peso: 10
  - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta matrizgenerica / Caso 7:
  - Arquivo de output gerado: Resultados/Marina/matrizgenerica/Casos/7/result_valgrind.txt.
- - Valgrind: Ok! allocs: 129, frees: 129, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 146, frees: 146, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Ok! Peso: 10
  - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta matrizgenerica / Caso 8:
  - Arquivo de output gerado: Resultados/Marina/matrizgenerica/Casos/8/result_valgrind.txt.
- - Valgrind: Ok! allocs: 853, frees: 853, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 997, frees: 997, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Ok! Peso: 10
  - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta matrizgenerica / Caso 9:
