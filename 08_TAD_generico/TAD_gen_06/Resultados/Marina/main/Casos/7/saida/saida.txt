@@ -14,10 +14,17 @@ Digite a operação desejada
 	1 - Apenas imprimir a matriz
 	2 - Converter para o tipo complexo e imprimir
 	3 - Calcular e imprimir a multiplicacao da matriz pela sua transposta.
+Digite a operação desejada
+	1 - Apenas imprimir a matriz
+	2 - Converter para o tipo complexo e imprimir
+	3 - Calcular e imprimir a multiplicacao da matriz pela sua transposta.
 0.00 + i10.00 0.00 + i22.00 0.00 + i34.00 
 0.00 + i22.00 0.00 + i50.00 0.00 + i78.00 
 0.00 + i34.00 0.00 + i78.00 0.00 + i122.00 
 
+Digite a operação desejada
+	1 - Entrar com uma nova matriz
+	2 - Encerrar o Programa
 Digite a operação desejada
 	1 - Entrar com uma nova matriz
 	2 - Encerrar o Programa
@@ -26,7 +33,7 @@ Digite a operação desejada
 	1 - Apenas imprimir a matriz
 	2 - Converter para o tipo complexo e imprimir
 	3 - Calcular e imprimir a multiplicacao da matriz pela sua transposta.
-0.000000 
+4 
 Digite a operação desejada
 	1 - Entrar com uma nova matriz
 	2 - Encerrar o Programa
