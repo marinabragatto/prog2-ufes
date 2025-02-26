@@ -1,0 +1,57 @@
+histograma.c: In function ‘CalcularHistograma’:
+histograma.c:32:9: warning: unused variable ‘intervalo’ [-Wunused-variable]
+   32 |     int intervalo;
+      |         ^~~~~~~~~
+histograma.c: In function ‘MostrarHistograma’:
+histograma.c:80:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   80 |         printf("[%d, %d): %d\n", minimo, intervalo, histograma->numPixIntervalor[i]);
+      |         ^~~~~~
+histograma.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    2 | #include <stdlib.h>
+  +++ |+#include <stdio.h>
+    3 | 
+histograma.c:80:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   80 |         printf("[%d, %d): %d\n", minimo, intervalo, histograma->numPixIntervalor[i]);
+      |         ^~~~~~
+histograma.c:80:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+imagem.c: In function ‘CriarImagem’:
+imagem.c:72:9: warning: unused variable ‘i’ [-Wunused-variable]
+   72 |     int i = 0;
+      |         ^
+imagem.c: In function ‘LerImagem’:
+imagem.c:103:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+  103 |     scanf("%d %d %d\n", &altura, &largura, &tipo);
+      |     ^~~~~
+imagem.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    2 | #include <stdlib.h>
+  +++ |+#include <stdio.h>
+    3 | /**
+imagem.c:103:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+  103 |     scanf("%d %d %d\n", &altura, &largura, &tipo);
+      |     ^~~~~
+imagem.c:103:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+imagem.c:109:16: warning: unused variable ‘elem’ [-Wunused-variable]
+  109 |         void * elem;
+      |                ^~~~
+imagem.c:120:16: warning: unused variable ‘elem’ [-Wunused-variable]
+  120 |         void * elem;
+      |                ^~~~
+imagem.c:101:51: warning: unused variable ‘j’ [-Wunused-variable]
+  101 |     int largura = 0, altura = 0, tipo = 0, i = 0, j = 0;
+      |                                                   ^
+imagem.c: In function ‘DestruirImagem’:
+imagem.c:146:17: warning: unused variable ‘i’ [-Wunused-variable]
+  146 |             int i = 0;
+      |                 ^
+main.c: In function ‘main’:
+main.c:5:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+    5 |     scanf("%d", &nIntervalos);
+      |     ^~~~~
+main.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    1 | #include "histograma.h"
+  +++ |+#include <stdio.h>
+    2 | 
+main.c:5:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+    5 |     scanf("%d", &nIntervalos);
+      |     ^~~~~
+main.c:5:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’

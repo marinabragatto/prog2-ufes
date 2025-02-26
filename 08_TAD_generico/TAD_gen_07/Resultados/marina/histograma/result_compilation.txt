@@ -1,0 +1,16 @@
+histograma.c: In function ‘CalcularHistograma’:
+histograma.c:32:9: warning: unused variable ‘intervalo’ [-Wunused-variable]
+   32 |     int intervalo;
+      |         ^~~~~~~~~
+histograma.c: In function ‘MostrarHistograma’:
+histograma.c:80:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   80 |         printf("[%d, %d): %d\n", minimo, intervalo, histograma->numPixIntervalor[i]);
+      |         ^~~~~~
+histograma.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    2 | #include <stdlib.h>
+  +++ |+#include <stdio.h>
+    3 | 
+histograma.c:80:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   80 |         printf("[%d, %d): %d\n", minimo, intervalo, histograma->numPixIntervalor[i]);
+      |         ^~~~~~
+histograma.c:80:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
