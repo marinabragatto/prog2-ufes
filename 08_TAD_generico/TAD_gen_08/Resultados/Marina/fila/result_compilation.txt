@@ -1,0 +1,19 @@
+fila.c: In function ‘FilaConstruct’:
+fila.c:16:19: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   16 |     fila = (Fila*)malloc(sizeof(Fila));
+      |                   ^~~~~~
+fila.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    1 | #include "fila.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+fila.c:16:19: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   16 |     fila = (Fila*)malloc(sizeof(Fila));
+      |                   ^~~~~~
+fila.c:16:19: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+fila.c: In function ‘FilaDestroy’:
+fila.c:34:9: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   34 |         free(f);
+      |         ^~~~
+fila.c:34:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+fila.c:34:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+fila.c:34:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’

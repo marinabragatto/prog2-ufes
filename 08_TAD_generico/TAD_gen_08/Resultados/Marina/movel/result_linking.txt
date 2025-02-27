@@ -1,0 +1,6 @@
+/usr/bin/ld: Resultados/Marina/movel/main.o: in function `main':
+main.c:(.text+0xa1): undefined reference to `LeMovel'
+/usr/bin/ld: main.c:(.text+0xf6): undefined reference to `ImprimeMovel'
+/usr/bin/ld: main.c:(.text+0x102): undefined reference to `DestroiMovel'
+/usr/bin/ld: main.c:(.text+0x129): undefined reference to `DestroiMovel'
+collect2: error: ld returned 1 exit status
