@@ -1,0 +1,32 @@
+estabelecimento.c: In function ‘CriaEstabelecimento’:
+estabelecimento.c:17:42: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   17 |     Estabelecimento = (tEstabelecimento*)malloc(sizeof(tEstabelecimento));
+      |                                          ^~~~~~
+estabelecimento.c:3:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    2 | #include "vector.h"
+  +++ |+#include <stdlib.h>
+    3 | /**
+estabelecimento.c:17:42: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   17 |     Estabelecimento = (tEstabelecimento*)malloc(sizeof(tEstabelecimento));
+      |                                          ^~~~~~
+estabelecimento.c:17:42: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+estabelecimento.c: In function ‘DestroiEstabelecimento’:
+estabelecimento.c:31:53: warning: passing argument 2 of ‘VectorDestroy’ from incompatible pointer type [-Wincompatible-pointer-types]
+   31 |             VectorDestroy(estabelecimento->Produto, DestroiProduto);
+      |                                                     ^~~~~~~~~~~~~~
+      |                                                     |
+      |                                                     void (*)(tProduto *) {aka void (*)(struct Produto *)}
+In file included from estabelecimento.c:2:
+vector.h:46:38: note: expected ‘void (*)(void *)’ but argument is of type ‘void (*)(tProduto *)’ {aka ‘void (*)(struct Produto *)’}
+   46 | void VectorDestroy(Vector *v, void (*destroy)(DataType));
+      |                               ~~~~~~~^~~~~~~~~~~~~~~~~~
+estabelecimento.c:33:9: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   33 |         free(estabelecimento);
+      |         ^~~~
+estabelecimento.c:33:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+estabelecimento.c:33:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+estabelecimento.c:33:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+estabelecimento.c: In function ‘LeEstabelecimento’:
+estabelecimento.c:60:9: warning: unused variable ‘tamanho’ [-Wunused-variable]
+   60 |     int tamanho = 0, qtd = 0;
+      |         ^~~~~~~
