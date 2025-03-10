@@ -5,6 +5,7 @@
         "string": "c",
         "string_view": "c",
         "clinica.h": "c",
-        "utils_char2.h": "c"
+        "utils_char2.h": "c",
+        "stdlib.h": "c"
     }
 }

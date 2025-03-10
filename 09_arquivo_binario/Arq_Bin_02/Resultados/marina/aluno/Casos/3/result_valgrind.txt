@@ -1,0 +1,15 @@
+==89461== Memcheck, a memory error detector
+==89461== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==89461== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==89461== Command: Resultados/marina/aluno/prog Resultados/marina/aluno/Casos/3
+==89461== Parent PID: 89460
+==89461== 
+==89461== 
+==89461== HEAP SUMMARY:
+==89461==     in use at exit: 0 bytes in 0 blocks
+==89461==   total heap usage: 13 allocs, 13 frees, 3,284 bytes allocated
+==89461== 
+==89461== All heap blocks were freed -- no leaks are possible
+==89461== 
+==89461== For lists of detected and suppressed errors, rerun with: -s
+==89461== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

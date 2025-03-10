@@ -1,0 +1,4 @@
+base_alunos.c: In function ‘LerBaseAlunos’:
+base_alunos.c:55:15: warning: statement with no effect [-Wunused-value]
+   55 |     baseAlunos->alunos;
+      |     ~~~~~~~~~~^~~~~~~~
