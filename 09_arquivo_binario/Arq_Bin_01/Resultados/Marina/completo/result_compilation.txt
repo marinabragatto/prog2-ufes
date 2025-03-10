@@ -1,0 +1,12 @@
+aluno.c: In function ‘ImprimeAlunos’:
+aluno.c:186:9: warning: implicit declaration of function ‘imprimeAluno’; did you mean ‘ImprimeAlunos’? [-Wimplicit-function-declaration]
+  186 |         imprimeAluno(alunos[i]);
+      |         ^~~~~~~~~~~~
+      |         ImprimeAlunos
+aluno.c: At top level:
+aluno.c:193:6: warning: conflicting types for ‘imprimeAluno’; have ‘void(Aluno *)’ {aka ‘void(struct aluno *)’}
+  193 | void imprimeAluno (Aluno * aluno){
+      |      ^~~~~~~~~~~~
+aluno.c:186:9: note: previous implicit declaration of ‘imprimeAluno’ with type ‘void(Aluno *)’ {aka ‘void(struct aluno *)’}
+  186 |         imprimeAluno(alunos[i]);
+      |         ^~~~~~~~~~~~
