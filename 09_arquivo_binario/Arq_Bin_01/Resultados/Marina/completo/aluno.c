@@ -157,19 +157,20 @@ void CarregaAlunosBinario(Aluno **alunos, char *fileName){
         // Lendo nomeAluno
         fread(&tamanho, sizeof(int), 1, arquivo);
         fread(nomeAluno, sizeof(char), tamanho, arquivo);
-
+        nomeAluno[tamanho] = '\0';
         // Lendo dtNas
         fread(&tamanho, sizeof(int), 1, arquivo);
         fread(dtNas, sizeof(char), tamanho, arquivo);
+        dtNas[tamanho] = '\0';
 
         // Lendo curso
         fread(&tamanho, sizeof(int), 1, arquivo);
         fread(curso, sizeof(char), tamanho, arquivo);
-
+        curso[tamanho] = '\0';
         // Lendo periodo
         fread(&tamanho, sizeof(int), 1, arquivo);
         fread(periodo, sizeof(char), tamanho, arquivo);
-
+        periodo[tamanho] = '\0';
         // Lendo valores numéricos diretamente
         fread(&cra, sizeof(float), 1, arquivo);
         fread(&periodoConclusao, sizeof(int), 1, arquivo);
