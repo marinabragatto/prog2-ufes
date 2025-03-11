@@ -7,6 +7,7 @@
         "clinica.h": "c",
         "utils_char2.h": "c",
         "stdlib.h": "c",
-        "produto.h": "c"
+        "produto.h": "c",
+        "memory_resource": "c"
     }
 }
