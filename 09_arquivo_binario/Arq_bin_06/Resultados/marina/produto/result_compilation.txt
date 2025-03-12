@@ -1,0 +1,4 @@
+produto.c: In function ‘ImprimeProduto’:
+produto.c:81:12: warning: too many arguments for format [-Wformat-extra-args]
+   81 |     printf("%d;%s;R$ %.2f;%d", produto->codigo, produto->nome, produto->preco, produto->quantidadeVendida, 8.9);
+      |            ^~~~~~~~~~~~~~~~~~

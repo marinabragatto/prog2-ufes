@@ -1,0 +1,25 @@
+Arquivos Esperados Corretos: 6 de 7
+Pastas Compiladas Corretamente: 4 de 5 
+Pastas Linkadas Corretamente: 3 de 5
+Teste main
+  - Resultados corretos: 0 de 4
+  - Valgrinds corretos: 0 de 4
+Nota de marina para o teste main: 0
+Teste completo
+  - Resultados corretos: 0 de 4
+  - Valgrinds corretos: 0 de 4
+Nota de marina para o teste completo: 0
+Teste produto
+  - Resultados corretos: 4 de 4
+  - Valgrinds corretos: 4 de 4
+Nota de marina para o teste produto: 2.00
+Teste vector
+  - Resultados corretos: 4 de 4
+  - Valgrinds corretos: 4 de 4
+Nota de marina para o teste vector: 2.00
+Teste estabelecimento
+  - Resultados corretos: 4 de 4
+  - Valgrinds corretos: 4 de 4
+Nota de marina para o teste estabelecimento: 2.00
+Nota de marina: 0+(2.00)+(2.00)+(2.00)+(0)+(0)
+Nota de marina: 6.00
