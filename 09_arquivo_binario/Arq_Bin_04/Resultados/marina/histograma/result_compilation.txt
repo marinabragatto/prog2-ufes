@@ -1,0 +1,38 @@
+histograma.c: In function ‘CalcularHistograma’:
+histograma.c:25:25: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   25 |     hist = (Histograma*)malloc(sizeof(Histograma));
+      |                         ^~~~~~
+histograma.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    1 | #include "histograma.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+histograma.c:25:25: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   25 |     hist = (Histograma*)malloc(sizeof(Histograma));
+      |                         ^~~~~~
+histograma.c:25:25: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+histograma.c:30:9: warning: unused variable ‘resto’ [-Wunused-variable]
+   30 |     int resto = 0, tamInt = 0;
+      |         ^~~~~
+histograma.c: In function ‘MostrarHistograma’:
+histograma.c:80:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   80 |         printf("[%d, %d): %d\n", minimoIntervalo, minimoIntervalo+histograma->tamanhoIntervalo, histograma->intervalos[i]);
+      |         ^~~~~~
+histograma.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    1 | #include "histograma.h"
+  +++ |+#include <stdio.h>
+    2 | 
+histograma.c:80:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   80 |         printf("[%d, %d): %d\n", minimoIntervalo, minimoIntervalo+histograma->tamanhoIntervalo, histograma->intervalos[i]);
+      |         ^~~~~~
+histograma.c:80:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+histograma.c: In function ‘DestruirHistograma’:
+histograma.c:94:13: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   94 |             free(histograma->intervalos);
+      |             ^~~~
+histograma.c:94:13: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+histograma.c:94:13: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+histograma.c:94:13: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+histograma.c:96:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+   96 |         free(histograma);
+      |         ^~~~
+histograma.c:96:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’

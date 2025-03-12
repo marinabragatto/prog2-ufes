@@ -1,0 +1,15 @@
+==83919== Memcheck, a memory error detector
+==83919== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==83919== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==83919== Command: Resultados/marina/histograma/prog Resultados/marina/histograma/Casos/1
+==83919== Parent PID: 83918
+==83919== 
+==83919== 
+==83919== HEAP SUMMARY:
+==83919==     in use at exit: 0 bytes in 0 blocks
+==83919==   total heap usage: 8 allocs, 8 frees, 566,068 bytes allocated
+==83919== 
+==83919== All heap blocks were freed -- no leaks are possible
+==83919== 
+==83919== For lists of detected and suppressed errors, rerun with: -s
+==83919== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
