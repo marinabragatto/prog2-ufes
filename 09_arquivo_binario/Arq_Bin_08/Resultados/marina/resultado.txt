@@ -1,10 +1,10 @@
 Arquivos Esperados Corretos: 7 de 7
 Pastas Compiladas Corretamente: 5 de 5 
-Pastas Linkadas Corretamente: 3 de 5
+Pastas Linkadas Corretamente: 5 de 5
 Teste main
-  - Resultados corretos: 0 de 4
-  - Valgrinds corretos: 0 de 4
-Nota de marina para o teste main: 0
+  - Resultados corretos: 4 de 4
+  - Valgrinds corretos: 4 de 4
+Nota de marina para o teste main: 2.50
 Teste contato
   - Resultados corretos: 4 de 4
   - Valgrinds corretos: 4 de 4
@@ -18,8 +18,8 @@ Teste vector
   - Valgrinds corretos: 4 de 4
 Nota de marina para o teste vector: 2.50
 Teste completo
-  - Resultados corretos: 0 de 4
-  - Valgrinds corretos: 0 de 4
-Nota de marina para o teste completo: 0
-Nota de marina: 0+(2.50)+(0)+(0)+(2.50)+lista_(2.50)
+  - Resultados corretos: 4 de 4
+  - Valgrinds corretos: 4 de 4
+Nota de marina para o teste completo: 2.50
+Nota de marina: 0+(2.50)+(2.50)+(2.50)+(2.50)+lista_(2.50)
 Nota de marina: 
